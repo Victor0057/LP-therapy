@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Divorce Support — Private Online Therapy That Moves You Forward</title>
+<meta name="description" content="A persuasive, emotionally resonant landing page for divorce-focused online therapy. Orange CTAs, rich sections, clear outcomes, toolbox, pricing, FAQs, and sticky CTA." />
+<style>
+  :root{
+    --bg:#F6F4F1;         
+    --ink:#122F27;        
+    --muted:#3E5A52;      
+    --panel:#FFFFFF;      
+    --soft:#E9E4DD;       
+    --cta:#FF7A45;        
+    --ctaH:#E56733;       
+    --accent:#1C7C62;     
+    --shadow:0 18px 46px rgba(0,0,0,.07);
+    --radius:18px;
+    --max:1120px;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{
+    font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;
+    background:var(--bg);
+    color:var(--ink);
+    line-height:1.7;
+    -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+  }
+  a{color:inherit; text-decoration:none}
+  .wrap{max-width:var(--max); margin:auto; padding:0 22px}
+
+  header{
+    padding:120px 0 92px;
+    background: radial-gradient(1200px 600px at 80% -10%, #F0ECE6 0%, #F6F4F1 60%, #F6F4F1 100%);
+    border-bottom:1px solid var(--soft);
+    text-align:center;
+  }
+  h1{
+    margin:0 0 10px;
+    font-size:clamp(44px,6.8vw,76px);
+    line-height:1.04; letter-spacing:.2px;
+  }
+  .kicker{
+    font-size:clamp(22px,3.4vw,34px);
+    font-weight:900; margin:12px 0 16px; color:var(--accent);
+  }
+  .sub{
+    font-size:clamp(18px,2vw,20px);
+    color:var(--muted);
+    max-width:940px; margin:0 auto 26px;
+  }
+  .cta{
+    display:inline-block; background:var(--cta); color:#fff; font-weight:900;
+    text-decoration:none; padding:16px 28px; border-radius:16px;
+    box-shadow:var(--shadow);
+    transition:background .15s ease, transform .05s ease;
+    font-size:18px;
+  }
+  .cta:hover{background:var(--ctaH); transform:translateY(-1px)}
+  .trust{color:var(--muted); margin-top:12px; font-size:15px}
+
+  section{padding:96px 0}
+  h2{
+    margin:0 0 12px; text-align:center;
+    font-size:clamp(26px,3.2vw,38px); color:var(--accent);
+  }
+  .lead{max-width:940px; margin:0 auto 30px; text-align:center; color:var(--muted); font-size:18px}
+
+  .grid3{display:grid; gap:22px; grid-template-columns:repeat(3,1fr)}
+  .grid2{display:grid; gap:26px; grid-template-columns:1fr 1fr}
+  .card{background:var(--panel); border-radius:var(--radius); box-shadow:var(--shadow); padding:22px}
+  .card h3{margin:0 0 8px; font-size:20px; color:var(--ink)}
+  .card p{margin:0}
+
+  .strip{
+    background:var(--panel); border-radius:var(--radius); box-shadow:var(--shadow);
+    padding:24px; display:grid; gap:12px; text-align:center
+  }
+  .badges{display:flex; flex-wrap:wrap; gap:12px; justify-content:center}
+  .badge{display:inline-block; background:#EDE9E2; color:var(--ink); padding:8px 12px; border-radius:999px; font-weight:700; font-size:14px}
+
+  .timeline{display:grid; gap:22px; grid-template-columns:repeat(3,1fr)}
+  .step{background:var(--panel); border-radius:var(--radius); box-shadow:var(--shadow); padding:22px}
+  .num{display:inline-grid; place-items:center; width:38px; height:38px; border-radius:50%; background:#FFE4D7; color:#8A3B1E; font-weight:900; margin-bottom:8px}
+
+  .price{background:var(--panel); border-radius:var(--radius); box-shadow:var(--shadow); padding:26px; text-align:center; max-width:640px; margin:0 auto}
+  .big{font-size:46px; font-weight:900; margin:6px 0}
+  .small{color:var(--muted)}
+  .ribbon{display:inline-block; background:#FFE4D7; color:#8A3B1E; font-weight:900; padding:6px 10px; border-radius:999px; margin-bottom:10px}
+
+  .objections .card{display:flex; gap:14px; align-items:flex-start}
+  .dot{width:14px; height:14px; border-radius:50%; background:var(--cta); margin-top:8px; flex-shrink:0}
+
+  .testi{display:grid; gap:22px; grid-template-columns:1fr 1fr}
+  blockquote{margin:0; background:var(--panel); border-radius:var(--radius); box-shadow:var(--shadow); padding:22px; font-size:18px}
+  blockquote footer{margin-top:10px; opacity:.8; font-size:14px}
+
+  .band{background:var(--panel); border-radius:var(--radius); box-shadow:var(--shadow); padding:34px; text-align:center}
+
+  .sticky{
+    position:fixed; left:0; right:0; bottom:0; z-index:50;
+    background:rgba(255,122,69,.98); color:#fff;
+    display:flex; justify-content:center; gap:14px; align-items:center;
+    padding:12px 16px; box-shadow:0 -10px 30px rgba(0,0,0,.12)
+  }
+  .sticky .copy{font-weight:900; letter-spacing:.2px; text-align:center}
+  .sticky a{background:#fff; color:#B44C27; font-weight:900; padding:10px 16px; border-radius:12px}
+
+  footer{padding:52px 0 88px; text-align:center; color:var(--muted); font-size:13px; border-top:1px solid var(--soft)}
+
+  @media (max-width:1000px){
+    .grid3,.grid2,.timeline,.testi{grid-template-columns:1fr}
+    header{padding:104px 0 82px}
+    .sticky{flex-direction:column; gap:10px}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <h1>Divorce hurts</h1>
+    <div class="kicker">Staying stuck hurts more</div>
+    <p class="sub">If your chest is tight and your mind is loud, you are not broken. You are overwhelmed. Therapy turns the volume down so you can sleep, speak clearly and make decisions you trust. Start today and take back this week.</p>
+    <p><a class="cta" href="https://onlinetherapy.go2cloud.org/aff_c?offer_id=2&amp;aff_id=1116&amp;source=redditads&amp;aff_sub=divorce" aria-label="Start therapy now">Start Therapy Today</a></p>
+    <div class="trust">Private online sessions · Licensed therapists · Daily replies Monday to Friday</div>
+  </div>
+</header>
+
+<section id="trust">
+  <div class="wrap strip">
+    <div class="badges">
+      <span class="badge">CBT based program</span>
+      <span class="badge">Eight sections and twenty five worksheets</span>
+      <span class="badge">Unlimited messaging</span>
+      <span class="badge">Instant therapist match</span>
+      <span class="badge">Change therapist any time</span>
+      <span class="badge">Video voice or text</span>
+    </div>
+  </div>
+</section>
+
+<section id="outcomes">
+  <div class="wrap">
+    <h2>What begins to change this month</h2>
+    <p class="lead">Four outcomes people feel first when they start now.</p>
+    <div class="grid2">
+      <div class="card">
+        <h3>Calmer days</h3>
+        <p>Five minute resets you can use between obligations. Your body stops bracing for impact and your mind gets room to think.</p>
+      </div>
+      <div class="card">
+        <h3>Clear decisions</h3>
+        <p>A simple map replaces spirals. You choose one next step and you know why it matters.</p>
+      </div>
+      <div class="card">
+        <h3>Lower conflict</h3>
+        <p>Language that reduces heat in messages and talks. You protect boundaries and time.</p>
+      </div>
+      <div class="card">
+        <h3>Real confidence</h3>
+        <p>Small wins stack. You see progress and feel more like yourself again.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="cost">
+  <div class="wrap">
+    <h2>The cost of waiting</h2>
+    <p class="lead">Time is not neutral. Delay quietly collects interest.</p>
+    <div class="grid3">
+      <div class="card">
+        <h3>Energy drain</h3>
+        <p>Foggy mornings. Wired nights. Tasks take twice as long and give nothing back.</p>
+      </div>
+      <div class="card">
+        <h3>Avoidable mistakes</h3>
+        <p>Hard talks happen without a plan. Emotions drive choices you would not make rested.</p>
+      </div>
+      <div class="card">
+        <h3>Distance at home</h3>
+        <p>People you love feel the weather even when no one names it. Support gets thinner.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="seven">
+  <div class="wrap">
+    <h2>Your next seven days</h2>
+    <p class="lead">Momentum starts now. Not someday.</p>
+    <div class="timeline">
+      <div class="step">
+        <div class="num">Day 1</div>
+        <h3 style="margin:6px 0">Relief</h3>
+        <p>Meet your therapist. Map what hurts most. Leave with a reset you can use tonight.</p>
+      </div>
+      <div class="step">
+        <div class="num">Days 2–3</div>
+        <h3 style="margin:6px 0">Clarity</h3>
+        <p>Choose one decision. Build the words for one hard conversation.</p>
+      </div>
+      <div class="step">
+        <div class="num">Days 4–7</div>
+        <h3 style="margin:6px 0">Control</h3>
+        <p>Sleep routine. Boundaries that hold. A plan for next week that respects your energy.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="toolbox">
+  <div class="wrap">
+    <h2>Everything you get</h2>
+    <p class="lead">Not just calls. A complete toolbox for progress between sessions.</p>
+    <div class="grid2">
+      <div class="card">
+        <h3>Live sessions</h3>
+        <p>Weekly meetings of forty five minutes by video, voice or text. The Premium plan offers two each week plus express replies.</p>
+      </div>
+      <div class="card">
+        <h3>Messaging that matters</h3>
+        <p>Unlimited messages. Replies every weekday so you are not alone with spirals or wins.</p>
+      </div>
+      <div class="card">
+        <h3>CBT program</h3>
+        <p>Eight sections with twenty five worksheets. Practical exercises that fit real life and build new habits.</p>
+      </div>
+      <div class="card">
+        <h3>Wellbeing library</h3>
+        <p>Yoga and meditation videos, a journal and an activity plan. Assessments that track what changes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="pricing">
+  <div class="wrap">
+    <h2>Start without friction</h2>
+    <p class="lead">Plans from forty eight dollars each week with twenty percent off your first month. Upgrade or cancel any time.</p>
+    <div class="price">
+      <div class="ribbon">Premium available</div>
+      <div class="big">From $48 per week</div>
+      <div class="small">Instant therapist match and the flexibility to change any time.</div>
+      <p style="margin-top:18px"><a class="cta" href="https://onlinetherapy.go2cloud.org/aff_c?offer_id=2&amp;aff_id=1116&amp;source=redditads&amp;aff_sub=divorce">See Plans</a></p>
+    </div>
+  </div>
+</section>
+
+<section id="proof">
+  <div class="wrap">
+    <h2>People do feel better</h2>
+    <div class="testi">
+      <blockquote>
+        “I was spiraling every night. After the first call I slept. After the third I set real limits and kept them.”
+        <footer>— A.M.</footer>
+      </blockquote>
+      <blockquote>
+        “Clearer head. Fewer fights. I got through the week without falling apart.”
+        <footer>— D.L.</footer>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<section id="final">
+  <div class="wrap">
+    <div class="band">
+      <h2>Say enough to spirals</h2>
+      <p class="lead">If you are done carrying this alone, book now. One conversation changes the week. We take it from here together.</p>
+      <p style="margin-top:12px"><a class="cta" href="https://onlinetherapy.go2cloud.org/aff_c?offer_id=2&amp;aff_id=1116&amp;source=redditads&amp;aff_sub=divorce">Start Therapy Today</a></p>
+    </div>
+  </div>
+</section>
+
+<div class="sticky" role="region" aria-label="Sticky call to action">
+  <div class="copy">Sessions open this week. Choose your therapist and start.</div>
+  <a href="https://onlinetherapy.go2cloud.org/aff_c?offer_id=2&amp;aff_id=1116&amp;source=redditads&amp;aff_sub=divorce" aria-label="Book now">Book now</a>
+</div>
+
+<footer>
+  © <span id="y"></span> Private Online Support
+</footer>
+<script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+</body>
+</html>
