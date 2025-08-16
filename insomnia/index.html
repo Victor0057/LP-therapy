@@ -1,78 +1,111 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Insomnia Online Therapy — Sleep Better with CBT-I</title>
-<meta name="description" content="Overcome insomnia with CBT-I delivered online. Licensed therapists, weekly plan, real support, lasting skills.">
-<meta name="theme-color" content="#1e3a8a">
+<title>Insomnia Online Therapy — Sleep Better with CBT‑I</title>
+<meta name="description" content="Overcome insomnia with CBT‑I delivered online. Licensed therapists, weekly plan, real support, lasting skills.">
+<meta name="theme-color" content="#2563eb">
 <style>
   :root{
-    --ink:#0f172a;         /* deep slate */
+    --ink:#0f172a;          /* deep slate */
     --muted:#485a7a;
-    --bg:#f7fbff;          /* airy */
+    --bg:#f5fbff;           /* airy blue-ish */
     --panel:#ffffff;
     --line:#e8eef7;
-    --cta:#2563eb;         /* blue (schimbă dacă vrei) */
+    --cta:#2563eb;          /* blue CTA */
     --cta-press:#1e40af;
     --shadow:0 18px 50px rgba(30,58,138,.12);
     --radius:18px;
   }
   *{box-sizing:border-box}
   html,body{margin:0;background:var(--bg);color:var(--ink);font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial;line-height:1.65}
+  html{scroll-behavior:smooth}
   a{color:inherit;text-decoration:none}
 
-  /* === Topbar — roomy & mobile friendly === */
+  /* Topbar */
   .topbar{position:sticky;top:0;z-index:1000;background:rgba(255,255,255,.95);
           backdrop-filter:saturate(160%) blur(8px);border-bottom:1px solid var(--line)}
-  .topbar-wrap{max-width:1040px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;
+  .topbar-wrap{max-width:1080px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;
                padding:12px 18px;gap:12px}
-  .brand{font-weight:800;letter-spacing:.2px;font-size:clamp(18px,2.6vw,22px);line-height:1.2;white-space:nowrap}
+  .brand{font-weight:900;letter-spacing:.2px;font-size:clamp(18px,2.6vw,22px);line-height:1.2;white-space:nowrap}
   .btn-pill{display:inline-flex;align-items:center;justify-content:center;height:46px;padding:0 20px;border-radius:999px;
             background:var(--cta);color:#fff;font-weight:900;letter-spacing:.2px;box-shadow:0 12px 28px rgba(37,99,235,.22);
             transition:.15s transform ease,.15s box-shadow ease,.15s background ease;white-space:nowrap}
   .btn-pill:hover{transform:translateY(-1px);box-shadow:0 16px 36px rgba(37,99,235,.26)}
   .btn-pill:active{background:var(--cta-press);transform:translateY(0)}
+  @media (max-width:520px){.topbar-wrap{padding:10px 14px} .brand{max-width:60%;overflow:hidden;text-overflow:ellipsis} .btn-pill{height:46px;padding:0 16px;font-size:.95rem}}  
 
-  @media (max-width:520px){
-    .topbar-wrap{padding:10px 14px}
-    .brand{max-width:60%;overflow:hidden;text-overflow:ellipsis}
-    .btn-pill{height:46px;padding:0 16px;font-size:.95rem}
-  }
-
-  /* === Hero === */
-  .wrap{max-width:1040px;margin:0 auto;padding:clamp(18px,2.6vw,24px)}
-  .hero{background:linear-gradient(180deg,#ffffff 0%,#f0f7ff 100%);border-bottom:1px solid var(--line)}
+  /* Containers */
+  .wrap{max-width:1080px;margin:0 auto;padding:clamp(18px,2.6vw,24px)}
+  .hero{background:linear-gradient(180deg,#ffffff 0%,#eef6ff 100%);border-bottom:1px solid var(--line)}
   .hero-card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:clamp(18px,3vw,28px);
               box-shadow:var(--shadow)}
   .eyebrow{display:inline-block;background:#eaf1ff;color:#1e3a8a;border:1px solid #dfe9ff;border-radius:999px;
-           padding:8px 12px;font-weight:800;font-size:.98rem}
-  h1{font-size:clamp(2.1rem,6.2vw,3.2rem);line-height:1.08;letter-spacing:-.01em;margin:12px 0 10px}
+           padding:8px 12px;font-weight:900;font-size:.98rem}
+  h1{font-size:clamp(2.2rem,6.2vw,3.2rem);line-height:1.08;letter-spacing:-.01em;margin:12px 0 10px}
   .lead{font-size:clamp(1.05rem,1.7vw,1.2rem);color:#1f2e55;max-width:70ch;margin:8px 0 16px}
   .cta-row{display:flex;gap:12px;flex-wrap:wrap}
   .btn{display:inline-flex;align-items:center;justify-content:center;background:var(--cta);color:#fff;
-       font-weight:900;border-radius:14px;padding:14px 22px;box-shadow:0 14px 34px rgba(37,99,235,.22)}
-  .btn.secondary{background:#0ea5e9}
+       font-weight:900;border-radius:14px;padding:14px 22px;box-shadow:0 14px 34px rgba(37,99,235,.22);transition:.12s transform ease}
+  .btn:hover{transform:translateY(-1px)}
   .btn:active{transform:translateY(0)}
+  .btn.block{display:block;text-align:center;width:100%}
 
-  /* Bulleted benefits */
+  /* Outlined button (no default background) */
+  .btn.outline{background:transparent;color:var(--cta);border:2px solid var(--cta);box-shadow:none}
+  .btn.outline:hover{background:rgba(37,99,235,.06)}
+
+  /* Bullets */
   .bullets{margin-top:12px}
   .bullets li{margin:10px 0;display:flex;gap:12px;align-items:flex-start}
   .dot{width:10px;height:10px;border-radius:99px;background:#3b82f6;box-shadow:0 0 0 6px #eaf1ff;margin-top:.65em;flex:none}
 
-  /* === 3-card features — responsive === */
-  .features{margin-top:18px;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
-             padding:18px;box-shadow:var(--shadow)}
+  /* Panels & grids */
+  .panel{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow)}
   .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
   .card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px}
   .card h3{margin:0 0 6px;font-size:1.1rem}
   .card p{margin:0;color:var(--muted)}
+  @media (max-width:900px){.grid-3{grid-template-columns:repeat(2,1fr)}}
+  @media (max-width:620px){.grid-3{grid-template-columns:1fr} .card p{font-size:1.03rem;line-height:1.7}}
 
-  @media (max-width:900px){ .grid-3{grid-template-columns:repeat(2,1fr)} }
-  @media (max-width:620px){
-    .grid-3{grid-template-columns:1fr}
-    .card p{font-size:1.03rem;line-height:1.7}
-  }
+  /* How it works */
+  .steps{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:12px}
+  .step{background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px;box-shadow:var(--shadow)}
+  .num{display:inline-grid;place-items:center;width:36px;height:36px;border-radius:12px;background:#eaf1ff;color:#1e3a8a;
+        font-weight:900;margin-bottom:8px}
+  .step h3{margin:0 0 6px;font-size:1.05rem}
+  .step p{margin:0;color:var(--muted)}
+  @media (max-width:1080px){.steps{grid-template-columns:repeat(3,1fr)}}
+  @media (max-width:680px){.steps{grid-template-columns:1fr}}
+
+  /* Testimonials */
+  .testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  @media (max-width:900px){.testi-grid{grid-template-columns:repeat(2,1fr)}}
+  @media (max-width:640px){.testi-grid{grid-template-columns:1fr}}
+  .testi{background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px;box-shadow:var(--shadow)}
+  .testi-head{display:flex;align-items:center;gap:12px;margin-bottom:6px}
+  .avatar{flex:none;width:48px;height:48px;border-radius:999px;background:linear-gradient(135deg,#eaf1ff,#f7fbff);
+           border:1px solid #dfe9ff;display:grid;place-items:center;font-weight:900;color:#1e3a8a}
+  .stars{display:flex;gap:2px;margin-top:2px}
+  .star{width:16px;height:16px}
+
+  /* Plans */
+  .plans{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  @media (max-width:960px){.plans{grid-template-columns:1fr 1fr}}
+  @media (max-width:640px){.plans{grid-template-columns:1fr}}
+  .plan{background:#fff;border:3px solid #e6eefb;border-radius:18px;padding:18px;display:grid;gap:8px;box-shadow:var(--shadow)}
+  .plan.pop{border-color:#2563eb}
+  .ribbon{display:inline-block;background:#2563eb;color:#fff;border-radius:999px;padding:4px 10px;font-size:.86rem;font-weight:900}
+
+  /* FAQ */
+  details{background:#fff;border:2px solid #e6eefb;border-radius:14px;padding:14px 16px;box-shadow:var(--shadow)}
+  details + details{margin-top:10px}
+  summary{cursor:pointer;font-weight:900;color:#1f2e55}
+
+  .footer{padding:26px 0;color:#60746e;font-size:.92rem}
 </style>
 </head>
 <body>
@@ -88,21 +121,21 @@
   <div class="wrap">
     <div class="hero-card">
       <span class="eyebrow">Overcome insomnia with online therapy</span>
-      <h1>Sleep better with CBT-I delivered online</h1>
-      <p class="lead">Relearn natural sleep with a licensed therapist on secure video. Follow a clear weekly plan and track your progress with a simple sleep diary. CBT-I is first-line care for chronic insomnia and it fits real life.</p>
+      <h1>Sleep better with CBT‑I delivered online</h1>
+      <p class="lead">Relearn natural sleep with a licensed therapist on secure video. Follow a clear weekly plan and track your progress with a simple sleep diary. CBT‑I is first‑line care for chronic insomnia and it fits real life.</p>
 
       <div class="cta-row">
         <a class="btn" href="https://onlinetherapy.go2cloud.org/aff_c?offer_id=2&aff_id=1116&source=safetherapy&aff_sub=insomnia">Start today</a>
-        <a class="btn secondary" href="https://onlinetherapy.go2cloud.org/aff_c?offer_id=2&aff_id=1116&source=safetherapy&aff_sub=insomnia">See how it works</a>
+        <a class="btn outline" href="#how">See how it works</a>
       </div>
 
       <ul class="bullets">
         <li><span class="dot" aria-hidden="true"></span><span>Rebuild a steady sleep schedule</span></li>
-        <li><span class="dot" aria-hidden="true"></span><span>Use a wind-down routine that actually works</span></li>
+        <li><span class="dot" aria-hidden="true"></span><span>Use a wind‑down routine that actually works</span></li>
         <li><span class="dot" aria-hidden="true"></span><span>Prevent relapse with a simple plan</span></li>
       </ul>
 
-      <section class="features" aria-label="Why this helps">
+      <section class="panel" aria-label="Why this helps" style="margin-top:18px">
         <div class="grid-3">
           <div class="card">
             <h3>Clear steps</h3>
@@ -110,7 +143,7 @@
           </div>
           <div class="card">
             <h3>Real support</h3>
-            <p>Guidance and check-ins between sessions so you never feel stuck on your own.</p>
+            <p>Guidance and check‑ins between sessions so you never feel stuck on your own.</p>
           </div>
           <div class="card">
             <h3>Lasting skills</h3>
@@ -122,5 +155,134 @@
   </div>
 </main>
 
+<!-- HOW IT WORKS -->
+<section class="wrap" aria-labelledby="how">
+  <h2 id="how">How it works</h2>
+  <div class="steps">
+    <div class="step">
+      <div class="num">1</div>
+      <h3>Smart match + intake</h3>
+      <p>Tell us about your sleep, goals, and schedule. Get matched with a licensed therapist trained in CBT‑I.</p>
+    </div>
+    <div class="step">
+      <div class="num">2</div>
+      <h3>Baseline & sleep diary</h3>
+      <p>Track 7 nights to map bedtimes, wake‑ups, and total sleep time. Your plan starts from real data, not guesswork.</p>
+    </div>
+    <div class="step">
+      <div class="num">3</div>
+      <h3>Weekly plan that fits life</h3>
+      <p>Sleep window, stimulus control, wind‑down routine, and light‑exposure tweaks — adjusted to your day.</p>
+    </div>
+    <div class="step">
+      <div class="num">4</div>
+      <h3>Live sessions + messages</h3>
+      <p>Meet weekly (video/voice/text) and message between sessions so you never feel stuck at 2 AM.</p>
+    </div>
+    <div class="step">
+      <div class="num">5</div>
+      <h3>Relapse prevention</h3>
+      <p>Build a simple maintenance plan for travel, stress, or time‑zone shifts so better sleep lasts.</p>
+    </div>
+  </div>
+  <div style="max-width:520px;margin:16px auto 0">
+    <a class="btn block" href="https://onlinetherapy.go2cloud.org/aff_c?offer_id=2&aff_id=1116&source=safetherapy&aff_sub=insomnia">Start today</a>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="wrap" aria-labelledby="stories">
+  <h2 id="stories">Client stories</h2>
+  <div class="testi-grid" style="margin-top:12px">
+    <div class="testi">
+      <div class="testi-head">
+        <div class="avatar">A. D.</div>
+        <div><strong>Fell asleep faster</strong><div class="stars" aria-label="Five stars">
+          <svg class="star" viewBox="0 0 24 24"><path fill="#ffb25e" d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8z"/></svg>
+          <svg class="star" viewBox="0 0 24 24"><path fill="#ffb25e" d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8z"/></svg>
+          <svg class="star" viewBox="0 0 24 24"><path fill="#ffb25e" d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8z"/></svg>
+          <svg class="star" viewBox="0 0 24 24"><path fill="#ffb25e" d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8z"/></svg>
+          <svg class="star" viewBox="0 0 24 24"><path fill="#ffb25e" d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8z"/></svg>
+        </div></div>
+      </div>
+      <p>It used to take me hours to fall asleep. With the plan and a realistic wind‑down routine I’m in bed and out much quicker.</p>
+    </div>
+    <div class="testi">
+      <div class="testi-head">
+        <div class="avatar">R. P.</div>
+        <div><strong>No more 3 AM clock‑watching</strong><div class="stars" aria-label="Five stars">
+          <svg class="star" viewBox="0 0 24 24"><path fill="#ffb25e" d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8z"/></svg>
+          <svg class="star" viewBox="0 0 24 24"><path fill="#ffb25e" d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8z"/></svg>
+          <svg class="star" viewBox="0 0 24 24"><path fill="#ffb25e" d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8z"/></svg>
+          <svg class="star" viewBox="0 0 24 24"><path fill="#ffb25e" d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8z"/></svg>
+          <svg class="star" viewBox="0 0 24 24"><path fill="#ffb25e" d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8z"/></svg>
+        </div></div>
+      </div>
+      <p>I learned how to handle wake‑ups without spiraling. I get back to sleep and feel human again.</p>
+    </div>
+    <div class="testi">
+      <div class="testi-head">
+        <div class="avatar">S. K.</div>
+        <div><strong>Steady mornings</strong><div class="stars" aria-label="Five stars">
+          <svg class="star" viewBox="0 0 24 24"><path fill="#ffb25e" d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8z"/></svg>
+          <svg class="star" viewBox="0 0 24 24"><path fill="#ffb25e" d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8z"/></svg>
+          <svg class="star" viewBox="0 0 24 24"><path fill="#ffb25e" d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8z"/></svg>
+          <svg class="star" viewBox="0 0 24 24"><path fill="#ffb25e" d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8z"/></svg>
+          <svg class="star" viewBox="0 0 24 24"><path fill="#ffb25e" d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8z"/></svg>
+        </div></div>
+      </div>
+      <p>I don’t dread the alarm anymore. The sleep window and morning routine made a huge difference.</p>
+    </div>
+  </div>
+  <div style="max-width:520px;margin:16px auto 0">
+    <a class="btn block" href="https://onlinetherapy.go2cloud.org/aff_c?offer_id=2&aff_id=1116&source=safetherapy&aff_sub=insomnia">Start today</a>
+  </div>
+</section>
+
+<!-- Plans -->
+<section class="wrap" aria-labelledby="plans">
+  <h2 id="plans">Choose your pace</h2>
+  <div class="plans" style="margin-top:12px">
+    <div class="plan">
+      <div class="name"><strong>Essential</strong></div>
+      <div class="mini">Unlimited messaging with your therapist</div>
+      <div class="mini"><strong>From 48 dollars per week</strong></div>
+      <a class="btn block" href="https://onlinetherapy.go2cloud.org/aff_c?offer_id=2&aff_id=1116&source=safetherapy&aff_sub=insomnia">Begin with messages</a>
+    </div>
+    <div class="plan pop">
+      <div class="ribbon">Popular</div>
+      <div class="name"><strong>Standard</strong></div>
+      <div class="mini">One live session each week plus unlimited messages</div>
+      <a class="btn block" href="https://onlinetherapy.go2cloud.org/aff_c?offer_id=2&aff_id=1116&source=safetherapy&aff_sub=insomnia">Start with one live session</a>
+    </div>
+    <div class="plan">
+      <div class="name"><strong>Premium</strong></div>
+      <div class="mini">Two live sessions each week plus priority replies</div>
+      <a class="btn block" href="https://onlinetherapy.go2cloud.org/aff_c?offer_id=2&aff_id=1116&source=safetherapy&aff_sub=insomnia">Choose Premium</a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="wrap" aria-labelledby="faq">
+  <h2 id="faq">Quick answers</h2>
+  <details>
+    <summary>How quickly will I see changes</summary>
+    <p class="muted">Many people notice calmer nights in 2–3 weeks as the schedule stabilizes and wind‑down becomes consistent.</p>
+  </details>
+  <details>
+    <summary>Do I need sleep medication</summary>
+    <p class="muted">CBT‑I is first‑line care and can be used with or without medication. Your therapist will guide best practice.</p>
+  </details>
+  <details>
+    <summary>Can I change therapist</summary>
+    <p class="muted">Yes, you can switch with one click if it doesn’t feel like a fit.</p>
+  </details>
+</section>
+
+<footer class="footer wrap" role="contentinfo">
+  © <span id="y"></span> Safe Therapy — promotional page for an independent online therapy platform.
+</footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
 </body>
 </html>
