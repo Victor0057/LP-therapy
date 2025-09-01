@@ -11,280 +11,371 @@
 
   gtag('config', 'G-CVBXTDCGS2');
 </script>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Overcome Your Anxiety with Online Therapy</title>
-  <meta name="description" content="A ClickFunnels style page for online therapy focused on anxiety. Speak with a licensed therapist and follow a personal calm plan." />
-  <meta name="theme-color" content="#0e6a55" />
-  <style>
-    :root{
-      --ink:#0f2b22;
-      --muted:#4a6a61;
-      --bg:#fcfefd;
-      --card:#ffffff;
-      --line:#e6efe9;
-      --cta:#ff7a45;
-      --cta-press:#e16332;
-      --brand:#0f7a62;
-      --gold:#ffe9d9;
-      --shadow:0 24px 60px rgba(16,42,36,.10);
-    }
-    *{box-sizing:border-box}
-    html,body{margin:0;background:var(--bg);color:var(--ink);font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;line-height:1.65}
-    a{color:inherit;text-decoration:none}
-    h1,h2,h3{margin:0 0 10px 0}
-    p{margin:0}
-    .wrap{max-width:980px;margin:0 auto;padding:clamp(16px,2vw,24px)}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Anxiety Online Therapy | Feel Steady With CBT</title>
+<meta name="description" content="CBT based online therapy that helps you overcome anxiety and panic. Licensed therapists, clear weekly plan, tools you can use in real moments.">
+<meta name="theme-color" content="#2563eb">
+<style>
+  :root{
+    --ink:#0f172a;
+    --muted:#485a7a;
+    --bg:#f5fbff;
+    --panel:#ffffff;
+    --line:#e8eef7;
+    --cta:#2563eb;
+    --cta-press:#1e40af;
+    --shadow:0 18px 50px rgba(30,58,138,.12);
+    --radius:18px;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;background:var(--bg);color:var(--ink);font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial;line-height:1.65}
+  html{scroll-behavior:smooth}
+  a{color:inherit;text-decoration:none}
 
-    .btn{display:inline-flex;align-items:center;gap:10px;background:var(--cta);color:#fff;font-weight:900;letter-spacing:.2px;
-      border-radius:14px;padding:16px 26px;box-shadow:0 16px 36px rgba(255,122,69,.28);transition:.15s transform ease,.15s background ease}
-    .btn:hover{transform:translateY(-1px)}
-    .btn:active{background:var(--cta-press);transform:translateY(0)}
-    .btn.block{width:100%;justify-content:center}
+  .topbar{position:sticky;top:0;z-index:1000;background:rgba(255,255,255,.95);
+          backdrop-filter:saturate(160%) blur(8px);border-bottom:1px solid var(--line)}
+  .topbar-wrap{max-width:1080px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;
+               padding:12px 18px;gap:12px}
+  .brand{font-weight:900;letter-spacing:.2px;font-size:clamp(18px,2.6vw,22px);line-height:1.2;white-space:nowrap}
+  .btn-pill{display:inline-flex;align-items:center;justify-content:center;height:46px;padding:0 20px;border-radius:999px;
+            background:var(--cta);color:#fff;font-weight:900;letter-spacing:.2px;box-shadow:0 12px 28px rgba(37,99,235,.22);
+            transition:.15s transform ease,.15s box-shadow ease,.15s background ease;white-space:nowrap}
+  .btn-pill:hover{transform:translateY(-1px);box-shadow:0 16px 36px rgba(37,99,235,.26)}
+  .btn-pill:active{background:var(--cta-press);transform:translateY(0)}
+  @media (max-width:520px){.topbar-wrap{padding:10px 14px} .brand{max-width:60%;overflow:hidden;text-overflow:ellipsis} .btn-pill{height:46px;padding:0 16px;font-size:.95rem}}  
 
-    header.hero{border-bottom:1px solid var(--line);background:linear-gradient(180deg,#ffffff 0%,#f5fbf8 100%)}
-    .hero-inner{text-align:center;padding-block:clamp(64px,9vw,110px)}
-    .eyebrow{display:inline-block;font-size:.94rem;color:#0f7a62;font-weight:900;background:#e9f6f1;border:1px solid #d6efe6;padding:6px 12px;border-radius:999px}
-    .title{font-size:clamp(2.6rem,5.2vw,3.8rem);line-height:1.05;letter-spacing:-.01em;margin-top:10px}
-    .lead{font-size:clamp(1.06rem,1.6vw,1.2rem);color:#264c42;max-width:70ch;margin:10px auto 0}
-    .cta-row{display:grid;grid-template-columns:1fr;gap:12px;max-width:520px;margin:18px auto 0}
-    .mini{color:var(--muted);font-size:.96rem}
+  .wrap{max-width:1080px;margin:0 auto;padding:clamp(18px,2.6vw,24px)}
+  .hero{background:linear-gradient(180deg,#ffffff 0%,#eef6ff 100%);border-bottom:1px solid var(--line)}
+  .hero-card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:clamp(18px,3vw,28px);
+              box-shadow:var(--shadow)}
+  .eyebrow{display:inline-block;background:#eaf1ff;color:#1e3a8a;border:1px solid #dfe9ff;border-radius:999px;
+           padding:8px 12px;font-weight:900;font-size:.98rem}
+  h1{font-size:clamp(2.2rem,6.2vw,3.2rem);line-height:1.08;letter-spacing:-.01em;margin:12px 0 10px;color:var(--ink)}
+  .lead{font-size:clamp(1.05rem,1.7vw,1.2rem);color:#1f2e55;max-width:70ch;margin:8px 0 16px}
+  .cta-row{display:flex;gap:12px;flex-wrap:wrap}
+  .btn{display:inline-flex;align-items:center;justify-content:center;background:var(--cta);color:#fff;
+       font-weight:900;border-radius:14px;padding:14px 22px;box-shadow:0 14px 34px rgba(37,99,235,.22);transition:.12s transform ease}
+  .btn:hover{transform:translateY(-1px)}
+  .btn:active{transform:translateY(0)}
+  .btn.block{display:block;text-align:center;width:100%}
+  .btn.outline{background:transparent;color:var(--cta);border:2px solid var(--cta);box-shadow:none}
+  .btn.outline:hover{background:rgba(37,99,235,.06)}
 
-    section{padding-block:clamp(52px,7vw,88px);border-bottom:1px solid var(--line)}
-    h2{font-size:clamp(1.9rem,2.6vw,2.3rem)}
+  .panel{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow)}
+  .card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px}
+  .card h3{margin:0 0 6px;font-size:1.1rem}
+  .card p{margin:0;color:var(--muted)}
 
-    .stack{background:var(--card);border:2px solid #e9efe8;border-radius:18px;padding:18px;box-shadow:var(--shadow)}
-    .rows{display:grid;gap:10px;margin-top:10px}
-    .row{display:flex;gap:12px;align-items:flex-start;background:#fff;border:1px solid #e9efe8;border-radius:12px;padding:12px}
-    .tick{flex:none;width:22px;height:22px;border-radius:6px;background:#eaf6f2;display:grid;place-items:center}
+  .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+  @media (max-width:900px){.grid-3{grid-template-columns:repeat(2,1fr)}}
+  @media (max-width:960px){.grid-2{grid-template-columns:1fr}}
+  @media (max-width:620px){.grid-3{grid-template-columns:1fr}}
 
-    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:12px}
-    @media (max-width:840px){.steps{grid-template-columns:1fr}}
-    .step{background:#fff;border:2px solid #e9efe8;border-radius:16px;padding:16px;text-align:center;box-shadow:var(--shadow)}
-    .num{display:inline-grid;place-items:center;width:36px;height:36px;border-radius:12px;background:#eaf6f2;color:#0f7a62;font-weight:900;margin-bottom:8px}
+  .section-title{font-size:clamp(1.6rem,1.2vw + 1rem,2rem);font-weight:900;letter-spacing:-.01em;color:#1e3a8a;margin:0 0 12px}
 
-    .results{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:12px}
-    @media (max-width:840px){.results{grid-template-columns:1fr}}
-    .result{background:#fff;border:2px solid #e9efe8;border-radius:16px;padding:16px;box-shadow:var(--shadow)}
+  .steps{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:12px}
+  .step{background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px;box-shadow:var(--shadow)}
+  .num{display:inline-grid;place-items:center;width:36px;height:36px;border-radius:12px;background:#eaf1ff;color:#1e3a8a;
+        font-weight:900;margin-bottom:8px}
 
-    .guar{background:linear-gradient(180deg,#fff7f1 0%,#ffffff 100%);border:2px solid #ffe3ce;border-radius:18px;padding:18px;box-shadow:var(--shadow)}
-    .seal{display:inline-grid;place-items:center;width:64px;height:64px;border-radius:999px;background:#ffe9d9;border:2px solid #ffd5b6;margin-right:10px}
-    .guar-row{display:flex;align-items:center;gap:12px;margin-bottom:10px}
+  .testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  @media (max-width:900px){.testi-grid{grid-template-columns:repeat(2,1fr)}}
+  @media (max-width:640px){.testi-grid{grid-template-columns:1fr}}
+  .testi{background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px;box-shadow:var(--shadow)}
+  .testi-head{display:flex;align-items:center;gap:12px;margin-bottom:6px}
+  .avatar{flex:none;width:48px;height:48px;border-radius:999px;background:linear-gradient(135deg,#eaf1ff,#f7fbff);
+           border:1px solid #dfe9ff;display:grid;place-items:center;font-weight:900;color:#1e3a8a}
+  .stars{display:flex;gap:2px;margin-top:2px}
+  .star{width:16px;height:16px}
 
-    /* Plans */
-    .plans{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:12px}
-    @media (max-width:960px){.plans{grid-template-columns:1fr 1fr}}
-    @media (max-width:640px){.plans{grid-template-columns:1fr}}
-    .plan{background:#fff;border:3px solid #e9efe8;border-radius:18px;padding:18px;display:grid;gap:8px;box-shadow:var(--shadow)}
-    .plan.pop{border-color:#0f7a62}
-    .ribbon{display:inline-block;background:#0f7a62;color:#fff;border-radius:999px;padding:4px 10px;font-size:.86rem;font-weight:900}
+  .plans{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  @media (max-width:960px){.plans{grid-template-columns:1fr 1fr}}
+  @media (max-width:640px){.plans{grid-template-columns:1fr}}
+  .plan{background:#fff;border:3px solid #e6eefb;border-radius:18px;padding:18px;display:grid;gap:8px;box-shadow:var(--shadow)}
+  .plan.pop{border-color:#2563eb}
+  .ribbon{display:inline-block;background:#2563eb;color:#fff;border-radius:999px;padding:4px 10px;font-size:.86rem;font-weight:900}
 
-    /* Testimonials */
-    .testis{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:12px}
-    @media (max-width:960px){.testis{grid-template-columns:1fr 1fr}}
-    @media (max-width:640px){.testis{grid-template-columns:1fr}}
-    .testi{background:#fff;border:2px solid #e8f0ec;border-radius:18px;padding:16px;box-shadow:var(--shadow)}
-    .testi-head{display:flex;align-items:center;gap:12px;margin-bottom:6px}
-    .avatar{flex:none;width:48px;height:48px;border-radius:999px;background:linear-gradient(135deg,#e9f6f1,#f6fbf9);border:1px solid #dfeae6;display:grid;place-items:center;font-weight:900;color:#0f7a62}
-    .stars{display:flex;gap:2px;margin-top:2px}
-    .star{width:16px;height:16px}
-    blockquote{margin:8px 0 0 0;padding:0;color:#2a4c42}
+  details{background:#fff;border:2px solid #e6eefb;border-radius:14px;padding:14px 16px;box-shadow:var(--shadow)}
+  details + details{margin-top:10px}
+  summary{cursor:pointer;font-weight:900;color:#1f2e55}
 
-    .footer{padding:24px 0;color:#687571;font-size:.92rem}
-  </style>
+  .footer{padding:26px 0;color:#60746e;font-size:.92rem}
+  .muted{color:var(--muted)}
+  .list{display:grid;gap:10px}
+  .badge{display:inline-block;background:#eaf1ff;color:#1e3a8a;border:1px solid #dfe9ff;border-radius:999px;padding:6px 10px;font-weight:900}
+</style>
 </head>
 <body>
 
-  <!-- HERO -->
-  <header class="hero" role="banner">
-    <div class="wrap hero-inner">
-      <span class="eyebrow">Support for anxiety</span>
-      <h1 class="title">Overcome Your Anxiety with Online Therapy</h1>
-      <p class="lead">Meet a licensed therapist and follow a calm plan that fits your day. You can begin today and feel a lighter night soon.</p>
+<header class="topbar">
+  <div class="topbar-wrap">
+    <div class="brand">Anxiety Online Therapy</div>
+    <a class="btn-pill" href="https://onlinetherapy.go2cloud.org/aff_c?offer_id=6&aff_id=1116&source=safetherapy&aff_sub=anxiety">Start today</a>
+  </div>
+</header>
+
+<main class="hero">
+  <div class="wrap">
+    <div class="hero-card">
+      <span class="eyebrow">You are not your anxiety</span>
+      <h1>Overcome anxiety with CBT based online therapy</h1>
+      <p class="lead">Work with a licensed therapist on secure video. Follow a clear weekly plan and learn skills that stop spirals and ease panic. CBT is a proven approach for anxiety and it fits real life.</p>
       <div class="cta-row">
-        <a class="btn block" href="https://onlinetherapy.go2cloud.org/aff_c?offer_id=2&aff_id=1116&source=safetherapy&aff_sub=anxiety">Start now</a>
-        <div class="mini">Private and secure. Change therapist any time.</div>
+        <a class="btn" href="https://onlinetherapy.go2cloud.org/aff_c?offer_id=6&aff_id=1116&source=safetherapy&aff_sub=anxiety">Start today</a>
+        <a class="btn outline" href="#how">See how it works</a>
       </div>
-    </div>
-  </header>
 
-  <!-- VALUE STACK -->
-  <section>
-    <div class="wrap">
-      <h2>Everything you need to feel steady</h2>
-      <div class="stack" style="margin-top:10px">
-        <div class="rows">
-          <div class="row"><div class="tick"><svg viewBox="0 0 24 24" width="14" height="14"><path fill="#0f7a62" d="M9 16.2l-3.5-3.6L4 14.1l5 5 11-11-1.4-1.4z"/></svg></div><div><strong>Weekly live sessions</strong><br><span class="mini">Video voice or text time that brings calm and clarity</span></div></div>
-          <div class="row"><div class="tick"><svg viewBox="0 0 24 24" width="14" height="14"><path fill="#0f7a62" d="M9 16.2l-3.5-3.6L4 14.1l5 5 11-11-1.4-1.4z"/></svg></div><div><strong>Unlimited messages</strong><br><span class="mini">Write when thoughts are fresh and feel support between sessions</span></div></div>
-          <div class="row"><div class="tick"><svg viewBox="0 0 24 24" width="14" height="14"><path fill="#0f7a62" d="M9 16.2l-3.5-3.6L4 14.1l5 5 11-11-1.4-1.4z"/></svg></div><div><strong>CBT calm tools</strong><br><span class="mini">Short worksheets a journal and gentle videos for anxious moments</span></div></div>
-          <div class="row"><div class="tick"><svg viewBox="0 0 24 24" width="14" height="14"><path fill="#0f7a62" d="M9 16.2l-3.5-3.6L4 14.1l5 5 11-11-1.4-1.4z"/></svg></div><div><strong>A plan made for your day</strong><br><span class="mini">Small steps you can keep even on busy days</span></div></div>
-        </div>
-        <div style="margin-top:14px">
-          <a class="btn block" href="https://onlinetherapy.go2cloud.org/aff_c?offer_id=2&aff_id=1116&source=safetherapy&aff_sub=anxiety">Get your calm plan</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- STEPS -->
-  <section>
-    <div class="wrap">
-      <h2>Your first three steps</h2>
-      <div class="steps">
-        <div class="step">
-          <div class="num">1</div>
-          <strong>Tell us what you feel</strong>
-          <p class="mini">Answer a few questions and see your best match</p>
-        </div>
-        <div class="step">
-          <div class="num">2</div>
-          <strong>Meet live</strong>
-          <p class="mini">Choose a time that fits your day and speak in a way that feels safe</p>
-        </div>
-        <div class="step">
-          <div class="num">3</div>
-          <strong>Use one small tool today</strong>
-          <p class="mini">Practise for two minutes and notice a calmer next step</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- RESULTS -->
-  <section>
-    <div class="wrap">
-      <h2>What begins to change</h2>
-      <div class="results">
-        <div class="result"><strong>Nights feel softer</strong><p class="mini">Your head slows and sleep comes easier</p></div>
-        <div class="result"><strong>Body feels steady</strong><p class="mini">You learn simple ways to calm racing energy</p></div>
-        <div class="result"><strong>Decisions feel clearer</strong><p class="mini">Worry loops shrink and your day moves with ease</p></div>
-      </div>
-      <div style="max-width:520px;margin:16px auto 0">
-        <a class="btn block" href="https://onlinetherapy.go2cloud.org/aff_c?offer_id=2&aff_id=1116&source=safetherapy&aff_sub=anxiety">Start now</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROMISE -->
-  <section>
-    <div class="wrap guar">
-      <div class="guar-row">
-        <div class="seal"><svg viewBox="0 0 24 24" width="30" height="30"><path fill="#d36f36" d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8z"/></svg></div>
-        <div><strong>A gentle promise</strong><br><span class="mini">If it does not feel like a fit you can change therapist with one click</span></div>
-      </div>
-      <p class="mini">Your privacy matters. Your pace matters. You choose the way we speak and the speed we move.</p>
-    </div>
-  </section>
-
-  <!-- PLANS (Choose your pace) -->
-  <section aria-labelledby="plans">
-    <div class="wrap">
-      <h2 id="plans">Choose your pace</h2>
-      <div class="plans">
-        <div class="plan">
-          <div class="name"><strong>Essential</strong></div>
-          <div class="mini">Unlimited messaging with your therapist</div>
-          <div class="mini"><strong>From 48 dollars per week</strong></div>
-          <a class="btn block" href="https://onlinetherapy.go2cloud.org/aff_c?offer_id=2&aff_id=1116&source=safetherapy&aff_sub=anxiety">Begin with messages</a>
-        </div>
-        <div class="plan pop">
-          <div class="ribbon">Popular</div>
-          <div class="name"><strong>Standard</strong></div>
-          <div class="mini">One live session each week plus unlimited messages</div>
-          <a class="btn block" href="https://onlinetherapy.go2cloud.org/aff_c?offer_id=2&aff_id=1116&source=safetherapy&aff_sub=anxiety">Start with one live session</a>
-        </div>
-        <div class="plan">
-          <div class="name"><strong>Premium</strong></div>
-          <div class="mini">Two live sessions each week plus priority replies</div>
-          <a class="btn block" href="https://onlinetherapy.go2cloud.org/aff_c?offer_id=2&aff_id=1116&source=safetherapy&aff_sub=anxiety">Choose Premium</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- TESTIMONIALS BEFORE FAQ -->
-  <section aria-labelledby="stories">
-    <div class="wrap">
-      <h2 id="stories">Client stories</h2>
-      <div class="testis">
-        <div class="testi">
-          <div class="testi-head">
-            <div class="avatar">R. P.</div>
-            <div>
-              <strong>Panic attacks eased</strong>
-              <div class="stars" aria-label="Five star rating">
-                <svg class="star" viewBox="0 0 24 24"><path fill="#ffb25e" d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8z"/></svg>
-                <svg class="star" viewBox="0 0 24 24"><path fill="#ffb25e" d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8z"/></svg>
-                <svg class="star" viewBox="0 0 24 24"><path fill="#ffb25e" d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8z"/></svg>
-                <svg class="star" viewBox="0 0 24 24"><path fill="#ffb25e" d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8z"/></svg>
-                <svg class="star" viewBox="0 0 24 24"><path fill="#ffb25e" d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8z"/></svg>
-              </div>
+      <div class="panel" style="margin-top:16px">
+        <div class="grid-3">
+          <div class="card">
+            <h3>What anxiety feels like</h3>
+            <div class="list muted">
+              <div>Racing heart tight chest or feeling short of breath</div>
+              <div>Rushing thoughts worst case images and a sense of dread</div>
+              <div>Restless sleep and tension that never fully turns off</div>
             </div>
           </div>
-          <blockquote>I had weekly rushes that felt like a wave in my chest and hands. My therapist taught me simple body first steps and words for fear. The spikes got shorter and I feel safe again.</blockquote>
-        </div>
-        <div class="testi">
-          <div class="testi-head">
-            <div class="avatar">M. L.</div>
-            <div>
-              <strong>Constant anxiety softened</strong>
-              <div class="stars" aria-label="Five star rating">
-                <svg class="star" viewBox="0 0 24 24"><path fill="#ffb25e" d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8z"/></svg>
-                <svg class="star" viewBox="0 0 24 24"><path fill="#ffb25e" d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8z"/></svg>
-                <svg class="star" viewBox="0 0 24 24"><path fill="#ffb25e" d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8z"/></svg>
-                <svg class="star" viewBox="0 0 24 24"><path fill="#ffb25e" d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8z"/></svg>
-                <svg class="star" viewBox="0 0 24 24"><path fill="#ffb25e" d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8z"/></svg>
-              </div>
+          <div class="card">
+            <h3>What keeps it going</h3>
+            <div class="list muted">
+              <div>Catastrophic thoughts that seem like facts</div>
+              <div>Avoidance that brings short relief but grows fear over time</div>
+              <div>Body alarm that you try to fight which makes it louder</div>
             </div>
           </div>
-          <blockquote>My days felt like a steady hum of worry. We made a short plan and I practised two minute tools. I speak kinder to myself and I can focus again.</blockquote>
-        </div>
-        <div class="testi">
-          <div class="testi-head">
-            <div class="avatar">S. K.</div>
-            <div>
-              <strong>Physical symptoms managed</strong>
-              <div class="stars" aria-label="Five star rating">
-                <svg class="star" viewBox="0 0 24 24"><path fill="#ffb25e" d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8z"/></svg>
-                <svg class="star" viewBox="0 0 24 24"><path fill="#ffb25e" d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8z"/></svg>
-                <svg class="star" viewBox="0 0 24 24"><path fill="#ffb25e" d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8z"/></svg>
-                <svg class="star" viewBox="0 0 24 24"><path fill="#ffb25e" d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8z"/></svg>
-                <svg class="star" viewBox="0 0 24 24"><path fill="#ffb25e" d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8z"/></svg>
-              </div>
+          <div class="card">
+            <h3>What changes it</h3>
+            <div class="list muted">
+              <div>Calm breath that lowers the alarm</div>
+              <div>Reframing thoughts with facts and balance</div>
+              <div>Gentle exposure that rebuilds confidence</div>
             </div>
           </div>
-          <blockquote>I often had a racing heart and tight shoulders. My therapist showed me cues to slow my body and thoughts. I still have busy days but I feel in charge now.</blockquote>
         </div>
       </div>
 
-      <div style="max-width:520px;margin:16px auto 0">
-        <a class="btn block" href="https://onlinetherapy.go2cloud.org/aff_c?offer_id=2&aff_id=1116&source=safetherapy&aff_sub=anxiety">Start now</a>
+      <!-- Curiosity and empathy block -->
+      <div class="panel" style="margin-top:14px">
+        <div class="grid-2">
+          <div>
+            <h3 class="section-title" style="font-size:1.3rem">Is this you</h3>
+            <div class="list">
+              <div>Mornings start with worry and a tight chest</div>
+              <div>You avoid calls meetings or places because fear might hit</div>
+              <div>You want tools that work during the day not only in sessions</div>
+            </div>
+          </div>
+          <div>
+            <h3 class="section-title" style="font-size:1.3rem">What you will get</h3>
+            <div class="list">
+              <div>Personal plan and a therapist by your side</div>
+              <div>Short practice that fits busy days</div>
+              <div>Simple steps to feel safe in your body and go where you want</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<!-- HOW IT WORKS -->
+<section class="wrap" id="how" aria-labelledby="how-title">
+  <h2 id="how-title" class="section-title">How it works</h2>
+  <div class="steps">
+    <div class="step">
+      <div class="num">1</div>
+      <h3>Share goals and match</h3>
+      <p>Answer a short intake and match with a licensed therapist who focuses on anxiety.</p>
+    </div>
+    <div class="step">
+      <div class="num">2</div>
+      <h3>Begin your plan</h3>
+      <p>Meet online by video voice or chat. Start a weekly plan that fits your life.</p>
+    </div>
+    <div class="step">
+      <div class="num">3</div>
+      <h3>Practice small steps</h3>
+      <p>Use calm breath thought records and gentle exposure with support between sessions.</p>
+    </div>
+    <div class="step">
+      <div class="num">4</div>
+      <h3>Track progress</h3>
+      <p>Notice wins adjust the plan and keep what works so calm grows week by week.</p>
+    </div>
+    <div class="step">
+      <div class="num">5</div>
+      <h3>Keep gains</h3>
+      <p>Build a simple prevention plan so stress and busy weeks do not undo your progress.</p>
+    </div>
+  </div>
+  <div style="max-width:520px;margin:16px auto 0">
+    <a class="btn block" href="https://onlinetherapy.go2cloud.org/aff_c?offer_id=6&aff_id=1116&source=safetherapy&aff_sub=anxiety">See your match</a>
+  </div>
+</section>
+
+<!-- PANIC ATTACKS -->
+<section class="wrap" id="panic" aria-labelledby="panic-title">
+  <h2 id="panic-title" class="section-title">Panic attacks explained and what to do</h2>
+  <div class="grid-2">
+    <div class="panel">
+      <p class="muted">A panic attack feels like danger. Your heart races your chest tightens your head spins and thoughts rush in. It feels scary and it is also a surge that the body can ride out. It peaks then it settles. With the right steps you can move through it with far less fear.</p>
+      <div class="badge">In the moment plan</div>
+      <div class="list" style="margin-top:10px">
+        <div><strong>Ground</strong> name five things you see four you can touch three you can hear two you can smell and one you can taste.</div>
+        <div><strong>Breathe</strong> inhale for four hold for two and exhale for six for one minute.</div>
+        <div><strong>Reframe</strong> tell yourself this is a body surge I am safe it will pass and I can ride the wave.</div>
+      </div>
+      <div style="max-width:520px;margin-top:12px">
+        <a class="btn block" href="https://onlinetherapy.go2cloud.org/aff_c?offer_id=6&aff_id=1116&source=safetherapy&aff_sub=anxiety">Practice this with a therapist</a>
       </div>
     </div>
-  </section>
-
-  <!-- FAQ -->
-  <section aria-labelledby="faq">
-    <div class="wrap">
-      <h2 id="faq">Quick answers</h2>
-      <details>
-        <summary>Can this help with panic</summary>
-        <p class="mini">Yes. You learn body first tools and clear language for fear. Short steps you can use in real moments.</p>
-      </details>
-      <details>
-        <summary>When can I start</summary>
-        <p class="mini">Usually today. Sign up get matched and choose a time that works.</p>
-      </details>
-      <details>
-        <summary>Can I change therapist</summary>
-        <p class="mini">Yes. You can change with one click if it does not feel like a fit.</p>
-      </details>
+    <div class="panel">
+      <h3 class="section-title" style="font-size:1.3rem">Why CBT works for anxiety</h3>
+      <div class="list muted">
+        <div><strong>Thoughts</strong> learn to catch what if and replace it with clear balanced statements.</div>
+        <div><strong>Behaviors</strong> stop the avoidance cycle with small planned steps that rebuild safety.</div>
+        <div><strong>Body</strong> use breath posture and attention to settle the alarm and keep it low.</div>
+      </div>
+      <div class="badge" style="margin-top:12px">You will learn to</div>
+      <div class="list">
+        <div>Lower daily background anxiety so calm feels normal again</div>
+        <div>Handle spikes without fear so panic loses power</div>
+        <div>Return to places and plans you care about</div>
+      </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <footer class="footer wrap" role="contentinfo">
-    <div>© <span id="y"></span> Safe Therapy. This page promotes an independent online therapy platform. If you need urgent help call your local emergency number.</div>
-  </footer>
-  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+<!-- WEEKLY ROADMAP -->
+<section class="wrap" aria-labelledby="roadmap">
+  <h2 id="roadmap" class="section-title">Week by week roadmap</h2>
+  <div class="steps">
+    <div class="step">
+      <div class="num">1</div>
+      <h3>Calm base</h3>
+      <p>Daily breath practice grounding and sleep support so the body rests.</p>
+    </div>
+    <div class="step">
+      <div class="num">2</div>
+      <h3>Thought skills</h3>
+      <p>Track common worry themes and write balanced responses you can trust.</p>
+    </div>
+    <div class="step">
+      <div class="num">3</div>
+      <h3>Gentle exposure</h3>
+      <p>Plan tiny steps toward feared tasks with wins that build fast.</p>
+    </div>
+    <div class="step">
+      <div class="num">4</div>
+      <h3>Confidence loop</h3>
+      <p>Expand steps review gains and set reminders for practice.</p>
+    </div>
+    <div class="step">
+      <div class="num">5</div>
+      <h3>Relapse prevention</h3>
+      <p>Set a plan for busy weeks and stress so calm stays with you.</p>
+    </div>
+  </div>
+  <div style="max-width:520px;margin:16px auto 0">
+    <a class="btn block" href="https://onlinetherapy.go2cloud.org/aff_c?offer_id=6&aff_id=1116&source=safetherapy&aff_sub=anxiety">Start today</a>
+  </div>
+</section>
+
+<!-- CLIENT STORIES -->
+<section class="wrap" aria-labelledby="stories">
+  <h2 id="stories" class="section-title">Real stories from clients</h2>
+  <div class="testi-grid">
+    <div class="testi">
+      <div class="testi-head">
+        <div class="avatar">E. R.</div>
+        <div><strong>Back to calm mornings</strong><div class="stars" aria-label="Five stars">
+          <svg class="star" viewBox="0 0 24 24"><path fill="#ffb25e" d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8z"/></svg>
+          <svg class="star" viewBox="0 0 24 24"><path fill="#ffb25e" d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8z"/></svg>
+          <svg class="star" viewBox="0 0 24 24"><path fill="#ffb25e" d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8z"/></svg>
+          <svg class="star" viewBox="0 0 24 24"><path fill="#ffb25e" d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8z"/></svg>
+          <svg class="star" viewBox="0 0 24 24"><path fill="#ffb25e" d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8z"/></svg>
+        </div></div>
+      </div>
+      <p>I used to wake with a knot in my chest. The plan and the tiny steps made mornings feel kind again.</p>
+    </div>
+    <div class="testi">
+      <div class="testi-head">
+        <div class="avatar">L. N.</div>
+        <div><strong>Panic lost power</strong><div class="stars" aria-label="Five stars">
+          <svg class="star" viewBox="0 0 24 24"><path fill="#ffb25e" d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8z"/></svg>
+          <svg class="star" viewBox="0 0 24 24"><path fill="#ffb25e" d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8z"/></svg>
+          <svg class="star" viewBox="0 0 24 24"><path fill="#ffb25e" d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8z"/></svg>
+          <svg class="star" viewBox="0 0 24 24"><path fill="#ffb25e" d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8z"/></svg>
+          <svg class="star" viewBox="0 0 24 24"><path fill="#ffb25e" d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8z"/></svg>
+        </div></div>
+      </div>
+      <p>Learning to ride the wave and breathe made the fear drop. Now I do what matters again.</p>
+    </div>
+    <div class="testi">
+      <div class="testi-head">
+        <div class="avatar">T. S.</div>
+        <div><strong>Confidence returned</strong><div class="stars" aria-label="Five stars">
+          <svg class="star" viewBox="0 0 24 24"><path fill="#ffb25e" d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8z"/></svg>
+          <svg class="star" viewBox="0 0 24 24"><path fill="#ffb25e" d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8z"/></svg>
+          <svg class="star" viewBox="0 0 24 24"><path fill="#ffb25e" d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8z"/></svg>
+          <svg class="star" viewBox="0 0 24 24"><path fill="#ffb25e" d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8z"/></svg>
+          <svg class="star" viewBox="0 0 24 24"><path fill="#ffb25e" d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8z"/></svg>
+        </div></div>
+      </div>
+      <p>Small steps back into places I avoided brought my life back piece by piece.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PLANS -->
+<section class="wrap" aria-labelledby="plans">
+  <h2 id="plans" class="section-title">Choose your pace</h2>
+  <div class="plans" style="margin-top:12px">
+    <div class="plan">
+      <div class="ribbon" style="background:#94a3b8;color:#fff">Essential</div>
+      <div><strong>Messaging with your therapist</strong></div>
+      <div class="muted">Write at your pace between check ins.</div>
+      <a class="btn block" href="https://onlinetherapy.go2cloud.org/aff_c?offer_id=6&aff_id=1116&source=safetherapy&aff_sub=anxiety">Begin with messages</a>
+    </div>
+    <div class="plan pop">
+      <div class="ribbon">Popular</div>
+      <div><strong>One live session each week and messages</strong></div>
+      <div class="muted">A steady weekly rhythm for growth and support.</div>
+      <a class="btn block" href="https://onlinetherapy.go2cloud.org/aff_c?offer_id=6&aff_id=1116&source=safetherapy&aff_sub=anxiety">Start with one live session</a>
+    </div>
+    <div class="plan">
+      <div class="ribbon" style="background:#1e3a8a;color:#fff">Premium</div>
+      <div><strong>Two live sessions each week and priority replies</strong></div>
+      <div class="muted">More contact and faster progress when you want it.</div>
+      <a class="btn block" href="https://onlinetherapy.go2cloud.org/aff_c?offer_id=6&aff_id=1116&source=safetherapy&aff_sub=anxiety">Choose Premium</a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="wrap" aria-labelledby="faq">
+  <h2 id="faq" class="section-title">Common worries and clear answers</h2>
+  <details>
+    <summary>What if therapy does not work for me</summary>
+    <p class="muted">Your plan is adjusted each week based on what you notice. Progress is reviewed together so you see what helps and what needs a tweak.</p>
+  </details>
+  <details>
+    <summary>Do I need long term therapy</summary>
+    <p class="muted">Many people use a short focused period to learn skills then return for refreshers when life gets busy.</p>
+  </details>
+  <details>
+    <summary>What if I feel nervous in sessions</summary>
+    <p class="muted">You can start with chat or voice then move to video when ready. Your comfort is part of the plan.</p>
+  </details>
+</section>
+
+<footer class="footer wrap" role="contentinfo">
+  © <span id="y"></span> promotional page for an independent online therapy platform.
+</footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
 </body>
 </html>
