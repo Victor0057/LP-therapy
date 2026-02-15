@@ -2,24 +2,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script>
-  const params = new URLSearchParams(window.location.search);
-  const sub = params.get("sub");
-
-  if (sub) {
-    document.querySelectorAll('a[href*="go.online-therapy.com/aff_c"]').forEach(a => {
-      const url = new URL(a.href);
-
-      url.searchParams.set("sub", sub);
-
-      a.href = url.toString();
-
-      if (a.getAttribute("target") === "_blank") a.removeAttribute("target");
-      a.setAttribute("rel", "noopener");
-    });
-  }
-</script>
-
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Online Therapy | Anxiety and Panic CBT Therapy</title>
@@ -982,6 +964,23 @@ details p{margin:10px 0 0;color:var(--muted);font-size:14.8px}
 <script>
 document.getElementById("year").textContent = new Date().getFullYear();
 </script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const params = new URLSearchParams(window.location.search);
+  const sub = params.get("sub");
+
+  if (sub) {
+    document.querySelectorAll('a[href*="go.online-therapy.com/aff_c"]').forEach(a => {
+      const url = new URL(a.href);
+      url.searchParams.set("sub", sub);
+      a.href = url.toString();
+    });
+  }
+
+});
+</script>
+</body>
 
 </body>
 </html>
