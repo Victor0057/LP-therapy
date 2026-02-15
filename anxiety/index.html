@@ -2,334 +2,968 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-CVBXTDCGS2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-CVBXTDCGS2');
-</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Anxiety Online Therapy | Feel Steady With CBT</title>
-<meta name="description" content="CBT based online therapy that helps you overcome anxiety and panic. Licensed therapists, clear weekly plan, tools you can use in real moments.">
-<meta name="theme-color" content="#2563eb">
+<title>Online Therapy | Anxiety and Panic CBT Therapy</title>
+<meta name="description" content="Premium online CBT therapy for anxiety and panic attacks. Calm your nervous system, sleep better, regain confidence, and feel emotionally steady again.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
 <style>
-  :root{--ink:#0f172a;--muted:#485a7a;--bg:#f5fbff;--panel:#ffffff;--line:#e8eef7;--cta:#2563eb;--cta-press:#1e40af;--shadow:0 18px 50px rgba(30,58,138,.12);--radius:18px}
-  *{box-sizing:border-box}
-  html,body{margin:0;background:var(--bg);color:var(--ink);font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial;line-height:1.65}
-  html{scroll-behavior:smooth}
-  a{color:inherit;text-decoration:none}
+:root{
+  --bg:#ffffff;
+  --ink:#0b1220;
+  --muted:#475569;
+  --muted2:#64748b;
+  --soft:#f6f8fc;
+  --line:#e2e8f0;
 
-  .topbar{position:sticky;top:0;z-index:1000;background:rgba(255,255,255,.95);backdrop-filter:saturate(160%) blur(8px);border-bottom:1px solid var(--line)}
-  .topbar-wrap{max-width:1080px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:12px 18px;gap:12px}
-  .brand{font-weight:900;letter-spacing:.2px;font-size:clamp(18px,2.6vw,22px);line-height:1.2;white-space:nowrap}
-  .btn-pill{display:inline-flex;align-items:center;justify-content:center;height:46px;padding:0 20px;border-radius:999px;background:var(--cta);color:#fff;font-weight:900;letter-spacing:.2px;box-shadow:0 12px 28px rgba(37,99,235,.22);transition:.15s}
-  .btn-pill:hover{transform:translateY(-1px);box-shadow:0 16px 36px rgba(37,99,235,.26)}
-  .btn-pill:active{background:var(--cta-press)}
+  --dark:#0b1220;
+  --dark2:#0f1a33;
+  --darkLine:rgba(255,255,255,.10);
+  --darkMuted:rgba(248,250,252,.82);
 
-  .wrap{max-width:1080px;margin:0 auto;padding:clamp(18px,2.6vw,24px)}
-  .hero{background:linear-gradient(180deg,#ffffff 0%,#eef6ff 100%);border-bottom:1px solid var(--line)}
-  .hero-card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:clamp(18px,3vw,28px);box-shadow:var(--shadow)}
-  .eyebrow{display:inline-block;background:#eaf1ff;color:#1e3a8a;border:1px solid #dfe9ff;border-radius:999px;padding:8px 12px;font-weight:900;font-size:.98rem}
-  h1{font-size:clamp(2.2rem,6.2vw,3.2rem);line-height:1.08;letter-spacing:-.01em;margin:12px 0 10px;color:var(--ink)}
-  .lead{font-size:clamp(1.05rem,1.7vw,1.2rem);color:#1f2e55;max-width:70ch;margin:8px 0 16px}
-  .cta-row{display:flex;gap:12px;flex-wrap:wrap}
-  .btn{display:inline-flex;align-items:center;justify-content:center;background:var(--cta);color:#fff;font-weight:900;border-radius:14px;padding:14px 22px;box-shadow:0 14px 34px rgba(37,99,235,.22);transition:.12s}
-  .btn:hover{transform:translateY(-1px)}
-  .btn.block{display:block;text-align:center;width:100%}
-  .btn.outline{background:transparent;color:var(--cta);border:2px solid var(--cta)}
-  .btn.outline:hover{background:rgba(37,99,235,.06)}
+  --accent:#4f46e5;
+  --accent2:#2563eb;
+  --accentSoft:rgba(79,70,229,.12);
 
-  .panel{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow)}
-  .card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px}
-  .card h3{margin:0 0 6px;font-size:1.1rem}
-  .card p{margin:0;color:var(--muted)}
-  .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-  .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
-  @media (max-width:900px){.grid-3{grid-template-columns:repeat(2,1fr)}}
-  @media (max-width:960px){.grid-2{grid-template-columns:1fr}}
-  @media (max-width:620px){.grid-3{grid-template-columns:1fr}}
+  --radius:18px;
+  --radius2:26px;
+  --shadow:0 22px 60px rgba(11,18,32,.08);
+  --shadow2:0 26px 90px rgba(11,18,32,.12);
 
-  /* Section titles — BLACK now */
-  .section-title{font-size:clamp(1.6rem,1.2vw + 1rem,2rem);font-weight:900;letter-spacing:-.01em;color:var(--ink);margin:0 0 12px}
+  --max:1160px;
+}
 
-  /* Steps */
-  .steps{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:12px}
-  .step{background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px;box-shadow:var(--shadow)}
-  .num{display:inline-grid;place-items:center;width:36px;height:36px;border-radius:12px;background:#eaf1ff;color:#1e3a8a;font-weight:900;margin-bottom:8px}
-  @media (max-width:768px){.steps{display:flex;flex-direction:column;gap:12px}.step{width:100%}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial;
+  background:var(--bg);
+  color:var(--ink);
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
 
-  .testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-  @media (max-width:900px){.testi-grid{grid-template-columns:repeat(2,1fr)}}
-  @media (max-width:640px){.testi-grid{grid-template-columns:1fr}}
-  .testi{background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px;box-shadow:var(--shadow)}
-  .testi-head{display:flex;align-items:center;gap:12px;margin-bottom:6px}
-  .avatar{flex:none;width:48px;height:48px;border-radius:999px;background:linear-gradient(135deg,#eaf1ff,#f7fbff);border:1px solid #dfe9ff;display:grid;place-items:center;font-weight:900;color:#1e3a8a}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+.section{padding:92px 0}
+.section.compact{padding:64px 0}
 
-  .plans{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-  @media (max-width:960px){.plans{grid-template-columns:1fr 1fr}}
-  @media (max-width:640px){.plans{grid-template-columns:1fr}}
-  .plan{background:#fff;border:3px solid #e6eefb;border-radius:18px;padding:18px;display:grid;gap:8px;box-shadow:var(--shadow)}
-  .plan.pop{border-color:#2563eb}
-  .ribbon{display:inline-block;background:#2563eb;color:#fff;border-radius:999px;padding:4px 10px;font-size:.86rem;font-weight:900}
+.topbar{
+  position:sticky;
+  top:0;
+  z-index:50;
+  background:rgba(255,255,255,.86);
+  backdrop-filter:saturate(160%) blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.topbarRow{
+  height:72px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+}
+.brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  font-weight:900;
+  letter-spacing:-.2px;
+}
+.mark{
+  width:38px;height:38px;border-radius:12px;
+  background:linear-gradient(135deg,var(--accent),var(--accent2));
+  box-shadow:0 14px 30px rgba(79,70,229,.25);
+}
+.brand span{font-size:16px}
+.nav{
+  display:flex;gap:18px;align-items:center;
+  color:var(--muted);
+  font-weight:700;
+  font-size:14px;
+}
+.nav a{padding:10px 8px;border-radius:12px}
+.nav a:hover{background:rgba(15,23,42,.04)}
 
-  details{background:#fff;border:2px solid #e6eefb;border-radius:14px;padding:14px 16px;box-shadow:var(--shadow)}
-  details + details{margin-top:10px}
-  summary{cursor:pointer;font-weight:900;color:#1f2e55}
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:16px;
+  font-weight:900;
+  letter-spacing:-.1px;
+  transition:.16s transform ease,.16s box-shadow ease,.16s background ease,.16s border-color ease;
+  white-space:nowrap;
+}
+.btnPrimary{
+  background:linear-gradient(135deg,var(--accent),var(--accent2));
+  color:#fff;
+  padding:14px 18px;
+  box-shadow:0 16px 34px rgba(37,99,235,.22);
+}
+.btnPrimary:hover{transform:translateY(-1px);box-shadow:0 20px 44px rgba(37,99,235,.26)}
+.btnGhost{
+  background:transparent;
+  color:var(--ink);
+  border:1px solid var(--line);
+  padding:13px 16px;
+}
+.btnGhost:hover{background:rgba(15,23,42,.03)}
+.btnSmall{padding:12px 14px;border-radius:14px;font-size:14px}
 
-  .footer{padding:26px 0;color:#60746e;font-size:.92rem}
-  .muted{color:var(--muted)}
-  .list{display:grid;gap:10px}
-  .badge{display:inline-block;background:#eaf1ff;color:#1e3a8a;border:1px solid #dfe9ff;border-radius:999px;padding:6px 10px;font-weight:900}
+.hero{
+  position:relative;
+  padding:62px 0 64px;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 12% 10%, rgba(79,70,229,.12), transparent 44%),
+    radial-gradient(circle at 88% 22%, rgba(37,99,235,.10), transparent 46%),
+    linear-gradient(180deg,#ffffff 0%, #f7f9ff 100%);
+  border-bottom:1px solid var(--line);
+}
+.heroGrid{
+  display:grid;
+  grid-template-columns: 1.15fr .85fr;
+  gap:34px;
+  align-items:start;
+}
+@media (max-width:980px){
+  .nav{display:none}
+  .heroGrid{grid-template-columns:1fr;gap:18px}
+}
+.kicker{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  padding:10px 12px;
+  border-radius:999px;
+  border:1px solid var(--line);
+  background:rgba(255,255,255,.7);
+  color:#1e293b;
+  font-weight:900;
+  font-size:13px;
+}
+.kdot{
+  width:10px;height:10px;border-radius:999px;
+  background:linear-gradient(135deg,var(--accent),var(--accent2));
+  box-shadow:0 0 0 6px var(--accentSoft);
+}
+.h1{
+  margin:16px 0 12px;
+  font-size:clamp(34px,4.5vw,58px);
+  line-height:1.05;
+  letter-spacing:-1.1px;
+  font-weight:900;
+}
+.lead{
+  margin:0 0 16px;
+  color:var(--muted);
+  font-size:clamp(16px,1.4vw,19px);
+  max-width:64ch;
+}
+
+.heroCtas{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:18px;
+  align-items:center;
+}
+.micro{
+  margin-top:10px;
+  color:var(--muted2);
+  font-size:13px;
+}
+
+.trustRow{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top:18px;
+}
+.badge{
+  display:inline-flex;
+  gap:10px;
+  align-items:center;
+  padding:10px 12px;
+  border:1px solid var(--line);
+  background:rgba(255,255,255,.8);
+  border-radius:16px;
+  color:#1f2937;
+  font-weight:800;
+  font-size:13px;
+}
+.badgeIcon{
+  width:28px;height:28px;border-radius:12px;
+  background:rgba(79,70,229,.10);
+  border:1px solid rgba(79,70,229,.16);
+  display:grid;place-items:center;
+}
+.badgeIcon svg{width:16px;height:16px}
+
+.heroBox{
+  border:1px solid var(--line);
+  background:rgba(255,255,255,.75);
+  border-radius:var(--radius2);
+  box-shadow:var(--shadow2);
+  padding:18px;
+}
+.heroBoxTitle{
+  font-weight:900;
+  letter-spacing:-.2px;
+  margin:0 0 8px;
+  font-size:14px;
+  color:#0f172a;
+}
+.heroBoxText{
+  margin:0;
+  color:var(--muted);
+  font-size:14.8px;
+  line-height:1.55;
+}
+.heroBoxList{
+  margin-top:14px;
+  display:grid;
+  gap:10px;
+}
+.item{
+  display:flex;
+  gap:12px;
+  align-items:flex-start;
+  padding:12px 14px;
+  border-radius:16px;
+  background:#ffffff;
+  border:1px solid var(--line);
+}
+.dot{
+  width:12px;height:12px;border-radius:999px;
+  background:linear-gradient(135deg,var(--accent),var(--accent2));
+  box-shadow:0 0 0 6px var(--accentSoft);
+  margin-top:6px;
+  flex:none;
+}
+.item b{color:#0f172a;font-weight:900}
+.item span{color:var(--muted);font-size:14.5px}
+
+.smallKicker{
+  display:inline-flex;
+  gap:10px;
+  align-items:center;
+  padding:9px 12px;
+  border-radius:999px;
+  font-weight:900;
+  font-size:12px;
+  letter-spacing:.2px;
+  border:1px solid var(--line);
+  background:#fff;
+  color:#0f172a;
+}
+.smallDot{
+  width:10px;height:10px;border-radius:999px;
+  background:linear-gradient(135deg,var(--accent),var(--accent2));
+  box-shadow:0 0 0 6px rgba(79,70,229,.18);
+}
+.h2{
+  margin:0 0 10px;
+  font-size:clamp(26px,2.6vw,38px);
+  line-height:1.15;
+  letter-spacing:-.7px;
+  font-weight:900;
+}
+.copy{
+  margin:0;
+  color:var(--muted);
+  font-size:16.6px;
+  max-width:78ch;
+}
+.copy + .copy{margin-top:10px}
+
+.grid3{
+  margin-top:18px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:14px;
+}
+@media (max-width:980px){.grid3{grid-template-columns:1fr}}
+.miniCard{
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:16px;
+  background:linear-gradient(180deg,#ffffff 0%, #fbfdff 100%);
+  box-shadow:var(--shadow);
+}
+.miniCard b{display:block;font-weight:900;color:#0f172a;letter-spacing:-.2px}
+.miniCard span{display:block;margin-top:6px;color:var(--muted);font-size:14.6px}
+
+.outcomes{
+  margin-top:18px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:14px;
+}
+@media (max-width:980px){.outcomes{grid-template-columns:1fr}}
+.outcome{
+  border:1px solid var(--line);
+  border-radius:20px;
+  padding:18px;
+  background:#fff;
+  box-shadow:var(--shadow);
+}
+.outcome h3{margin:0 0 6px;font-size:16px;letter-spacing:-.2px;font-weight:900}
+.outcome p{margin:0;color:var(--muted);font-size:14.9px}
+.tag{
+  display:inline-flex;
+  margin-top:10px;
+  padding:7px 10px;
+  border-radius:999px;
+  background:rgba(79,70,229,.10);
+  border:1px solid rgba(79,70,229,.16);
+  color:#3730a3;
+  font-weight:900;
+  font-size:12px;
+}
+
+.darkSection{
+  background:
+    radial-gradient(circle at 18% 22%, rgba(79,70,229,.22), transparent 52%),
+    radial-gradient(circle at 82% 18%, rgba(37,99,235,.16), transparent 55%),
+    linear-gradient(180deg,var(--dark) 0%, var(--dark2) 100%);
+  color:#fff;
+}
+.darkSection .smallKicker{
+  border:1px solid rgba(255,255,255,.12);
+  background:rgba(255,255,255,.06);
+  color:#fff;
+}
+.darkSection .copy{color:var(--darkMuted)}
+.darkSection .outcome,
+.darkSection .miniCard{
+  background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.12);
+  box-shadow:none;
+}
+.darkSection .outcome p,
+.darkSection .miniCard span{color:rgba(248,250,252,.84)}
+.darkSection .miniCard b,
+.darkSection .outcome h3{color:#fff}
+.darkSection .tag{
+  background:rgba(255,255,255,.10);
+  border:1px solid rgba(255,255,255,.14);
+  color:#fff;
+}
+
+.testiGrid{
+  margin-top:18px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:14px;
+}
+@media (max-width:980px){.testiGrid{grid-template-columns:1fr}}
+.testi{
+  border:1px solid var(--line);
+  border-radius:22px;
+  padding:18px;
+  background:#fff;
+  box-shadow:var(--shadow);
+}
+.darkSection .testi{
+  background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.12);
+  box-shadow:none;
+}
+.testiTop{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:10px}
+.person{display:flex;align-items:center;gap:10px}
+.avatar{
+  width:42px;height:42px;border-radius:999px;
+  background:linear-gradient(135deg,rgba(79,70,229,.16),rgba(37,99,235,.10));
+  border:1px solid rgba(79,70,229,.18);
+  display:grid;place-items:center;
+  font-weight:900;color:#1e293b
+}
+.darkSection .avatar{color:#fff}
+.name{font-weight:900;letter-spacing:-.2px;font-size:14px}
+.meta{color:var(--muted2);font-size:12.5px;font-weight:800}
+.stars{display:flex;gap:3px}
+.star{width:16px;height:16px}
+.testi p{margin:0;color:var(--muted);font-size:14.9px}
+.darkSection .testi p{color:rgba(248,250,252,.84)}
+
+.faq{
+  margin-top:18px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:14px;
+}
+@media (max-width:980px){.faq{grid-template-columns:1fr}}
+details{
+  border:1px solid var(--line);
+  border-radius:18px;
+  background:#fff;
+  padding:14px 16px;
+  box-shadow:var(--shadow);
+}
+summary{
+  cursor:pointer;
+  font-weight:900;
+  letter-spacing:-.2px;
+  color:#0f172a;
+  list-style:none;
+}
+summary::-webkit-details-marker{display:none}
+details p{margin:10px 0 0;color:var(--muted);font-size:14.8px}
+.darkSection details{
+  background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.12);
+  box-shadow:none;
+}
+.darkSection summary{color:#fff}
+.darkSection details p{color:rgba(248,250,252,.84)}
+
+.ctaBand{
+  background:linear-gradient(135deg, rgba(79,70,229,.08) 0%, rgba(37,99,235,.06) 100%);
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+}
+.ctaBandInner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:18px;
+  flex-wrap:wrap;
+}
+
+.footer{
+  padding:34px 0 96px;
+  color:var(--muted2);
+  font-size:12.9px;
+}
+.footerRow{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  justify-content:space-between;
+  align-items:center;
+  border-top:1px solid var(--line);
+  padding-top:20px;
+}
+.smallLinks{display:flex;gap:12px;flex-wrap:wrap}
+.smallLinks a{color:var(--muted2);font-weight:800}
+.smallLinks a:hover{color:#0f172a}
+
+.stickyBar{
+  position:fixed;
+  left:0;right:0;bottom:0;
+  z-index:60;
+  background:rgba(255,255,255,.92);
+  backdrop-filter:saturate(170%) blur(10px);
+  border-top:1px solid var(--line);
+}
+.stickyRow{
+  max-width:var(--max);
+  margin:0 auto;
+  padding:12px 20px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  flex-wrap:wrap;
+}
+.stickyMsg{display:flex;align-items:center;gap:12px;min-width:240px}
+.pulse{
+  width:10px;height:10px;border-radius:999px;
+  background:linear-gradient(135deg,var(--accent),var(--accent2));
+  box-shadow:0 0 0 0 rgba(79,70,229,.35);
+  animation:pulse 1.6s infinite;
+}
+@keyframes pulse{
+  0%{box-shadow:0 0 0 0 rgba(79,70,229,.30)}
+  70%{box-shadow:0 0 0 12px rgba(79,70,229,0)}
+  100%{box-shadow:0 0 0 0 rgba(79,70,229,0)}
+}
+.stickyMsg b{font-weight:900;letter-spacing:-.2px}
+.stickyMsg span{color:var(--muted);font-weight:800;font-size:13.6px}
+@media (max-width:520px){
+  .stickyRow{justify-content:center}
+  .stickyMsg{justify-content:center;text-align:center}
+}
 </style>
 </head>
+
 <body>
 
-<header class="topbar">
-  <div class="topbar-wrap">
-    <div class="brand">Anxiety Online Therapy</div>
-    <a class="btn-pill" href="https://go.online-therapy.com/aff_c?offer_id=2&aff_id=1116&source=safetherapy&aff_sub=anxiety">Start today</a>
-  </div>
-</header>
-
-<main class="hero">
+<main id="top" class="hero">
   <div class="wrap">
-    <div class="hero-card">
-      <span class="eyebrow">You are not your anxiety</span>
-      <h1>Overcome anxiety with CBT based online therapy</h1>
-      <p class="lead">Work with a licensed therapist on secure video. Follow a clear weekly plan and learn skills that stop spirals and ease panic. CBT is a proven approach for anxiety and it fits real life.</p>
-      <div class="cta-row">
-        <a class="btn" href="https://go.online-therapy.com/aff_c?offer_id=2&aff_id=1116&source=safetherapy&aff_sub=anxiety">Start today</a>
-        <a class="btn outline" href="#how">See how it works</a>
-      </div>
+    <div class="heroGrid">
 
-      <div class="panel" style="margin-top:16px">
-        <div class="grid-3">
-          <div class="card">
-            <h3>What anxiety feels like</h3>
-            <div class="list muted">
-              <div>Racing heart tight chest or feeling short of breath</div>
-              <div>Rushing thoughts worst case images and a sense of dread</div>
-              <div>Restless sleep and tension that never fully turns off</div>
-            </div>
+      <div>
+        <div class="kicker"><span class="kdot" aria-hidden="true"></span>Online CBT therapy for anxiety and panic</div>
+
+        <h1 class="h1">What if your mind could finally be quiet.</h1>
+
+        <p class="lead">
+          If you live with anxiety, you already know the feeling.
+          Your chest tightens.
+          Your stomach drops.
+          Your heart speeds up.
+          And your brain searches for a reason until it finds the scariest one.
+        </p>
+
+        <p class="lead" style="max-width:60ch">
+          Therapy is not about becoming a different person.
+          It is about your nervous system learning safety again.
+          You sleep deeply.
+          You stop fearing your own sensations.
+          You feel confident in conversations.
+          You handle stress without spiraling.
+        </p>
+
+        <div class="heroCtas">
+          <a class="btn btnPrimary" href="https://go.online-therapy.com/SHvn">Start Therapy</a>
+          <a class="btn btnGhost" href="#get">See what you get</a>
+        </div>
+
+        <div class="micro">
+          Secure sessions. Licensed therapists. Clear structure. Built on CBT.
+        </div>
+
+        <div class="trustRow" aria-label="trust signals">
+          <div class="badge">
+            <span class="badgeIcon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 2l7 4v6c0 5-3 9-7 10-4-1-7-5-7-10V6l7-4z" stroke="currentColor" stroke-width="2"/></svg>
+            </span>
+            Private and encrypted
           </div>
-          <div class="card">
-            <h3>What keeps it going</h3>
-            <div class="list muted">
-              <div>Catastrophic thoughts that seem like facts</div>
-              <div>Avoidance that brings short relief but grows fear over time</div>
-              <div>Body alarm that you try to fight which makes it louder</div>
-            </div>
+          <div class="badge">
+            <span class="badgeIcon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M20 7l-9 10-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            Licensed therapists
           </div>
-          <div class="card">
-            <h3>What changes it</h3>
-            <div class="list muted">
-              <div>Calm breath that lowers the alarm</div>
-              <div>Reframing thoughts with facts and balance</div>
-              <div>Gentle exposure that rebuilds confidence</div>
-            </div>
+          <div class="badge">
+            <span class="badgeIcon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M4 19V5m0 14h16M8 15V9m4 6V7m4 8v-5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </span>
+            CBT based treatment
           </div>
         </div>
       </div>
 
-      <div class="panel" style="margin-top:14px">
-        <div class="grid-2">
-          <div>
-            <h3 class="section-title" style="font-size:1.3rem">Is this you</h3>
-            <div class="list">
-              <div>Mornings start with worry and a tight chest</div>
-              <div>You avoid calls meetings or places because fear might hit</div>
-              <div>You want tools that work during the day not only in sessions</div>
+      <aside class="heroBox" aria-label="what changes quickly">
+        <div class="heroBoxTitle">What you start noticing when it clicks</div>
+        <p class="heroBoxText">
+          The goal is not to erase feelings.
+          The goal is to stop anxiety from controlling your choices.
+          When CBT is applied well, relief looks like real life returning.
+        </p>
+
+        <div class="heroBoxList" aria-label="clean outcome list">
+          <div class="item">
+            <span class="dot" aria-hidden="true"></span>
+            <div>
+              <b>Sleep becomes normal</b><br>
+              <span>You stop replaying the day. Your body powers down without a fight.</span>
             </div>
           </div>
-          <div>
-            <h3 class="section-title" style="font-size:1.3rem">What you will get</h3>
-            <div class="list">
-              <div>Personal plan and a therapist by your side</div>
-              <div>Short practice that fits busy days</div>
-              <div>Simple steps to feel safe in your body and go where you want</div>
+          <div class="item">
+            <span class="dot" aria-hidden="true"></span>
+            <div>
+              <b>Panic loses its power</b><br>
+              <span>The sensations stop feeling like danger. The fear of the next attack fades.</span>
+            </div>
+          </div>
+          <div class="item">
+            <span class="dot" aria-hidden="true"></span>
+            <div>
+              <b>You show up confidently</b><br>
+              <span>Conversations stop feeling like a performance. You feel present in the room.</span>
             </div>
           </div>
         </div>
-      </div>
+      </aside>
 
     </div>
   </div>
 </main>
 
-<section class="wrap" id="how" aria-labelledby="how-title">
-  <h2 id="how-title" class="section-title">How it works</h2>
-  <div class="steps">
-    <div class="step">
-      <div class="num">1</div>
-      <h3>Share goals and match</h3>
-      <p>Answer a short intake and match with a licensed therapist who focuses on anxiety.</p>
-    </div>
-    <div class="step">
-      <div class="num">2</div>
-      <h3>Begin your plan</h3>
-      <p>Meet online by video voice or chat. Start a weekly plan that fits your life.</p>
-    </div>
-    <div class="step">
-      <div class="num">3</div>
-      <h3>Practice small steps</h3>
-      <p>Use calm breath thought records and gentle exposure with support between sessions.</p>
-    </div>
-    <div class="step">
-      <div class="num">4</div>
-      <h3>Track progress</h3>
-      <p>Notice wins adjust the plan and keep what works so calm grows week by week.</p>
-    </div>
-    <div class="step">
-      <div class="num">5</div>
-      <h3>Keep gains</h3>
-      <p>Build a simple prevention plan so stress and busy weeks do not undo your progress.</p>
-    </div>
-  </div>
-  <div style="max-width:520px;margin:16px auto 0">
-    <a class="btn block" href="https://go.online-therapy.com/aff_c?offer_id=2&aff_id=1116&source=safetherapy&aff_sub=anxiety">See your match</a>
-  </div>
-</section>
+<section id="get" class="section">
+  <div class="wrap">
+    <span class="smallKicker"><span class="smallDot" aria-hidden="true"></span>What you get</span>
+    <h2 class="h2">Clear outcomes, not vague promises.</h2>
 
-<section class="wrap" id="panic" aria-labelledby="panic-title">
-  <h2 id="panic-title" class="section-title">Panic attacks explained and what to do</h2>
-  <div class="grid-2">
-    <div class="panel">
-      <p class="muted">A panic attack feels like danger. Your heart races your chest tightens your head spins and thoughts rush in. It feels scary and it is also a surge that the body can ride out. It peaks then it settles. With the right steps you can move through it with far less fear.</p>
-      <div class="badge">In the moment plan</div>
-      <div class="list" style="margin-top:10px">
-        <div><strong>Ground</strong> name five things you see four you can touch three you can hear two you can smell and one you can taste.</div>
-        <div><strong>Breathe</strong> inhale for four hold for two and exhale for six for one minute.</div>
-        <div><strong>Reframe</strong> tell yourself this is a body surge I am safe it will pass and I can ride the wave.</div>
+    <p class="copy">
+      This is designed for the real anxiety you live with.
+      Racing thoughts.
+      Body symptoms.
+      Panic surges.
+      The constant scanning for danger.
+      The exhaustion after pretending you are fine.
+    </p>
+
+    <p class="copy">
+      Your therapist helps you identify your exact loop.
+      Thoughts.
+      Feelings.
+      Physical sensations.
+      Behaviors.
+      Then you learn to change the loop with skills that hold up in daily life.
+    </p>
+
+    <div class="outcomes" aria-label="outcomes list">
+      <div class="outcome">
+        <h3>Calm mind in the middle of stress</h3>
+        <p>You stop catastrophizing automatically. You can think clearly under pressure.</p>
+        <span class="tag">Clarity</span>
       </div>
-      <div style="max-width:520px;margin-top:12px">
-        <a class="btn block" href="https://go.online-therapy.com/aff_c?offer_id=2&aff_id=1116&source=safetherapy&aff_sub=anxiety">Practice this with a therapist</a>
+      <div class="outcome">
+        <h3>Better sleep, not just more sleep</h3>
+        <p>You fall asleep without looping. You wake up without dread in your chest.</p>
+        <span class="tag">Rest</span>
       </div>
-    </div>
-    <div class="panel">
-      <h3 class="section-title" style="font-size:1.3rem">Why CBT works for anxiety</h3>
-      <div class="list muted">
-        <div><strong>Thoughts</strong> learn to catch what if and replace it with clear balanced statements.</div>
-        <div><strong>Behaviors</strong> stop the avoidance cycle with small planned steps that rebuild safety.</div>
-        <div><strong>Body</strong> use breath posture and attention to settle the alarm and keep it low.</div>
+      <div class="outcome">
+        <h3>Confidence in social situations</h3>
+        <p>You speak without rehearsing. You stop scanning faces for judgment.</p>
+        <span class="tag">Presence</span>
       </div>
-      <div class="badge" style="margin-top:12px">You will learn to</div>
-      <div class="list">
-        <div>Lower daily background anxiety so calm feels normal again</div>
-        <div>Handle spikes without fear so panic loses power</div>
-        <div>Return to places and plans you care about</div>
+      <div class="outcome">
+        <h3>Emotional control</h3>
+        <p>You feel the wave rise and you know what to do. You recover faster.</p>
+        <span class="tag">Regulation</span>
+      </div>
+      <div class="outcome">
+        <h3>Less avoidance</h3>
+        <p>You stop designing your life around anxiety. You choose what matters again.</p>
+        <span class="tag">Freedom</span>
+      </div>
+      <div class="outcome">
+        <h3>Confidence in your body</h3>
+        <p>Sensations become information, not a threat. You stop fearing your heartbeat.</p>
+        <span class="tag">Safety</span>
       </div>
     </div>
   </div>
 </section>
 
-<section class="wrap" aria-labelledby="roadmap">
-  <h2 id="roadmap" class="section-title">Week by week roadmap</h2>
-  <div class="steps">
-    <div class="step">
-      <div class="num">1</div>
-      <h3>Calm base</h3>
-      <p>Daily breath practice grounding and sleep support so the body rests.</p>
-    </div>
-    <div class="step">
-      <div class="num">2</div>
-      <h3>Thought skills</h3>
-      <p>Track common worry themes and write balanced responses you can trust.</p>
-    </div>
-    <div class="step">
-      <div class="num">3</div>
-      <h3>Gentle exposure</h3>
-      <p>Plan tiny steps toward feared tasks with wins that build fast.</p>
-    </div>
-    <div class="step">
-      <div class="num">4</div>
-      <h3>Confidence loop</h3>
-      <p>Expand steps review gains and set reminders for practice.</p>
-    </div>
-    <div class="step">
-      <div class="num">5</div>
-      <h3>Relapse prevention</h3>
-      <p>Set a plan for busy weeks and stress so calm stays with you.</p>
-    </div>
-  </div>
-  <div style="max-width:520px;margin:16px auto 0">
-    <a class="btn block" href="https://go.online-therapy.com/aff_c?offer_id=2&aff_id=1116&source=safetherapy&aff_sub=anxiety">Start today</a>
-  </div>
-</section>
+<section id="panic" class="section darkSection">
+  <div class="wrap">
+    <span class="smallKicker"><span class="smallDot" aria-hidden="true"></span>Panic attacks</span>
+    <h2 class="h2">Panic stops controlling your life when you stop fearing your sensations.</h2>
 
-<section class="wrap" aria-labelledby="stories">
-  <h2 id="stories" class="section-title">Real stories from clients</h2>
-  <div class="testi-grid">
-    <div class="testi">
-      <div class="testi-head">
-        <div class="avatar">E. R.</div>
-        <div><strong>Back to calm mornings</strong></div>
+    <p class="copy">
+      A panic attack can feel like something is seriously wrong with your body.
+      The heart racing.
+      The tight chest.
+      The dizziness.
+      The heat.
+      The numbness.
+      The feeling that you are about to lose control.
+    </p>
+
+    <p class="copy">
+      The fear is understandable.
+      Your brain is trying to protect you.
+      But panic grows when a sensation is interpreted as danger.
+      That interpretation triggers more adrenaline.
+      Then the body sensations intensify.
+      Then the fear multiplies.
+    </p>
+
+    <div class="grid3" aria-label="panic changes">
+      <div class="miniCard">
+        <b>You learn what panic is</b>
+        <span>Not intellectually. In your body. You understand the sensations and they become predictable.</span>
       </div>
-      <p>I used to wake with a knot in my chest. The plan and the tiny steps made mornings feel kind again.</p>
-    </div>
-    <div class="testi">
-      <div class="testi-head">
-        <div class="avatar">L. N.</div>
-        <div><strong>Panic lost power</strong></div>
+      <div class="miniCard">
+        <b>You stop feeding the loop</b>
+        <span>You reduce safety behaviors that keep fear alive and replace them with skills that calm the system.</span>
       </div>
-      <p>Learning to ride the wave and breathe made the fear drop. Now I do what matters again.</p>
-    </div>
-    <div class="testi">
-      <div class="testi-head">
-        <div class="avatar">T. S.</div>
-        <div><strong>Confidence returned</strong></div>
+      <div class="miniCard">
+        <b>You build confidence through practice</b>
+        <span>With guidance, you practice new responses until your brain learns safety again.</span>
       </div>
-      <p>Small steps back into places I avoided brought my life back piece by piece.</p>
+    </div>
+
+    <div class="outcomes" aria-label="panic outcomes">
+      <div class="outcome">
+        <h3>Less fear of the next attack</h3>
+        <p>The biggest shift is losing the fear of having one. That fear is what keeps panic close.</p>
+        <span class="tag">Relief</span>
+      </div>
+      <div class="outcome">
+        <h3>Shorter episodes</h3>
+        <p>If panic rises, you can bring it down. You stop feeling helpless inside your own body.</p>
+        <span class="tag">Control</span>
+      </div>
+      <div class="outcome">
+        <h3>Normal life returns</h3>
+        <p>You stop avoiding driving, stores, meetings, flights, crowds, or being alone.</p>
+        <span class="tag">Freedom</span>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="wrap" aria-labelledby="plans">
-  <h2 id="plans" class="section-title">Choose your pace</h2>
-  <div class="plans" style="margin-top:12px">
-    <div class="plan">
-      <div class="ribbon" style="background:#94a3b8;color:#fff">Essential</div>
-      <div><strong>Messaging with your therapist</strong></div>
-      <div class="muted">Write at your pace between check ins.</div>
-      <a class="btn block" href="https://go.online-therapy.com/aff_c?offer_id=2&aff_id=1116&source=safetherapy&aff_sub=anxiety">Begin with messages</a>
+<section id="cbt" class="section">
+  <div class="wrap">
+    <span class="smallKicker"><span class="smallDot" aria-hidden="true"></span>CBT approach</span>
+    <h2 class="h2">CBT gives you a map of your anxiety, then shows you how to change it.</h2>
+
+    <p class="copy">
+      CBT is a practical method for understanding how thoughts, feelings, physical sensations, and behaviors interact.
+      Anxiety feels random until you map the pattern.
+      Once you can see it clearly, you can change it.
+    </p>
+
+    <div class="grid3" aria-label="cbt pillars">
+      <div class="miniCard">
+        <b>Identify sensations</b>
+        <span>You learn to label chest tightness, breathing changes, nausea, dizziness, and tension without panic.</span>
+      </div>
+      <div class="miniCard">
+        <b>Catch the thought</b>
+        <span>You learn the exact sentence your brain uses to turn discomfort into danger.</span>
+      </div>
+      <div class="miniCard">
+        <b>Change the response</b>
+        <span>You replace avoidance and reassurance seeking with actions that retrain the nervous system.</span>
+      </div>
     </div>
-    <div class="plan pop">
-      <div class="ribbon">Popular</div>
-      <div><strong>One live session each week and messages</strong></div>
-      <div class="muted">A steady weekly rhythm for growth and support.</div>
-      <a class="btn block" href="https://go.online-therapy.com/aff_c?offer_id=2&aff_id=1116&source=safetherapy&aff_sub=anxiety">Start with one live session</a>
-    </div>
-    <div class="plan">
-      <div class="ribbon" style="background:#1e3a8a;color:#fff">Premium</div>
-      <div><strong>Two live sessions each week and priority replies</strong></div>
-      <div class="muted">More contact and faster progress when you want it.</div>
-      <a class="btn block" href="https://go.online-therapy.com/aff_c?offer_id=2&aff_id=1116&source=safetherapy&aff_sub=anxiety">Choose Premium</a>
+
+    <div class="outcomes" aria-label="skills you build">
+      <div class="outcome">
+        <h3>Body literacy</h3>
+        <p>You recognize patterns in your sensations. You understand triggers. Your body stops feeling unpredictable.</p>
+        <span class="tag">Clarity</span>
+      </div>
+      <div class="outcome">
+        <h3>Thought accuracy</h3>
+        <p>You challenge catastrophic interpretations and build alternatives that feel believable.</p>
+        <span class="tag">Calm mind</span>
+      </div>
+      <div class="outcome">
+        <h3>Exposure with support</h3>
+        <p>You gradually face triggers safely so they lose their power over time.</p>
+        <span class="tag">Confidence</span>
+      </div>
+      <div class="outcome">
+        <h3>Regulation skills</h3>
+        <p>Grounding, breath, attention training, recovery routines that work in real moments.</p>
+        <span class="tag">Control</span>
+      </div>
+      <div class="outcome">
+        <h3>Relapse resilience</h3>
+        <p>Stress will happen. You learn how to stabilize without returning to the old baseline.</p>
+        <span class="tag">Stability</span>
+      </div>
+      <div class="outcome">
+        <h3>More life</h3>
+        <p>You stop living in preparation for danger and start living in the present again.</p>
+        <span class="tag">Freedom</span>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="wrap" aria-labelledby="faq">
-  <h2 id="faq" class="section-title">Common worries and clear answers</h2>
-  <details>
-    <summary>What if therapy does not work for me</summary>
-    <p class="muted">Your plan is adjusted each week based on what you notice. Progress is reviewed together so you see what helps and what needs a tweak.</p>
-  </details>
-  <details>
-    <summary>Do I need long term therapy</summary>
-    <p class="muted">Many people use a short focused period to learn skills then return for refreshers when life gets busy.</p>
-  </details>
-  <details>
-    <summary>What if I feel nervous in sessions</summary>
-    <p class="muted">You can start with chat or voice then move to video when ready. Your comfort is part of the plan.</p>
-  </details>
+<section id="reviews" class="section darkSection">
+  <div class="wrap">
+    <span class="smallKicker"><span class="smallDot" aria-hidden="true"></span>Reviews</span>
+    <h2 class="h2">People describe one moment that changes everything</h2>
+    <p class="copy">
+      The moment your heart races and you do not panic.
+      The moment you sleep through the night.
+      The moment you speak and you are not performing.
+      Then it compounds.
+    </p>
+
+    <div class="testiGrid" aria-label="testimonials">
+      <div class="testi">
+        <div class="testiTop">
+          <div class="person">
+            <div class="avatar">M</div>
+            <div>
+              <div class="name">Maya</div>
+              <div class="meta">Panic and sleep</div>
+            </div>
+          </div>
+          <div class="stars" aria-label="five stars">
+            <svg class="star" viewBox="0 0 24 24"><path fill="#ffd166" d="M12 2l2.8 6 6.6.6-5 4.2 1.6 6.4-6-3.4-6 3.4 1.6-6.4-5-4.2 6.6-.6z"/></svg>
+            <svg class="star" viewBox="0 0 24 24"><path fill="#ffd166" d="M12 2l2.8 6 6.6.6-5 4.2 1.6 6.4-6-3.4-6 3.4 1.6-6.4-5-4.2 6.6-.6z"/></svg>
+            <svg class="star" viewBox="0 0 24 24"><path fill="#ffd166" d="M12 2l2.8 6 6.6.6-5 4.2 1.6 6.4-6-3.4-6 3.4 1.6-6.4-5-4.2 6.6-.6z"/></svg>
+            <svg class="star" viewBox="0 0 24 24"><path fill="#ffd166" d="M12 2l2.8 6 6.6.6-5 4.2 1.6 6.4-6-3.4-6 3.4 1.6-6.4-5-4.2 6.6-.6z"/></svg>
+            <svg class="star" viewBox="0 0 24 24"><path fill="#ffd166" d="M12 2l2.8 6 6.6.6-5 4.2 1.6 6.4-6-3.4-6 3.4 1.6-6.4-5-4.2 6.6-.6z"/></svg>
+          </div>
+        </div>
+        <p>
+          The first win was learning what panic sensations actually were.
+          Once I could label them, the fear dropped.
+          Then sleep returned.
+        </p>
+      </div>
+
+      <div class="testi">
+        <div class="testiTop">
+          <div class="person">
+            <div class="avatar">J</div>
+            <div>
+              <div class="name">Jordan</div>
+              <div class="meta">Social anxiety</div>
+            </div>
+          </div>
+          <div class="stars" aria-label="five stars">
+            <svg class="star" viewBox="0 0 24 24"><path fill="#ffd166" d="M12 2l2.8 6 6.6.6-5 4.2 1.6 6.4-6-3.4-6 3.4 1.6-6.4-5-4.2 6.6-.6z"/></svg>
+            <svg class="star" viewBox="0 0 24 24"><path fill="#ffd166" d="M12 2l2.8 6 6.6.6-5 4.2 1.6 6.4-6-3.4-6 3.4 1.6-6.4-5-4.2 6.6-.6z"/></svg>
+            <svg class="star" viewBox="0 0 24 24"><path fill="#ffd166" d="M12 2l2.8 6 6.6.6-5 4.2 1.6 6.4-6-3.4-6 3.4 1.6-6.4-5-4.2 6.6-.6z"/></svg>
+            <svg class="star" viewBox="0 0 24 24"><path fill="#ffd166" d="M12 2l2.8 6 6.6.6-5 4.2 1.6 6.4-6-3.4-6 3.4 1.6-6.4-5-4.2 6.6-.6z"/></svg>
+            <svg class="star" viewBox="0 0 24 24"><path fill="#ffd166" d="M12 2l2.8 6 6.6.6-5 4.2 1.6 6.4-6-3.4-6 3.4 1.6-6.4-5-4.2 6.6-.6z"/></svg>
+          </div>
+        </div>
+        <p>
+          I stopped rehearsing every sentence.
+          I can be present and speak naturally.
+          The calm feels real, not forced.
+        </p>
+      </div>
+
+      <div class="testi">
+        <div class="testiTop">
+          <div class="person">
+            <div class="avatar">A</div>
+            <div>
+              <div class="name">Avery</div>
+              <div class="meta">Panic recovery</div>
+            </div>
+          </div>
+          <div class="stars" aria-label="five stars">
+            <svg class="star" viewBox="0 0 24 24"><path fill="#ffd166" d="M12 2l2.8 6 6.6.6-5 4.2 1.6 6.4-6-3.4-6 3.4 1.6-6.4-5-4.2 6.6-.6z"/></svg>
+            <svg class="star" viewBox="0 0 24 24"><path fill="#ffd166" d="M12 2l2.8 6 6.6.6-5 4.2 1.6 6.4-6-3.4-6 3.4 1.6-6.4-5-4.2 6.6-.6z"/></svg>
+            <svg class="star" viewBox="0 0 24 24"><path fill="#ffd166" d="M12 2l2.8 6 6.6.6-5 4.2 1.6 6.4-6-3.4-6 3.4 1.6-6.4-5-4.2 6.6-.6z"/></svg>
+            <svg class="star" viewBox="0 0 24 24"><path fill="#ffd166" d="M12 2l2.8 6 6.6.6-5 4.2 1.6 6.4-6-3.4-6 3.4 1.6-6.4-5-4.2 6.6-.6z"/></svg>
+            <svg class="star" viewBox="0 0 24 24"><path fill="#ffd166" d="M12 2l2.8 6 6.6.6-5 4.2 1.6 6.4-6-3.4-6 3.4 1.6-6.4-5-4.2 6.6-.6z"/></svg>
+          </div>
+        </div>
+        <p>
+          Panic used to feel like a threat.
+          Now it feels like a wave I understand.
+          It rises and I know what to do until it passes.
+        </p>
+      </div>
+    </div>
+  </div>
 </section>
 
-<footer class="footer wrap" role="contentinfo">
-  © <span id="y"></span> promotional page for an independent online therapy platform.
-</footer>
-<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+<section id="start" class="section ctaBand">
+  <div class="wrap">
+    <div class="ctaBandInner">
+      <div>
+        <span class="smallKicker"><span class="smallDot" aria-hidden="true"></span>Start Therapy</span>
+        <h2 class="h2" style="margin:10px 0 10px">Start therapy now and build a calmer baseline</h2>
+        <p class="copy">
+          No pressure.
+          Just a clear next step.
+          If you have been white knuckling anxiety alone, you do not need to keep doing that.
+        </p>
+      </div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap">
+        <a class="btn btnPrimary" href="https://go.online-therapy.com/SHvn">Start Therapy</a>
+        <a class="btn btnGhost" href="#top">Back to top</a>
+      </div>
+    </div>
+
+    <div class="grid3" style="margin-top:18px" aria-label="what happens next">
+      <div class="miniCard">
+        <b>First session</b>
+        <span>You define the anxiety pattern and build your plan with your therapist.</span>
+      </div>
+      <div class="miniCard">
+        <b>Skills that work in real moments</b>
+        <span>You learn tools for sleep, panic surges, and social confidence.</span>
+      </div>
+      <div class="miniCard">
+        <b>Progress that compounds</b>
+        <span>Small wins build trust in your body and stability becomes your new normal.</span>
+      </div>
+    </div>
+</div>
+</section>
+
+<section id="faq" class="section">
+  <div class="wrap">
+    <span class="smallKicker"><span class="smallDot" aria-hidden="true"></span>FAQ</span>
+    <h2 class="h2">Real questions before starting therapy</h2>
+    <p class="copy">
+      You do not need perfect words to begin.
+      You only need a first step that feels safe enough.
+    </p>
+
+    <div class="faq" aria-label="frequently asked questions">
+      <details>
+        <summary>Can CBT help with panic attacks</summary>
+        <p>
+          CBT targets the panic loop directly.
+          You learn to reinterpret body sensations, reduce avoidance, and practice new responses so fear decreases over time.
+        </p>
+      </details>
+      <details>
+        <summary>What if my anxiety feels mostly physical</summary>
+        <p>
+          That is common.
+          CBT helps you identify sensations like tight chest, dizziness, racing heart, and breathing changes.
+          When you can label them accurately, fear drops.
+        </p>
+      </details>
+      <details>
+        <summary>How quickly can I feel a difference</summary>
+        <p>
+          Many people notice early shifts when they practice regulation skills consistently.
+          Your timeline depends on your pattern and what you practice between sessions.
+        </p>
+      </details>
+      <details>
+        <summary>Do I have to talk about everything</summary>
+        <p>
+          No.
+          You move at a pace that feels safe.
+          The goal is stability and progress, not forcing vulnerability.
+        </p>
+      </details>
+      <details>
+        <summary>Is online therapy effective</summary>
+        <p>
+          For many people, yes.
+          Consistency and structure matter more than location.
+          Online sessions can also feel safer which helps people practice skills.
+        </p>
+      </details>
+      <details>
+        <summary>What if I feel worse after a session</summary>
+        <p>
+          Some sessions can feel intense when you face patterns you avoided.
+          A good therapist helps you stay regulated and turns intensity into clarity and skills.
+        </p>
+      </details>
+    </div>
+
+    <div class="footer">
+      <div class="footerRow">
+        <div>© <span id="year"></span> Online Therapy</div>
+        <div class="smallLinks">
+          <a href="#get">What you get</a>
+          <a href="#panic">Panic</a>
+          <a href="#cbt">CBT</a>
+          <a href="#reviews">Reviews</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>
