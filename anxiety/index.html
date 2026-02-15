@@ -962,24 +962,32 @@ details p{margin:10px 0 0;color:var(--muted);font-size:14.8px}
 </section>
 
 <script>
-document.getElementById("year").textContent = new Date().getFullYear();
-</script>
-<script>
 document.addEventListener("DOMContentLoaded", function () {
+  const p = new URLSearchParams(window.location.search);
 
-  const params = new URLSearchParams(window.location.search);
-  const sub = params.get("sub");
+  const affSub  = p.get("aff_sub")  || p.get("sub");
+  const affSub2 = p.get("aff_sub2") || p.get("sub2");
+  const affSub3 = p.get("aff_sub3") || p.get("sub3");
 
-  if (sub) {
-    document.querySelectorAll('a[href*="go.online-therapy.com/aff_c"]').forEach(a => {
-      const url = new URL(a.href);
-      url.searchParams.set("sub", sub);
-      a.href = url.toString();
-    });
-  }
+  if (!affSub && !affSub2 && !affSub3) return;
 
+  document.querySelectorAll('a[href*="go.online-therapy.com/aff_c"]').forEach(a => {
+    try {
+      const u = new URL(a.href);
+
+      if (affSub)  u.searchParams.set("aff_sub", affSub);
+      if (affSub2) u.searchParams.set("aff_sub2", affSub2);
+      if (affSub3) u.searchParams.set("aff_sub3", affSub3);
+
+      a.href = u.toString();
+
+      if (a.getAttribute("target") === "_blank") a.removeAttribute("target");
+      a.setAttribute("rel", "noopener");
+    } catch (e) {}
+  });
 });
 </script>
+
 </body>
 
 </body>
