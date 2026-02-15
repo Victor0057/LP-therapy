@@ -964,21 +964,13 @@ details p{margin:10px 0 0;color:var(--muted);font-size:14.8px}
 <script>
 document.addEventListener("DOMContentLoaded", function () {
   const p = new URLSearchParams(window.location.search);
-
-  const affSub  = p.get("aff_sub")  || p.get("sub");
-  const affSub2 = p.get("aff_sub2") || p.get("sub2");
-  const affSub3 = p.get("aff_sub3") || p.get("sub3");
-
-  if (!affSub && !affSub2 && !affSub3) return;
+  const source = p.get("source");
+  if (!source) return;
 
   document.querySelectorAll('a[href*="go.online-therapy.com/aff_c"]').forEach(a => {
     try {
       const u = new URL(a.href);
-
-      if (affSub)  u.searchParams.set("aff_sub", affSub);
-      if (affSub2) u.searchParams.set("aff_sub2", affSub2);
-      if (affSub3) u.searchParams.set("aff_sub3", affSub3);
-
+      u.searchParams.set("source", source);
       a.href = u.toString();
 
       if (a.getAttribute("target") === "_blank") a.removeAttribute("target");
@@ -987,6 +979,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 </script>
+
 
 </body>
 
