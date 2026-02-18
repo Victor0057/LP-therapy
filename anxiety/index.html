@@ -16,19 +16,7 @@
   <title>Online CBT Therapy for Anxiety and Panic</title>
   <meta name="description" content="Online CBT therapy for anxiety and panic attacks. Structured care with clear steps, focused on real life results you can feel." />
   <style>
-    /* Page scale set to 125% to match a browser zoom feel */
-    :root{ --pageScale: 1.25; }
-    body{ zoom: var(--pageScale); }
-    /* Fallback for browsers that do not support zoom */
-    @supports not (zoom: 1) {
-      body{
-        transform: scale(var(--pageScale));
-        transform-origin: top left;
-        width: calc(100% / var(--pageScale));
-      }
-    }
-
-    :root{
+:root{
       --bg:#f4f8ff;
       --surface:#ffffff;
       --surface2:#f7f9ff;
@@ -656,6 +644,24 @@
       .resultBandGrid{grid-template-columns:1fr}
       .heroNote{grid-template-columns:1fr}
       .nav{display:none}
+    }
+  
+    /* Mobile optimization */
+    @media (max-width: 768px){
+      body{ zoom:1 !important; transform:none !important; width:100% !important; }
+      h1{ font-size:28px; line-height:1.2; }
+      h2{ font-size:22px; }
+      .hero{ padding:20px 0 0; }
+      .heroCard{ padding:18px; }
+      .heroImg{ min-height:220px; }
+      .btn{ width:100%; padding:14px; font-size:15px; }
+      .proofNewGrid{ gap:12px; }
+      .proofCard{ padding:14px; }
+      .imageStack{ height:260px; }
+      .stackImg{ border-radius:14px; }
+      .centerPhoto{ min-height:280px; }
+      .resultBand{ padding:18px; }
+      .ctaCard{ padding:18px; }
     }
   </style>
 </head>
