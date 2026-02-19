@@ -4,458 +4,656 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Feel Calm Again | Professional Online Support</title>
+  <title>Quiet Your Mind ✨ Online Support for Anxiety</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
   <style>
     :root{
       --bg:#ffffff;
-      --text:#0b1220;
-      --muted:#334155;
-      --line:rgba(12,18,32,0.10);
-      --card:#ffffff;
-      --soft:#f5f8ff;
-      --soft2:#f8fafc;
+      --soft:#f6f8ff;
+      --soft2:#f7f7fb;
+      --ink:#0b1220;
+      --muted:#506173;
+      --line:rgba(11,18,32,0.12);
 
-      /* Single blue */
-      --primary:#2563eb;
+      --blue:#245eea;
+      --blueSoft:rgba(36,94,234,0.10);
+      --blueLine:rgba(36,94,234,0.22);
 
-      /* Soft shadows, no glow */
-      --shadow: 0 16px 50px rgba(2,6,23,0.10);
-      --shadow2: 0 10px 26px rgba(2,6,23,0.08);
-      --radius: 18px;
+      --shadow: 0 22px 70px rgba(2,6,23,0.10);
+      --shadow2: 0 12px 34px rgba(2,6,23,0.08);
+
+      --r14:14px;
+      --r18:18px;
+      --r24:24px;
+      --r32:32px;
+      --r40:40px;
+
+      --container: 1180px;
     }
 
     *{box-sizing:border-box}
     html{scroll-behavior:smooth}
     body{
       margin:0;
-      font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      background:var(--bg);
-      color:var(--text);
-      line-height:1.65;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.75;
       overflow-x:hidden;
     }
 
-    a{color:inherit}
     .container{
-      width:min(1160px, calc(100% - 40px));
-      margin:0 auto;
+      width: min(var(--container), calc(100% - 40px));
+      margin: 0 auto;
     }
+
+    a{color:inherit}
+    h1,h2,h3{letter-spacing:-0.035em}
+    h1{
+      margin:0;
+      font-size: clamp(38px, 5vw, 76px);
+      line-height: 1.02;
+    }
+    h2{
+      margin:0;
+      font-size: clamp(24px, 2.8vw, 42px);
+      line-height: 1.18;
+    }
+    h3{
+      margin:0;
+      font-size: 18px;
+      line-height: 1.25;
+      letter-spacing:-0.02em;
+    }
+    p{margin:0}
+    .muted{color:var(--muted)}
+    .accent{color:var(--blue); font-weight: 900}
 
     .btn{
       display:inline-flex;
       align-items:center;
       justify-content:center;
       gap:10px;
-      padding:14px 18px;
-      border-radius:14px;
-      border:1px solid transparent;
-      font-weight:700;
-      font-size:15px;
-      cursor:pointer;
+      padding: 14px 18px;
+      border-radius: var(--r18);
+      border: 1px solid transparent;
+      font-weight: 900;
+      font-size: 15px;
       text-decoration:none;
-      transition: transform .18s ease, box-shadow .18s ease, background .18s ease, border-color .18s ease;
+      cursor:pointer;
+      user-select:none;
       white-space:nowrap;
+      transition: transform .16s ease, box-shadow .16s ease, background .16s ease, border-color .16s ease, opacity .16s ease;
     }
     .btnPrimary{
-      background: var(--primary);
+      background: var(--blue);
       color:#fff;
-      box-shadow: 0 10px 22px rgba(37,99,235,0.16);
+      box-shadow: 0 16px 36px rgba(36,94,234,0.22);
     }
     .btnPrimary:hover{
-      transform:translateY(-2px);
-      box-shadow: 0 14px 28px rgba(37,99,235,0.20);
+      transform: translateY(-2px);
+      box-shadow: 0 20px 44px rgba(36,94,234,0.26);
+    }
+
+    .chipRow{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top: 18px;
+    }
+    .chip{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding: 10px 12px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: #fff;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 800;
+      box-shadow: 0 10px 22px rgba(2,6,23,0.05);
+      user-select:none;
+    }
+    .chip .dot{
+      width:9px;height:9px;border-radius:999px;
+      background: var(--blue);
+      box-shadow: 0 0 0 6px rgba(36,94,234,0.08);
+      flex:0 0 auto;
     }
 
     .hero{
-      position:relative;
-      padding:78px 0 36px;
-      background:#ffffff;
+      padding: 78px 0 56px;
+      background: var(--bg);
     }
     .heroGrid{
       display:grid;
-      grid-template-columns: 1.12fr 0.88fr;
-      gap:34px;
-      align-items:center;
+      grid-template-columns: 1.08fr 0.92fr;
+      gap: 22px;
+      align-items:start;
     }
 
-    .kicker{
+    .heroBadge{
       display:inline-flex;
       align-items:center;
       gap:10px;
-      padding:10px 12px;
-      border-radius:999px;
-      border:1px solid var(--line);
-      background:#ffffff;
-      box-shadow:0 14px 34px rgba(2,6,23,0.06);
-      color:var(--muted);
-      font-size:13px;
-      font-weight:700;
-    }
-    .kickerIcon{
-      width:22px;height:22px;border-radius:10px;
-      background:rgba(37,99,235,0.12);
-      display:grid;place-items:center;
-      border:1px solid rgba(37,99,235,0.18);
-      color:var(--primary);
-      font-weight:900;
+      padding: 10px 12px;
+      border-radius: 999px;
+      border: 1px solid var(--blueLine);
+      background: var(--blueSoft);
+      color: var(--ink);
+      font-size: 13px;
+      font-weight: 900;
+      user-select:none;
+      width: fit-content;
     }
 
-    h1{
-      margin:16px 0 14px;
-      font-size:clamp(34px, 4vw, 52px);
-      line-height:1.05;
-      letter-spacing:-0.03em;
+    .lead{
+      margin-top: 16px;
+      color: var(--muted);
+      font-size: clamp(16px, 1.25vw, 19px);
+      max-width: 80ch;
     }
-    .accent{
-      color: var(--primary);
-      font-weight:800;
-    }
-    .heroP{
-      margin:0 0 18px;
-      font-size:clamp(16px, 1.35vw, 19px);
-      color:var(--muted);
-      max-width:62ch;
-    }
-    .heroNote{
-      margin:10px 0 0;
-      font-size:14px;
-      color:var(--muted);
-      max-width:70ch;
-    }
-    .heroNote a{
-      color:var(--primary);
-      text-decoration:none;
-      font-weight:800;
-    }
-    .heroNote a:hover{text-decoration:underline}
 
-    .microTrust{
+    .heroActions{
+      margin-top: 22px;
       display:flex;
       flex-wrap:wrap;
-      gap:10px;
-      margin-top:18px;
-      color:var(--muted);
-      font-size:13px;
-    }
-    .microItem{
-      display:inline-flex;
+      gap: 12px;
       align-items:center;
-      gap:8px;
-      padding:10px 12px;
-      border-radius:999px;
-      background:#ffffff;
-      border:1px solid var(--line);
     }
-    .check{
-      width:18px;height:18px;border-radius:999px;
-      background:rgba(37,99,235,0.12);
-      display:grid;place-items:center;
-      border:1px solid rgba(37,99,235,0.18);
-      font-weight:900;
-      color:var(--primary);
-      font-size:12px;
+    .softLink{
+      text-decoration:none;
+      color: var(--muted);
+      font-weight: 900;
+      border-bottom: 1px solid rgba(80,97,115,0.35);
+      padding-bottom: 2px;
     }
+    .softLink:hover{color: var(--ink); border-bottom-color: rgba(11,18,32,0.35)}
 
-    .heroCard{
-      background:#ffffff;
-      border:1px solid var(--line);
-      border-radius:var(--radius);
-      box-shadow:var(--shadow);
+    /* Surprise layout: a tall "phone" onboarding canvas */
+    .phone{
+      border: 1px solid var(--line);
+      background: #fff;
+      border-radius: var(--r40);
+      box-shadow: var(--shadow);
       overflow:hidden;
     }
-    .heroCardHeader{
-      padding:18px 18px 14px;
+    .phoneTop{
+      padding: 18px 18px 14px;
+      border-bottom: 1px solid var(--line);
       display:flex;
+      align-items:center;
       justify-content:space-between;
-      align-items:flex-start;
-      gap:14px;
-      border-bottom:1px solid var(--line);
-      background:#ffffff;
+      gap: 12px;
     }
-    .heroCardHeader strong{font-size:14px}
-    .heroCardHeader span{display:block; font-size:12px; color:var(--muted); margin-top:2px}
-    .signal{
+    .app{
+      display:flex;
+      align-items:center;
+      gap: 12px;
+    }
+    .appIcon{
+      width: 42px;height:42px;border-radius: 18px;
+      background: var(--blue);
+      color:#fff;
+      display:grid;
+      place-items:center;
+      font-weight: 900;
+      box-shadow: 0 14px 30px rgba(36,94,234,0.22);
+      user-select:none;
+    }
+    .app strong{display:block; font-size: 14px}
+    .app span{display:block; margin-top:3px; font-size: 12px; color: var(--muted); font-weight: 700}
+
+    .stage{
       display:inline-flex;
       align-items:center;
-      gap:8px;
-      padding:10px 12px;
-      border-radius:999px;
-      background:#fff;
-      border:1px solid var(--line);
-      color:var(--muted);
-      font-size:12px;
-      font-weight:800;
+      gap: 10px;
+      padding: 10px 12px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: var(--soft2);
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 900;
+      user-select:none;
       white-space:nowrap;
     }
-    .signalDot{
-      width:9px;height:9px;border-radius:999px;
-      background: var(--primary);
-      box-shadow:0 0 0 5px rgba(37,99,235,0.08);
-    }
-    .heroCardBody{
-      padding:18px;
+
+    .phoneBody{
+      padding: 18px;
       display:grid;
-      gap:14px;
+      gap: 14px;
+      background: var(--soft);
     }
-    .meter{
-      background:rgba(2,6,23,0.03);
-      border:1px solid var(--line);
-      border-radius:16px;
-      padding:14px;
-      display:grid;
-      gap:10px;
+
+    .card{
+      border: 1px solid rgba(11,18,32,0.10);
+      background: #fff;
+      border-radius: var(--r32);
+      box-shadow: 0 12px 32px rgba(2,6,23,0.06);
+      padding: 16px;
     }
-    .meterTop{
+
+    .cardHead{
       display:flex;
+      align-items:flex-start;
       justify-content:space-between;
-      align-items:center;
-      gap:10px;
+      gap: 12px;
       flex-wrap:wrap;
     }
-    .meterTop strong{font-size:13px}
-    .meterTop span{font-size:13px;color:var(--muted)}
-    .bar{
-      height:10px;border-radius:999px;
-      background:rgba(2,6,23,0.06);
-      overflow:hidden;
-      border:1px solid rgba(2,6,23,0.06);
-    }
-    .bar > div{
-      height:100%;
-      width:72%;
-      border-radius:999px;
-      background: var(--primary);
-    }
-    .list{
-      margin:0;
-      padding:0;
-      list-style:none;
-      display:grid;
-      gap:10px;
-    }
-    .li{
-      display:flex;
-      gap:10px;
-      align-items:flex-start;
-      padding:12px 12px;
-      border-radius:14px;
-      border:1px solid var(--line);
-      background:#fff;
-    }
-    .liIcon{
-      width:22px;height:22px;border-radius:10px;
-      display:grid;place-items:center;
-      background:rgba(2,6,23,0.03);
-      border:1px solid rgba(2,6,23,0.08);
-      font-weight:900;
-      font-size:12px;
-      flex:0 0 auto;
-      color:#16a34a;
-    }
-    .liText{
-      font-size:15px;
-      color:var(--muted);
-      margin-top:-1px;
-      line-height:1.55;
-    }
-    .liText strong{color:var(--text)}
+    .cardHead strong{font-size: 13px; font-weight: 900}
+    .cardHead span{font-size: 12px; color: var(--muted); font-weight: 900}
 
-    .section{
-      padding:70px 0;
-    }
-    .sectionTight{padding:52px 0;}
-    .sectionHeader{
-      display:flex;
-      flex-direction:column;
-      gap:10px;
-      margin-bottom:26px;
-    }
-    .sectionHeader h2{
-      margin:0;
-      font-size:clamp(26px, 2.6vw, 38px);
-      letter-spacing:-0.02em;
-      line-height:1.12;
-    }
-    .sectionHeader p{
-      margin:0;
-      color:var(--muted);
-      font-size:17px;
-      max-width:74ch;
-    }
-
-    .grid2{
+    .pickGrid{
+      margin-top: 12px;
       display:grid;
       grid-template-columns: 1fr 1fr;
-      gap:18px;
+      gap: 10px;
     }
-    .panel{
-      border-radius:var(--radius);
-      border:1px solid var(--line);
-      background:#ffffff;
-      box-shadow:var(--shadow2);
-      padding:24px;
-      overflow:hidden;
-    }
-    .panel h3{
-      margin:0 0 10px;
-      font-size:19px;
-      letter-spacing:-0.01em;
-    }
-    .panel p{margin:0 0 16px; color:var(--muted); font-size:15px; line-height:1.6}
-
-    .steps{
+    .pick{
+      border: 1px solid rgba(11,18,32,0.12);
+      background: #fff;
+      border-radius: 22px;
+      padding: 12px;
+      cursor:pointer;
+      user-select:none;
+      transition: transform .14s ease, border-color .14s ease, background .14s ease;
       display:grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap:16px;
-      margin-top:18px;
+      gap: 6px;
+      min-height: 92px;
     }
-    .stepCard{
-      border-radius:var(--radius);
-      border:1px solid var(--line);
-      background:#fff;
-      box-shadow:var(--shadow2);
-      padding:20px;
-      min-height:178px;
+    .pick:hover{transform: translateY(-1px)}
+    .pick.isOn{
+      border-color: rgba(36,94,234,0.40);
+      background: rgba(36,94,234,0.06);
     }
-    .stepNum{
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      width:42px;height:42px;border-radius:16px;
-      background:rgba(37,99,235,0.10);
-      border:1px solid rgba(37,99,235,0.18);
-      color:var(--primary);
-      font-weight:900;
-      letter-spacing:0.2px;
-    }
-    .stepCard h4{
-      margin:14px 0 8px;
-      font-size:16px;
-      letter-spacing:-0.01em;
-    }
-    .stepCard p{
-      margin:0;
-      color:var(--muted);
-      font-size:14px;
-      max-width:44ch;
-      line-height:1.55;
-    }
-
-    .proofRow{
-      display:grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap:16px;
-      margin-top:18px;
-    }
-    .quote{
-      border-radius:var(--radius);
-      border:1px solid var(--line);
-      background:#fff;
-      box-shadow:var(--shadow2);
-      padding:20px;
-      display:grid;
-      gap:12px;
-      min-height:170px;
-    }
-    .quote p{margin:0; color:var(--muted); font-size:15px; line-height:1.6}
-    .who{
+    .pickTop{
       display:flex;
       align-items:center;
-      gap:10px;
-      margin-top:auto;
+      gap: 10px;
+      font-weight: 900;
+      font-size: 13px;
+      letter-spacing:-0.01em;
     }
-    .avatar{
-      width:38px;height:38px;border-radius:14px;
-      background: rgba(37,99,235,0.10);
-      border:1px solid rgba(37,99,235,0.16);
+    .pickEmoji{
+      width: 34px;height:34px;border-radius: 16px;
+      display:grid;place-items:center;
+      background: rgba(36,94,234,0.10);
+      border: 1px solid rgba(36,94,234,0.18);
+      font-size: 18px;
+      user-select:none;
     }
-    .who strong{font-size:13px}
-    .who span{display:block; font-size:12px; color:var(--muted); margin-top:1px}
+    .pick p{
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.55;
+      margin: 0;
+    }
 
-    .faq{
-      border-radius:var(--radius);
-      border:1px solid var(--line);
-      background:#fff;
-      box-shadow:var(--shadow2);
-      overflow:hidden;
+    .meterWrap{
+      margin-top: 12px;
+      display:grid;
+      gap: 8px;
     }
-    details{border-bottom:1px solid var(--line)}
-    details:last-child{border-bottom:none}
-    summary{
-      cursor:pointer;
-      padding:18px 20px;
-      list-style:none;
+    input[type="range"]{width:100%; accent-color: var(--blue)}
+    .meterLabels{
+      display:flex;
+      justify-content:space-between;
+      gap: 12px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 900;
+    }
+
+    .result{
+      margin-top: 12px;
+      border: 1px solid rgba(11,18,32,0.12);
+      background: var(--soft2);
+      border-radius: 22px;
+      padding: 14px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.65;
+    }
+    .result strong{color: var(--ink)}
+
+    .phoneFoot{
+      padding: 16px 18px 18px;
+      border-top: 1px solid var(--line);
+      background:#fff;
       display:flex;
       align-items:center;
       justify-content:space-between;
-      gap:18px;
-      font-weight:800;
-      font-size:14px;
+      gap: 12px;
+      flex-wrap:wrap;
+    }
+    .micro{
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 800;
+      max-width: 48ch;
+    }
+
+    /* Sections */
+    .section{
+      padding: 78px 0;
+      border-top: 1px solid var(--line);
+      background: var(--bg);
+    }
+    .alt{background: var(--soft)}
+    .head{
+      display:grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 18px;
+      align-items:start;
+      margin-bottom: 18px;
+    }
+    .head p{
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.8;
+      max-width: 94ch;
+    }
+
+    .grid3{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 18px;
+    }
+    .box{
+      border: 1px solid rgba(11,18,32,0.12);
+      background:#fff;
+      border-radius: 34px;
+      box-shadow: var(--shadow2);
+      padding: 22px;
+      display:grid;
+      gap: 10px;
+      min-height: 220px;
+    }
+    .icon{
+      width:46px;height:46px;border-radius: 18px;
+      background: rgba(36,94,234,0.10);
+      border: 1px solid rgba(36,94,234,0.20);
+      display:grid;
+      place-items:center;
+      font-size: 18px;
+      user-select:none;
+    }
+    .box p{color: var(--muted); font-size: 15px; line-height: 1.7}
+
+    /* Mini session preview */
+    .session{
+      border: 1px solid rgba(11,18,32,0.12);
+      background:#fff;
+      border-radius: 40px;
+      box-shadow: var(--shadow2);
+      overflow:hidden;
+      margin-top: 18px;
+    }
+    .sessionTop{
+      padding: 18px 20px 16px;
+      border-bottom: 1px solid rgba(11,18,32,0.10);
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap: 12px;
+      flex-wrap:wrap;
+    }
+    .sessionTop strong{font-size: 14px; font-weight: 900}
+    .sessionTop span{color: var(--muted); font-size: 12px; font-weight: 900}
+
+    .sessionBody{
+      padding: 18px 20px 20px;
+      display:grid;
+      gap: 14px;
+      background: var(--soft2);
+    }
+    .bubbleCol{display:grid; gap: 10px}
+    .bubble{
+      width: fit-content;
+      max-width: min(560px, 100%);
+      border: 1px solid rgba(11,18,32,0.12);
+      border-radius: 22px;
+      padding: 12px 12px;
+      background:#fff;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.65;
+    }
+    .bubble strong{color: var(--ink)}
+    .bubble.user{
+      margin-left:auto;
+      background: rgba(36,94,234,0.08);
+      border-color: rgba(36,94,234,0.22);
+      color: var(--ink);
+    }
+
+    .promptGrid{
+      display:flex;
+      flex-wrap:wrap;
+      gap: 10px;
+    }
+    .prompt{
+      border: 1px solid rgba(11,18,32,0.12);
+      background:#fff;
+      color: var(--muted);
+      font-weight: 900;
+      font-size: 12px;
+      padding: 10px 12px;
+      border-radius: 999px;
+      cursor:pointer;
+      user-select:none;
+      transition: transform .14s ease, border-color .14s ease, background .14s ease, color .14s ease;
+    }
+    .prompt:hover{transform: translateY(-1px)}
+    .prompt.isOn{
+      border-color: rgba(36,94,234,0.40);
+      background: rgba(36,94,234,0.08);
+      color: var(--ink);
+    }
+
+    /* Panic tap grid */
+    .tapGrid{
+      margin-top: 18px;
+      display:grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: 16px;
+      align-items:start;
+    }
+    .tapList{
+      border: 1px solid rgba(11,18,32,0.12);
+      background:#fff;
+      border-radius: 34px;
+      box-shadow: var(--shadow2);
+      padding: 16px;
+      display:grid;
+      gap: 10px;
+    }
+    .tapBtn{
+      border: 1px solid rgba(11,18,32,0.12);
+      background: var(--soft2);
+      border-radius: 22px;
+      padding: 12px 12px;
+      cursor:pointer;
+      user-select:none;
+      transition: transform .14s ease, border-color .14s ease, background .14s ease;
+      display:flex;
+      align-items:center;
+      gap: 10px;
+      font-weight: 900;
+      font-size: 13px;
+      color: var(--ink);
+    }
+    .tapBtn:hover{transform: translateY(-1px)}
+    .tapBtn.isOn{
+      border-color: rgba(36,94,234,0.40);
+      background: rgba(36,94,234,0.07);
+    }
+    .tapEmoji{
+      width: 34px;height:34px;border-radius: 16px;
+      display:grid;place-items:center;
+      background: rgba(36,94,234,0.10);
+      border: 1px solid rgba(36,94,234,0.18);
+      font-size: 18px;
+      user-select:none;
+      flex:0 0 auto;
+    }
+
+    .tapPanel{
+      border: 1px solid rgba(11,18,32,0.12);
+      background:#fff;
+      border-radius: 34px;
+      box-shadow: var(--shadow2);
+      padding: 20px;
+      min-height: 220px;
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.8;
+    }
+    .tapPanel strong{color: var(--ink)}
+
+    /* Progress slider */
+    .progressWrap{
+      margin-top: 18px;
+      border: 1px solid rgba(11,18,32,0.12);
+      background:#fff;
+      border-radius: 40px;
+      box-shadow: var(--shadow2);
+      overflow:hidden;
+    }
+    .progressTop{
+      padding: 18px 20px 16px;
+      border-bottom: 1px solid rgba(11,18,32,0.10);
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap: 12px;
+      flex-wrap:wrap;
+    }
+    .progressTop strong{font-size: 14px; font-weight: 900}
+    .progressTop span{color: var(--muted); font-size: 12px; font-weight: 900}
+
+    .progressBody{
+      padding: 18px 20px 20px;
+      background: var(--soft2);
+      display:grid;
+      gap: 14px;
+    }
+    .progressCards{
+      display:grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 12px;
+    }
+    .pCard{
+      border: 1px solid rgba(11,18,32,0.12);
+      background:#fff;
+      border-radius: 26px;
+      padding: 16px;
+      display:grid;
+      gap: 8px;
+      min-height: 150px;
+    }
+    .pCard strong{color: var(--ink)}
+    .pCard p{color: var(--muted); font-size: 14px; line-height: 1.7}
+
+    /* FAQ */
+    .faq{
+      margin-top: 18px;
+      border: 1px solid rgba(11,18,32,0.12);
+      border-radius: 40px;
+      background:#fff;
+      box-shadow: var(--shadow2);
+      overflow:hidden;
+    }
+    details{border-top: 1px solid rgba(11,18,32,0.08)}
+    details:first-child{border-top:none}
+    summary{
+      cursor:pointer;
+      list-style:none;
+      padding: 18px 20px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap: 14px;
+      font-weight: 900;
+      font-size: 14px;
     }
     summary::-webkit-details-marker{display:none}
     .chev{
-      width:34px;height:34px;border-radius:14px;
-      display:grid;place-items:center;
-      border:1px solid var(--line);
-      background:rgba(37,99,235,0.08);
-      color:var(--muted);
-      transition: transform .18s ease;
-      flex:0 0 auto;
+      width: 40px;height: 40px;
+      border-radius: 18px;
+      border: 1px solid rgba(11,18,32,0.10);
+      background: var(--soft2);
+      display:grid;
+      place-items:center;
+      color: var(--muted);
+      transition: transform .16s ease;
+      flex: 0 0 auto;
+      user-select:none;
     }
-    details[open] .chev{transform:rotate(180deg)}
-    .answer{
-      padding:0 20px 18px;
-      color:var(--muted);
-      font-size:14px;
-      max-width:92ch;
-      line-height:1.6;
+    details[open] .chev{transform: rotate(180deg)}
+    .ans{
+      padding: 0 20px 18px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.8;
+      max-width: 92ch;
     }
 
+    /* Final */
     .final{
-      padding:72px 0 92px;
-      background:#ffffff;
+      padding: 84px 0 96px;
+      border-top: 1px solid var(--line);
+      background: var(--soft);
     }
     .finalBox{
-      border-radius:calc(var(--radius) + 6px);
-      border:1px solid var(--line);
-      background:#ffffff;
-      box-shadow:var(--shadow);
-      padding:34px;
+      border: 1px solid rgba(11,18,32,0.12);
+      background:#fff;
+      border-radius: 44px;
+      box-shadow: var(--shadow);
+      padding: 36px;
       display:grid;
-      grid-template-columns: 1fr 0.9fr;
-      gap:22px;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 22px;
       align-items:center;
-      overflow:hidden;
     }
-    .finalBox h2{margin:0; font-size:clamp(24px, 2.4vw, 34px); line-height:1.12; letter-spacing:-0.02em}
-    .finalBox p{margin:10px 0 0; color:var(--muted); font-size:16px; max-width:70ch; line-height:1.6}
-    .finalAside{display:grid; gap:12px; justify-items:start;}
-    .finePrint{font-size:12px; color:var(--muted); margin:0; max-width:54ch; line-height:1.55}
-
-    /* Reveal */
-    .reveal{opacity:0; transform:translateY(10px); transition: opacity .55s ease, transform .55s ease;}
-    .reveal.show{opacity:1; transform:translateY(0);}
+    .fine{
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 800;
+      line-height: 1.7;
+      max-width: 70ch;
+    }
 
     @media (max-width: 980px){
-      .heroGrid{grid-template-columns:1fr; gap:18px}
-      .steps{grid-template-columns:1fr 1fr}
-      .proofRow{grid-template-columns:1fr}
-      .grid2{grid-template-columns:1fr}
-      .finalBox{grid-template-columns:1fr}
+      .heroGrid{grid-template-columns: 1fr; gap: 18px}
+      .head{grid-template-columns: 1fr}
+      .grid3{grid-template-columns: 1fr}
+      .tapGrid{grid-template-columns: 1fr}
+      .progressCards{grid-template-columns: 1fr}
+      .finalBox{grid-template-columns: 1fr}
     }
     @media (max-width: 520px){
+      .container{width: min(var(--container), calc(100% - 28px))}
       .btn{width:100%}
-      summary{padding:16px 16px}
-      .answer{padding:0 16px 16px}
-      .panel{padding:20px}
-      .hero{padding:54px 0 22px}
-      .section{padding:56px 0}
-      .final{padding:56px 0 70px}
+      .hero{padding: 56px 0 40px}
+      .section{padding: 60px 0}
+      .final{padding: 60px 0 76px}
+      summary{padding: 16px 16px}
+      .ans{padding: 0 16px 16px}
+      .phoneBody{padding: 16px}
+      .phoneTop{padding: 16px}
+      .phoneFoot{padding: 14px 16px 16px}
+      .sessionTop, .sessionBody, .progressTop, .progressBody{padding-left: 16px; padding-right: 16px}
+      .tapPanel{padding: 16px}
     }
   </style>
 </head>
@@ -466,343 +664,390 @@
     <section class="hero">
       <div class="container">
         <div class="heroGrid">
-          <div class="reveal">
-            <div class="kicker">
-              <span class="kickerIcon" aria-hidden="true">✦</span>
-              Private support for anxiety and panic
-            </div>
 
-            <h1>
-              Your mind can feel <span class="accent">quiet</span> again
+          <div>
+            <div class="heroBadge">✨ Calm that feels real</div>
+
+            <h1 style="margin-top:16px">
+              Your mind can get <span class="accent">quiet</span> again
             </h1>
 
-            <p class="heroP">
-              If anxiety has been sitting in the background of your day, if your thoughts keep looping, and if your body stays tense even when nothing is wrong, you are not broken. You are stuck in a pattern that can be changed.
+            <p class="lead">
+              Anxiety can make normal life feel unsafe.
+              Panic can feel like you are trapped inside your body.
+              Support is not about becoming a different person.
+              It is about getting your life back.
             </p>
 
-            <a class="btn btnPrimary js-cta" href="#" aria-label="Get professional support">
-              Get Professional Support
-            </a>
+            <div class="chipRow" aria-label="Trust chips">
+              <div class="chip"><span class="dot" aria-hidden="true"></span>🔒 Private</div>
+              <div class="chip"><span class="dot" aria-hidden="true"></span>🧑‍⚕️ Professional support</div>
+              <div class="chip"><span class="dot" aria-hidden="true"></span>🧠 Anxiety and panic focus</div>
+            </div>
 
-            <p class="heroNote">
-              Not sure yet. <a href="#truth" aria-label="Read the page">Read this first</a>
-            </p>
-
-            <div class="microTrust" aria-label="Trust badges">
-              <div class="microItem"><span class="check" aria-hidden="true">✓</span>Confidential</div>
-              <div class="microItem"><span class="check" aria-hidden="true">✓</span>Private</div>
-              <div class="microItem"><span class="check" aria-hidden="true">✓</span>Professional</div>
-              <div class="microItem"><span class="check" aria-hidden="true">✓</span>Secure</div>
+            <div class="heroActions">
+              <!-- CTA 1 -->
+              <a class="btn btnPrimary jsCta" href="#" aria-label="Get professional support">
+                Get Professional Support
+              </a>
+              <a class="softLink" href="#preview" aria-label="See a quick preview">
+                See a 20 second preview
+              </a>
             </div>
           </div>
 
-          <div class="heroCard reveal" aria-label="Relief preview card">
-            <div class="heroCardHeader">
-              <div>
-                <strong>What you want is relief</strong>
-                <span>and the feeling that you are in control again</span>
-              </div>
-              <div class="signal">
-                <span class="signalDot" aria-hidden="true"></span>
-                Support available
-              </div>
-            </div>
-
-            <div class="heroCardBody">
-              <div class="meter">
-                <div class="meterTop">
-                  <strong>What it feels like right now</strong>
-                  <span>common starting point</span>
+          <aside class="phone" aria-label="Interactive onboarding preview">
+            <div class="phoneTop">
+              <div class="app">
+                <div class="appIcon">OT</div>
+                <div>
+                  <strong>Quick Preview</strong>
+                  <span>Choose and watch it adapt</span>
                 </div>
-                <div class="bar" aria-hidden="true"><div></div></div>
-                <ul class="list" aria-label="Current experience">
-                  <li class="li">
-                    <div class="liIcon" aria-hidden="true">✓</div>
-                    <div class="liText"><strong>Thoughts</strong> that repeat and do not stop</div>
-                  </li>
-                  <li class="li">
-                    <div class="liIcon" aria-hidden="true">✓</div>
-                    <div class="liText"><strong>Body</strong> tension that never fully releases</div>
-                  </li>
-                  <li class="li">
-                    <div class="liIcon" aria-hidden="true">✓</div>
-                    <div class="liText"><strong>Sleep</strong> that feels light or unsafe</div>
-                  </li>
-                </ul>
               </div>
+              <div class="stage" id="stageLabel">Step 1</div>
+            </div>
 
-              <div class="meter">
-                <div class="meterTop">
-                  <strong>What relief starts to look like</strong>
-                  <span>over time</span>
+            <div class="phoneBody" id="preview">
+
+              <div class="card" aria-label="Pick your today">
+                <div class="cardHead">
+                  <strong>Step 1 Pick your today</strong>
+                  <span id="todayLabel">🫀 Panic</span>
                 </div>
-                <ul class="list" aria-label="Relief outcomes">
-                  <li class="li">
-                    <div class="liIcon" aria-hidden="true">✓</div>
-                    <div class="liText"><strong>Quieter</strong> mind during the day</div>
-                  </li>
-                  <li class="li">
-                    <div class="liIcon" aria-hidden="true">✓</div>
-                    <div class="liText"><strong>Faster</strong> recovery when fear spikes</div>
-                  </li>
-                  <li class="li">
-                    <div class="liIcon" aria-hidden="true">✓</div>
-                    <div class="liText"><strong>Sleep</strong> that feels more stable</div>
-                  </li>
-                </ul>
+
+                <div class="pickGrid" id="todayGrid" role="group" aria-label="Today picks">
+                  <div class="pick isOn" data_key="panic" role="button" tabindex="0">
+                    <div class="pickTop"><div class="pickEmoji">🫀</div> Panic</div>
+                    <p>Fast heart, short breath, fear spikes</p>
+                  </div>
+                  <div class="pick" data_key="thoughts" role="button" tabindex="0">
+                    <div class="pickTop"><div class="pickEmoji">🧠</div> Thoughts</div>
+                    <p>Loops that feel impossible to stop</p>
+                  </div>
+                  <div class="pick" data_key="sleep" role="button" tabindex="0">
+                    <div class="pickTop"><div class="pickEmoji">🌙</div> Sleep</div>
+                    <p>Night fear, light sleep, alert nights</p>
+                  </div>
+                  <div class="pick" data_key="avoid" role="button" tabindex="0">
+                    <div class="pickTop"><div class="pickEmoji">🚪</div> Avoidance</div>
+                    <p>Life getting smaller over time</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card" aria-label="Energy meter">
+                <div class="cardHead">
+                  <strong>Step 2 How much energy do you have</strong>
+                  <span id="energyLabel">Medium</span>
+                </div>
+
+                <div class="meterWrap">
+                  <input id="energyRange" type="range" min="0" max="100" value="55" aria-label="Energy slider" />
+                  <div class="meterLabels">
+                    <span>Low</span>
+                    <span>High</span>
+                  </div>
+                </div>
+
+                <div class="result" id="energyText">
+                  <strong>Medium</strong> is enough.
+                  We keep the plan simple and repeatable.
+                </div>
+              </div>
+
+              <div class="card" aria-label="Your next steps">
+                <div class="cardHead">
+                  <strong>Step 3 Your next steps</strong>
+                  <span>Updates instantly</span>
+                </div>
+
+                <div class="result" id="planBox">
+                  <strong>Right now</strong> calm the body alarm first.
+                  <br><br>
+                  <strong>In the moment</strong> name sensations as a surge and let the wave peak and fall.
+                  <br><br>
+                  <strong>This week</strong> practice one small safe exposure that rebuilds confidence.
+                </div>
+              </div>
+
+            </div>
+
+            <div class="phoneFoot">
+              <div class="micro">
+                This is a preview.
+                A professional can tailor it to your exact situation.
               </div>
             </div>
+          </aside>
 
-          </div>
         </div>
       </div>
     </section>
 
-    <section class="sectionTight" id="truth">
+    <section class="section alt" id="what">
       <div class="container">
-        <div class="sectionHeader reveal">
-          <h2>Why anxiety keeps coming back</h2>
-          <p>
-            Most people blame themselves. The truth is simpler. Anxiety becomes a loop. Thoughts trigger body alarm. Body alarm triggers more thoughts. Avoidance grows, and the nervous system learns to stay on alert.
-          </p>
-        </div>
-
-        <div class="grid2">
-          <div class="panel reveal">
-            <h3>What makes it worse</h3>
-            <p>
-              You try to calm down by force. You search for answers. You monitor symptoms. You wait for certainty. It feels logical, but it accidentally feeds the loop.
-            </p>
-            <ul class="list" aria-label="What makes it worse list">
-              <li class="li">
-                <div class="liIcon" aria-hidden="true">✓</div>
-                <div class="liText"><strong>Checking</strong> your body for danger signals</div>
-              </li>
-              <li class="li">
-                <div class="liIcon" aria-hidden="true">✓</div>
-                <div class="liText"><strong>Arguing</strong> with every thought until you are exhausted</div>
-              </li>
-              <li class="li">
-                <div class="liIcon" aria-hidden="true">✓</div>
-                <div class="liText"><strong>Avoiding</strong> situations that could trigger fear</div>
-              </li>
-            </ul>
-          </div>
-
-          <div class="panel reveal">
-            <h3>What starts changing it</h3>
-            <p>
-              Relief becomes realistic when you work on the loop with a plan. You learn what to do when fear rises, how to calm the body, and how to respond to thoughts without feeding them.
-            </p>
-            <ul class="list" aria-label="What helps list">
-              <li class="li">
-                <div class="liIcon" aria-hidden="true">✓</div>
-                <div class="liText"><strong>Clarity</strong> on your pattern and triggers</div>
-              </li>
-              <li class="li">
-                <div class="liIcon" aria-hidden="true">✓</div>
-                <div class="liText"><strong>Skills</strong> for panic spikes and body tension</div>
-              </li>
-              <li class="li">
-                <div class="liIcon" aria-hidden="true">✓</div>
-                <div class="liText"><strong>Practice</strong> that builds confidence slowly</div>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <section class="section" id="how">
-      <div class="container">
-        <div class="sectionHeader reveal">
-          <h2>A simple path from pressure to control</h2>
-          <p>
-            No hype. No magic. Just structure. You start where you are and you build calm that actually holds when life gets stressful.
-          </p>
-        </div>
-
-        <div class="steps">
-          <div class="stepCard reveal">
-            <div class="stepNum">01</div>
-            <h4>Understand your loop</h4>
-            <p>Find the exact moments thoughts and body reactions feed each other.</p>
-          </div>
-
-          <div class="stepCard reveal">
-            <div class="stepNum">02</div>
-            <h4>Calm the body</h4>
-            <p>Lower the alarm signals so fear stops feeling urgent and endless.</p>
-          </div>
-
-          <div class="stepCard reveal">
-            <div class="stepNum">03</div>
-            <h4>Train the response</h4>
-            <p>Learn how to handle thoughts without chasing certainty or reassurance.</p>
-          </div>
-
-          <div class="stepCard reveal">
-            <div class="stepNum">04</div>
-            <h4>Rebuild confidence</h4>
-            <p>Return to life with less avoidance and more trust in yourself.</p>
-          </div>
-        </div>
-
-        <div style="height:18px"></div>
-
-        <div class="panel reveal">
-          <h3>What you should notice over time</h3>
-          <p>
-            The goal is not to never feel anxious. The goal is to stop being controlled by it.
-          </p>
-          <ul class="list" aria-label="Expected outcomes">
-            <li class="li">
-              <div class="liIcon" aria-hidden="true">✓</div>
-              <div class="liText"><strong>Less</strong> mental noise during normal days</div>
-            </li>
-            <li class="li">
-              <div class="liIcon" aria-hidden="true">✓</div>
-              <div class="liText"><strong>Fewer</strong> panic spikes, and faster recovery</div>
-            </li>
-            <li class="li">
-              <div class="liIcon" aria-hidden="true">✓</div>
-              <div class="liText"><strong>More</strong> stable sleep and less night fear</div>
-            </li>
-            <li class="li">
-              <div class="liIcon" aria-hidden="true">✓</div>
-              <div class="liText"><strong>More</strong> control over reactions in the moment</div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="sectionTight">
-      <div class="container">
-        <div class="sectionHeader reveal">
-          <h2>What people say when they finally feel lighter</h2>
-          <p>
-            Not a dramatic transformation. More like quiet returning, one normal day at a time.
-          </p>
-        </div>
-
-        <div class="proofRow">
-          <div class="quote reveal">
-            <p>
-              I still have stressful days, but I do not spiral the way I used to. That change alone gave me my life back.
-            </p>
-            <div class="who">
-              <div class="avatar" aria-hidden="true"></div>
-              <div>
-                <strong>Client story</strong>
-                <span>overthinking relief</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="quote reveal">
-            <p>
-              Sleep was the first win. When my nights got calmer, everything else became easier to handle.
-            </p>
-            <div class="who">
-              <div class="avatar" aria-hidden="true"></div>
-              <div>
-                <strong>Client story</strong>
-                <span>sleep support</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="quote reveal">
-            <p>
-              I stopped feeling like I had to fix myself alone. Having a plan made it feel possible again.
-            </p>
-            <div class="who">
-              <div class="avatar" aria-hidden="true"></div>
-              <div>
-                <strong>Client story</strong>
-                <span>confidence rebuilt</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="faq">
-      <div class="container">
-        <div class="sectionHeader reveal">
-          <h2>Questions you might be avoiding</h2>
-          <p>
-            If you are hesitating, it usually comes from one of these fears.
-          </p>
-        </div>
-
-        <div class="faq reveal">
-          <details>
-            <summary>
-              What if I am not struggling enough
-              <span class="chev" aria-hidden="true">⌄</span>
-            </summary>
-            <div class="answer">
-              If anxiety is changing your sleep, focus, mood, or relationships, that is enough. Most people wait too long because they think it has to be worse. It does not.
-            </div>
-          </details>
-
-          <details>
-            <summary>
-              What if support does not work for me
-              <span class="chev" aria-hidden="true">⌄</span>
-            </summary>
-            <div class="answer">
-              That fear is common after trying many things. The difference is structure and guidance. You are not collecting tips. You are following a plan and adjusting it to your reality.
-            </div>
-          </details>
-
-          <details>
-            <summary>
-              Is it private
-              <span class="chev" aria-hidden="true">⌄</span>
-            </summary>
-            <div class="answer">
-              Yes. Privacy is a core part of the experience. Many people choose online support because it feels safer, simpler, and more discreet.
-            </div>
-          </details>
-
-          <details>
-            <summary>
-              I feel scared to start
-              <span class="chev" aria-hidden="true">⌄</span>
-            </summary>
-            <div class="answer">
-              Starting can feel intense because it makes the problem feel real. But the first step is small. You begin at a pace that respects your nervous system and builds safety.
-            </div>
-          </details>
-        </div>
-      </div>
-    </section>
-
-    <section class="final">
-      <div class="container">
-        <div class="finalBox reveal">
+        <div class="head">
           <div>
-            <h2>Ready to feel calm again</h2>
+            <h2>What you want is not advice</h2>
             <p>
-              You do not need to keep white knuckling through the day. If anxiety is stealing your peace, start building real control.
+              You want relief that holds up when fear hits.
+              You want to trust your body again.
+              You want normal days back.
+              Not perfect days.
+              Just normal.
+            </p>
+          </div>
+          <div>
+            <h2>What works is structure</h2>
+            <p>
+              Calm the body first.
+              Respond to thoughts without chasing certainty.
+              Reduce avoidance step by step.
+              Confidence grows through repetition.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid3" aria-label="Core outcomes">
+          <div class="box">
+            <div class="icon" aria-hidden="true">🫧</div>
+            <h3>A calmer body</h3>
+            <p>
+              When your body feels safer, your mind stops scanning for danger.
+              Most relief starts here.
             </p>
           </div>
 
-          <div class="finalAside">
-            <a class="btn btnPrimary js-cta" href="#" aria-label="Final call to action">
+          <div class="box">
+            <div class="icon" aria-hidden="true">🧭</div>
+            <h3>A clear response plan</h3>
+            <p>
+              When panic rises or thoughts loop, you know what to do.
+              You stop reacting on autopilot.
+            </p>
+          </div>
+
+          <div class="box">
+            <div class="icon" aria-hidden="true">🌿</div>
+            <h3>A life that expands</h3>
+            <p>
+              Less avoidance.
+              Less checking.
+              More freedom to live without constant safety rituals.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="session">
+      <div class="container">
+        <div class="head">
+          <div>
+            <h2>💬 A mini session preview</h2>
+            <p>
+              Tap a prompt.
+              See how a grounded response can sound.
+              Simple.
+              Human.
+              Practical.
+            </p>
+          </div>
+          <div>
+            <h2>Why this helps</h2>
+            <p>
+              When fear hits, your brain wants certainty.
+              The goal is not certainty.
+              The goal is safety.
+            </p>
+          </div>
+        </div>
+
+        <div class="session" aria-label="Mini session">
+          <div class="sessionTop">
+            <strong>Tap a prompt</strong>
+            <span>Updates instantly</span>
+          </div>
+
+          <div class="sessionBody">
+            <div class="promptGrid" id="promptGrid" aria-label="Prompts">
+              <div class="prompt isOn" data_key="p1" role="button" tabindex="0">🫀 My chest feels tight</div>
+              <div class="prompt" data_key="p2" role="button" tabindex="0">🧠 I cannot stop thinking</div>
+              <div class="prompt" data_key="p3" role="button" tabindex="0">🌙 Nights feel unsafe</div>
+              <div class="prompt" data_key="p4" role="button" tabindex="0">🚪 I keep avoiding plans</div>
+            </div>
+
+            <div class="bubbleCol" aria-label="Chat bubbles">
+              <div class="bubble user" id="chatUser"><strong>You</strong><br>My chest feels tight and I feel panic rising.</div>
+              <div class="bubble" id="chatTherapist"><strong>Support</strong><br>Let us treat this like a surge, not a threat. Notice the tightness. Name it. Keep your body still and let the wave peak and fall. Your job is to not add fear to the sensation.</div>
+              <div class="bubble" id="chatStep"><strong>Next step</strong><br>Pick one tiny action that signals safety. Slow your pace. Relax your jaw. Unclench your hands. Stay present and let the surge pass.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="panic">
+      <div class="container">
+        <div class="head">
+          <div>
+            <h2>🧪 Panic sensations explained</h2>
+            <p>
+              Panic can feel like something is seriously wrong.
+              The sensations are real.
+              The meaning your brain gives them is the part that changes.
+            </p>
+          </div>
+          <div>
+            <h2>Tap a sensation</h2>
+            <p>
+              See a simple explanation and a calm response idea.
+              This is education, not diagnosis.
+            </p>
+          </div>
+        </div>
+
+        <div class="tapGrid" aria-label="Tap sensation grid">
+          <div class="tapList" id="tapList" aria-label="Sensation list">
+            <div class="tapBtn isOn" data_key="heart" role="button" tabindex="0"><div class="tapEmoji">🫀</div> Fast heartbeat</div>
+            <div class="tapBtn" data_key="breath" role="button" tabindex="0"><div class="tapEmoji">🌬️</div> Short breath</div>
+            <div class="tapBtn" data_key="dizzy" role="button" tabindex="0"><div class="tapEmoji">🌀</div> Dizziness</div>
+            <div class="tapBtn" data_key="heat" role="button" tabindex="0"><div class="tapEmoji">🔥</div> Heat rush</div>
+            <div class="tapBtn" data_key="shaky" role="button" tabindex="0"><div class="tapEmoji">🫨</div> Shaking</div>
+            <div class="tapBtn" data_key="numb" role="button" tabindex="0"><div class="tapEmoji">🧊</div> Numbness</div>
+          </div>
+
+          <div class="tapPanel" id="tapPanel" aria-label="Sensation panel">
+            <strong>Fast heartbeat</strong> is common in fight or flight.
+            Adrenaline raises heart rate to prepare you for action.
+            It feels scary.
+            It is designed to pass.
+            A helpful response is to name it as a surge and let it peak and fall without checking.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="progress">
+      <div class="container">
+        <div class="head">
+          <div>
+            <h2>🔁 From stuck to steady</h2>
+            <p>
+              Drag the slider.
+              Notice how the story changes.
+              Relief often looks quiet.
+              Less checking.
+              Faster recovery.
+              More space in your head.
+            </p>
+          </div>
+          <div>
+            <h2>Why this matters</h2>
+            <p>
+              Your goal is not to never feel anxious.
+              Your goal is to stop being controlled by it.
+            </p>
+          </div>
+        </div>
+
+        <div class="progressWrap" aria-label="Progress slider">
+          <div class="progressTop">
+            <strong>Move the slider</strong>
+            <span id="progLabel">Mid</span>
+          </div>
+
+          <div class="progressBody">
+            <div class="meterWrap">
+              <input id="progRange" type="range" min="0" max="100" value="52" aria-label="Progress slider" />
+              <div class="meterLabels">
+                <span>Stuck</span>
+                <span>Steady</span>
+              </div>
+            </div>
+
+            <div class="progressCards" aria-label="Progress cards">
+              <div class="pCard">
+                <strong id="mTitle">Mind</strong>
+                <p id="mText">Thoughts feel urgent and sticky. You chase certainty and replay scenarios.</p>
+              </div>
+              <div class="pCard">
+                <strong id="bTitle">Body</strong>
+                <p id="bText">Sensations feel dangerous. You monitor your body and wait for the next spike.</p>
+              </div>
+              <div class="pCard">
+                <strong id="lTitle">Life</strong>
+                <p id="lText">Plans feel risky. You avoid, delay, or rely on safety habits to get through.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq" aria-label="FAQ" style="margin-top:18px">
+          <details>
+            <summary>
+              Is this private
+              <span class="chev" aria-hidden="true">⌄</span>
+            </summary>
+            <div class="ans">
+              Privacy is a core part of online support.
+              Many people start here because it feels discreet and easier than in person sessions.
+            </div>
+          </details>
+
+          <details>
+            <summary>
+              What if I tried many things already
+              <span class="chev" aria-hidden="true">⌄</span>
+            </summary>
+            <div class="ans">
+              Many people have.
+              The difference is structure and guidance.
+              Instead of collecting tips, you build a repeatable response system you can use on hard days.
+            </div>
+          </details>
+
+          <details>
+            <summary>
+              How fast can I feel a difference
+              <span class="chev" aria-hidden="true">⌄</span>
+            </summary>
+            <div class="ans">
+              Some people feel relief quickly from having a clear plan.
+              Deeper change depends on consistency.
+              The aim is calmer recovery after fear, then fewer spirals over time.
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="final" id="start">
+      <div class="container">
+        <div class="finalBox">
+          <div>
+            <h2>Ready to take one calm step ✨</h2>
+            <p class="muted" style="margin-top:12px; font-size:16px; line-height:1.8; max-width:92ch">
+              If anxiety has been stealing your peace, you can start building control with support.
+              You do not have to carry it alone.
+            </p>
+            <div class="fine">
+              By clicking you will continue on the provider website.
+              Source tracking is preserved if present.
+            </div>
+          </div>
+
+          <div>
+            <!-- CTA 2 -->
+            <a class="btn btnPrimary jsCta" href="#" aria-label="Get professional support">
               Get Professional Support
             </a>
-            <p class="finePrint">
-              This page is not emergency care. If you feel in immediate danger, contact local emergency services.
-            </p>
-            <p class="finePrint">
-              By clicking you will be taken to the provider website to continue.
-            </p>
+            <div class="fine">
+              Two CTAs only.
+              One at the top.
+              One here.
+            </div>
           </div>
         </div>
       </div>
@@ -835,8 +1080,7 @@
       }
 
       var finalUrl = buildUrl();
-      var ctas = document.querySelectorAll(".js-cta");
-      ctas.forEach(function(a){
+      document.querySelectorAll(".jsCta").forEach(function(a){
         a.setAttribute("href", finalUrl);
         a.setAttribute("rel","noopener noreferrer");
         a.setAttribute("target","_blank");
@@ -844,17 +1088,267 @@
     })();
 
     (function(){
-      var nodes = document.querySelectorAll(".reveal");
-      if(!("IntersectionObserver" in window)){
-        nodes.forEach(function(n){ n.classList.add("show"); });
-        return;
+      var stage = document.getElementById("stageLabel");
+      var todayLabel = document.getElementById("todayLabel");
+      var energyRange = document.getElementById("energyRange");
+      var energyLabel = document.getElementById("energyLabel");
+      var energyText = document.getElementById("energyText");
+      var planBox = document.getElementById("planBox");
+      var picks = Array.from(document.querySelectorAll("#todayGrid .pick"));
+
+      var state = { today:"panic", energy:55 };
+
+      var todayMeta = {
+        panic:  { label:"🫀 Panic", now:"Calm the body alarm first.", moment:"Name sensations as a surge and let the wave peak and fall.", week:"Practice one small safe exposure that rebuilds confidence." },
+        thoughts:{ label:"🧠 Thoughts", now:"Reduce urgency in the body first.", moment:"Notice the thought and choose not to debate it.", week:"Remove one reassurance habit and replace it with a grounding action." },
+        sleep:  { label:"🌙 Sleep", now:"Make nights feel safer with a steady wind down.", moment:"If you wake anxious, keep it brief and return to calm.", week:"Keep the same evening routine and reduce late checking." },
+        avoid:  { label:"🚪 Avoidance", now:"Name one thing you avoid and shrink it.", moment:"Stay present and keep the step small.", week:"Repeat one tiny step three times to build trust." }
+      };
+
+      function band(v){
+        if(v <= 33) return "Low";
+        if(v <= 66) return "Medium";
+        return "High";
       }
-      var io = new IntersectionObserver(function(entries){
-        entries.forEach(function(e){
-          if(e.isIntersecting){ e.target.classList.add("show"); io.unobserve(e.target); }
+
+      function energyLine(today, v){
+        var b = band(v);
+        if(b === "Low"){
+          return "<strong>Low</strong> energy is fine. Keep it gentle. Choose the smallest step you can repeat.";
+        }
+        if(b === "High"){
+          if(today === "avoid"){
+            return "<strong>High</strong> energy can support a brave step. Keep it specific and repeatable.";
+          }
+          return "<strong>High</strong> energy can support a focused practice. Short and consistent wins.";
+        }
+        return "<strong>Medium</strong> is enough. Keep the plan simple and repeatable.";
+      }
+
+      function planLine(today, v){
+        var t = todayMeta[today] || todayMeta.panic;
+
+        var now = t.now;
+        var moment = t.moment;
+        var week = t.week;
+
+        if(v <= 33){
+          week = "Choose the smallest version of the step and repeat it. Gentle consistency builds safety.";
+        }else if(v >= 67){
+          week = "Choose a step with a bit of challenge and repeat it. Confidence grows through repetition.";
+        }
+
+        return "<strong>Right now</strong> " + now +
+               "<br><br><strong>In the moment</strong> " + moment +
+               "<br><br><strong>This week</strong> " + week;
+      }
+
+      function setToday(key){
+        state.today = key;
+        picks.forEach(function(p){
+          var on = p.getAttribute("data_key") === key;
+          p.classList.toggle("isOn", on);
         });
-      },{threshold:0.12});
-      nodes.forEach(function(n){ io.observe(n); });
+        if(todayLabel) todayLabel.textContent = (todayMeta[key] ? todayMeta[key].label : "🫀 Panic");
+        if(stage) stage.textContent = "Step 1";
+        render();
+      }
+
+      function setEnergy(v){
+        state.energy = Number(v);
+        if(energyLabel) energyLabel.textContent = band(state.energy);
+        if(energyText) energyText.innerHTML = energyLine(state.today, state.energy);
+        if(stage) stage.textContent = "Step 2";
+        renderPlanOnly();
+      }
+
+      function renderPlanOnly(){
+        if(planBox) planBox.innerHTML = planLine(state.today, state.energy);
+        if(stage) stage.textContent = "Step 3";
+      }
+
+      function render(){
+        if(energyText) energyText.innerHTML = energyLine(state.today, state.energy);
+        renderPlanOnly();
+      }
+
+      picks.forEach(function(p){
+        function activate(){
+          var key = p.getAttribute("data_key");
+          if(key) setToday(key);
+        }
+        p.addEventListener("click", activate);
+        p.addEventListener("keydown", function(e){
+          if(e.key === "Enter" || e.key === " "){
+            e.preventDefault();
+            activate();
+          }
+        });
+      });
+
+      if(energyRange){
+        energyRange.addEventListener("input", function(e){ setEnergy(e.target.value); });
+      }
+
+      setToday("panic");
+      setEnergy(energyRange ? energyRange.value : 55);
+    })();
+
+    (function(){
+      var grid = document.getElementById("promptGrid");
+      if(!grid) return;
+
+      var prompts = Array.from(grid.querySelectorAll(".prompt"));
+      var chatUser = document.getElementById("chatUser");
+      var chatTherapist = document.getElementById("chatTherapist");
+      var chatStep = document.getElementById("chatStep");
+
+      var copy = {
+        p1:{
+          user:"My chest feels tight and I feel panic rising.",
+          sup:"Let us treat this like a surge, not a threat. Notice the tightness. Name it. Keep your body still and let the wave peak and fall. Your job is to not add fear to the sensation.",
+          step:"Pick one tiny action that signals safety. Slow your pace. Relax your jaw. Unclench your hands. Stay present and let the surge pass."
+        },
+        p2:{
+          user:"I cannot stop thinking. I keep replaying everything.",
+          sup:"Your mind is trying to protect you by solving uncertainty. We do not fight the thoughts. We stop feeding them. Name the loop and return to the moment without debate.",
+          step:"Choose one boundary. No checking. No re reading. No seeking reassurance for ten minutes. Let the urge rise and fall."
+        },
+        p3:{
+          user:"Nights feel unsafe. I am tired but my body stays alert.",
+          sup:"Night anxiety is often a safety problem, not willpower. We create a steady wind down that teaches your body it is safe to switch off.",
+          step:"Keep a simple routine in the same order. Dim light. Calm pace. One grounding action. Then let sleep come when it comes."
+        },
+        p4:{
+          user:"I keep avoiding plans because I fear I will panic.",
+          sup:"Avoidance gives short relief and long fear. We do not force big leaps. We use tiny repeatable steps that rebuild trust in your body.",
+          step:"Pick one small plan you can repeat this week. Same place. Same time. Stay until discomfort drops a little."
+        }
+      };
+
+      function setPrompt(k){
+        prompts.forEach(function(p){
+          p.classList.toggle("isOn", p.getAttribute("data_key") === k);
+        });
+        var t = copy[k] || copy.p1;
+        if(chatUser) chatUser.innerHTML = "<strong>You</strong><br>" + t.user;
+        if(chatTherapist) chatTherapist.innerHTML = "<strong>Support</strong><br>" + t.sup;
+        if(chatStep) chatStep.innerHTML = "<strong>Next step</strong><br>" + t.step;
+      }
+
+      prompts.forEach(function(p){
+        function activate(){
+          var k = p.getAttribute("data_key");
+          if(k) setPrompt(k);
+        }
+        p.addEventListener("click", activate);
+        p.addEventListener("keydown", function(e){
+          if(e.key === "Enter" || e.key === " "){
+            e.preventDefault();
+            activate();
+          }
+        });
+      });
+
+      setPrompt("p1");
+    })();
+
+    (function(){
+      var list = document.getElementById("tapList");
+      var panel = document.getElementById("tapPanel");
+      if(!list || !panel) return;
+
+      var btns = Array.from(list.querySelectorAll(".tapBtn"));
+
+      var copy = {
+        heart: "<strong>Fast heartbeat</strong> is common in fight or flight. Adrenaline raises heart rate to prepare you for action. It feels scary. It is designed to pass. A helpful response is to name it as a surge and let it peak and fall without checking.",
+        breath:"<strong>Short breath</strong> often comes from stress breathing patterns. The body feels urgent. The aim is to slow the fear story, not to chase perfect breathing. Return to a calm anchor and let the surge settle.",
+        dizzy:"<strong>Dizziness</strong> can happen when adrenaline shifts blood flow and tension changes your breathing. It feels unstable. It usually settles as the surge ends. Stay present and avoid rushing to escape.",
+        heat:"<strong>Heat rush</strong> is a stress response. Blood vessels change and you can feel sudden warmth. Uncomfortable, not proof of danger. Let it pass without interpreting it as a sign.",
+        shaky:"<strong>Shaking</strong> is the body releasing adrenaline. It can feel alarming. It is a normal part of the surge and it fades. Your job is to not add fear to it.",
+        numb:"<strong>Numbness</strong> can come from tension and stress breathing. It can feel strange. It often reduces when fear reduces. Stay calm, avoid checking, and let the body settle."
+      };
+
+      function setOn(k){
+        btns.forEach(function(b){
+          b.classList.toggle("isOn", b.getAttribute("data_key") === k);
+        });
+        panel.innerHTML = copy[k] || copy.heart;
+      }
+
+      btns.forEach(function(b){
+        function activate(){
+          var k = b.getAttribute("data_key");
+          if(k) setOn(k);
+        }
+        b.addEventListener("click", activate);
+        b.addEventListener("keydown", function(e){
+          if(e.key === "Enter" || e.key === " "){
+            e.preventDefault();
+            activate();
+          }
+        });
+      });
+
+      setOn("heart");
+    })();
+
+    (function(){
+      var r = document.getElementById("progRange");
+      if(!r) return;
+
+      var label = document.getElementById("progLabel");
+      var mText = document.getElementById("mText");
+      var bText = document.getElementById("bText");
+      var lText = document.getElementById("lText");
+
+      function lerp(a,b,t){ return a + (b-a)*t; }
+
+      var story = {
+        stuck:{
+          m:"Thoughts feel urgent and sticky. You chase certainty and replay scenarios.",
+          b:"Sensations feel dangerous. You monitor your body and wait for the next spike.",
+          l:"Plans feel risky. You avoid, delay, or rely on safety habits to get through."
+        },
+        mid:{
+          m:"Thoughts still show up, but you notice them sooner. You can pause before spiraling.",
+          b:"Sensations feel intense, but you are learning to let them pass without feeding fear.",
+          l:"You do more things, even with discomfort. Avoidance starts to shrink."
+        },
+        steady:{
+          m:"Thoughts feel lighter. You stop debating every fear and return to the moment faster.",
+          b:"Your body still reacts sometimes, but it no longer feels like danger. Recovery is quicker.",
+          l:"Life expands. You make plans without needing constant safety rituals."
+        }
+      };
+
+      function render(v){
+        var n = Number(v);
+        var t = n / 100;
+
+        var bucket = "mid";
+        if(n <= 33) bucket = "stuck";
+        if(n >= 67) bucket = "steady";
+        if(label) label.textContent = bucket === "stuck" ? "Stuck" : (bucket === "steady" ? "Steady" : "Mid");
+
+        var a = story.stuck;
+        var b = story.mid;
+        var c = story.steady;
+
+        function chooseText(){
+          if(bucket === "stuck") return a;
+          if(bucket === "steady") return c;
+          return b;
+        }
+
+        var s = chooseText();
+        if(mText) mText.textContent = s.m;
+        if(bText) bText.textContent = s.b;
+        if(lText) lText.textContent = s.l;
+      }
+
+      r.addEventListener("input", function(e){ render(e.target.value); });
+      render(r.value);
     })();
   </script>
 </body>
