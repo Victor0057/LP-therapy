@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CVBXTDCGS2"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -11,370 +11,1378 @@
 
   gtag('config', 'G-CVBXTDCGS2');
 </script>
-  <!-- META -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Online Therapy that Meets You Where You Are</title>
-  <meta name="description" content="Private online therapy that feels calm and human. Start today with a licensed therapist and follow a gentle plan that fits your day." />
-  <meta property="og:title" content="Online Therapy that Meets You Where You Are">
-  <meta property="og:description" content="Start today with a licensed therapist. Real conversation, a personal plan, and calm tools you can use right away.">
-  <meta property="og:type" content="website">
-  <meta name="theme-color" content="#0e6a55">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiet Your Mind ✨ Online Support for Anxiety</title>
 
-  <!-- STYLES -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
   <style>
     :root{
-      --ink:#0e2e25;
-      --muted:#466a60;
-      --bg:#f6faf7;
-      --card:#ffffff;
-      --line:#e5efe8;
-      --cta:#ff7a45;
-      --cta-press:#e16332;
-      --ok:#147c66;
-      --shadow:0 18px 50px rgba(16, 42, 36, .08);
+      --bg:#ffffff;
+      --soft:#f6f8ff;
+      --soft2:#f7f7fb;
+      --ink:#0b1220;
+      --muted:#506173;
+      --line:rgba(11,18,32,0.12);
+
+      --blue:#245eea;
+      --blueSoft:rgba(36,94,234,0.10);
+      --blueLine:rgba(36,94,234,0.22);
+
+      --shadow: 0 22px 70px rgba(2,6,23,0.10);
+      --shadow2: 0 12px 34px rgba(2,6,23,0.08);
+
+      --r14:14px;
+      --r18:18px;
+      --r24:24px;
+      --r32:32px;
+      --r40:40px;
+
+      --container: 1180px;
     }
+
     *{box-sizing:border-box}
-    html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;line-height:1.55}
-    h1,h2,h3{margin:0 0 10px 0}
-    p{margin:0}
-    a{color:inherit;text-decoration:none}
-    .wrap{max-width:1160px;margin:0 auto;padding:clamp(16px,2vw,24px)}
-    .mini{font-size:.95rem;color:var(--muted)}
-    .btn{display:inline-flex;align-items:center;gap:10px;background:var(--cta);color:#fff;font-weight:800;border-radius:14px;padding:15px 22px;box-shadow:0 12px 28px rgba(255,122,69,.26);transition:.15s transform ease,.15s background ease}
-    .btn:hover{transform:translateY(-1px)}
-    .btn:active{background:var(--cta-press);transform:translateY(0)}
-    .btn.secondary{background:#fff;color:var(--ink);border:1px solid var(--line);box-shadow:none;font-weight:700}
-
-    header.hero{position:relative;isolation:isolate;border-bottom:1px solid var(--line);
-      background:
-        radial-gradient(900px 420px at -10% 0%, rgba(255,173,133,.12), transparent 60%),
-        radial-gradient(900px 520px at 90% -10%, rgba(20,124,102,.10), transparent 60%);
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.75;
+      overflow-x:hidden;
     }
-    .hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:clamp(20px,3vw,40px);align-items:center;padding-block:clamp(56px,8vw,96px)}
-    @media (max-width: 920px){ .hero-grid{grid-template-columns:1fr} }
-    .eyebrow{display:inline-block;font-size:.92rem;color:#0e6a55;font-weight:800;background:#e8f6f2;border:1px solid #d0eee6;border-radius:999px;padding:6px 10px}
-    h1{font-size:clamp(2.2rem,4.8vw,3.6rem);line-height:1.1}
-    .lead{font-size:clamp(1.06rem,1.7vw,1.2rem);color:#274c42;max-width:58ch;margin-top:6px}
-    .story{color:#466a60;max-width:60ch;margin-top:10px}
-    .cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px;align-items:center}
 
-    .trust{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px;max-width:560px}
-    .chip{display:flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--line);padding:10px 12px;border-radius:999px;box-shadow:var(--shadow)}
-    .ico{width:22px;height:22px;display:inline-grid;place-items:center;border-radius:6px;background:#eaf6f2}
+    .container{
+      width: min(var(--container), calc(100% - 40px));
+      margin: 0 auto;
+    }
 
-    .plan-mock{border-radius:22px;background:linear-gradient(180deg,#ffffff 0%,#f4f8f6 100%);border:1px solid var(--line);padding:18px;box-shadow:var(--shadow)}
-    .plan-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
-    .plan-title{font-weight:900}
-    .pill{display:inline-flex;gap:8px;align-items:center;background:#e8f6f2;border:1px solid #d3efe7;color:#0f4c3f;border-radius:999px;padding:6px 10px;font-size:.9rem;font-weight:800}
-    .progress{height:10px;border-radius:999px;background:#edf3f1;overflow:hidden;border:1px solid #e2ebe8;margin:8px 0 12px}
-    .progress>div{height:100%;width:62%;background:linear-gradient(90deg,#0fb095,#13a085);border-radius:999px}
-    .todo{display:grid;gap:8px;margin-top:6px}
-    .row{display:flex;gap:10px;align-items:flex-start;background:#fff;border:1px solid var(--line);padding:10px;border-radius:12px}
-    .check{flex:none;width:18px;height:18px;border-radius:4px;border:2px solid #cfeee6;display:grid;place-items:center}
-    .row.done .check{background:#e8f6f2;border-color:#b7e8dd}
-    .row .txt{display:grid;gap:4px}
-    .row .cap{font-weight:700}
-    .row .sub{font-size:.92rem;color:#466a60}
-    .helper{margin-top:10px;color:#3b6e64;font-size:.94rem}
+    a{color:inherit}
+    h1,h2,h3{letter-spacing:-0.035em}
+    h1{
+      margin:0;
+      font-size: clamp(38px, 5vw, 76px);
+      line-height: 1.02;
+    }
+    h2{
+      margin:0;
+      font-size: clamp(24px, 2.8vw, 42px);
+      line-height: 1.18;
+    }
+    h3{
+      margin:0;
+      font-size: 18px;
+      line-height: 1.25;
+      letter-spacing:-0.02em;
+    }
+    p{margin:0}
+    .muted{color:var(--muted)}
+    .accent{color:var(--blue); font-weight: 900}
 
-    main section{padding-block:clamp(52px,7vw,84px);border-bottom:1px solid var(--line)}
-    h2{font-size:clamp(1.7rem,2.6vw,2.2rem)}
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      padding: 14px 18px;
+      border-radius: var(--r18);
+      border: 1px solid transparent;
+      font-weight: 900;
+      font-size: 15px;
+      text-decoration:none;
+      cursor:pointer;
+      user-select:none;
+      white-space:nowrap;
+      transition: transform .16s ease, box-shadow .16s ease, background .16s ease, border-color .16s ease, opacity .16s ease;
+    }
+    .btnPrimary{
+      background: var(--blue);
+      color:#fff;
+      box-shadow: 0 16px 36px rgba(36,94,234,0.22);
+    }
+    .btnPrimary:hover{
+      transform: translateY(-2px);
+      box-shadow: 0 20px 44px rgba(36,94,234,0.26);
+    }
 
-    .steps{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start}
-    @media (max-width:960px){ .steps{grid-template-columns:1fr} }
-    .stepper{position:relative;padding-left:38px;display:grid;gap:18px}
-    .stepper:before{content:"";position:absolute;left:16px;top:0;bottom:0;width:2px;background:linear-gradient(180deg,#d7eee7,transparent)}
-    .step{position:relative}
-    .step .dot{position:absolute;left:-38px;top:2px;width:34px;height:34px;border-radius:999px;background:#eaf6f2;border:1px solid #cfeee6;display:grid;place-items:center;font-weight:900;color:#0f4c3f}
-    .callout{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;box-shadow:var(--shadow)}
+    .chipRow{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top: 18px;
+    }
+    .chip{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding: 10px 12px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: #fff;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 800;
+      box-shadow: 0 10px 22px rgba(2,6,23,0.05);
+      user-select:none;
+    }
+    .chip .dot{
+      width:9px;height:9px;border-radius:999px;
+      background: var(--blue);
+      box-shadow: 0 0 0 6px rgba(36,94,234,0.08);
+      flex:0 0 auto;
+    }
 
-    .grid-2{display:grid;grid-template-columns:1.1fr .9fr;gap:22px;align-items:center}
-    @media (max-width:980px){ .grid-2{grid-template-columns:1fr} }
-    .card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px;display:grid;gap:10px;box-shadow:var(--shadow)}
-    .tick{display:flex;gap:10px;align-items:flex-start}
-    .tick .ico{flex:none;width:22px;height:22px;border-radius:6px;background:#eaf6f2;display:grid;place-items:center}
+    .hero{
+      padding: 78px 0 56px;
+      background: var(--bg);
+    }
+    .heroGrid{
+      display:grid;
+      grid-template-columns: 1.08fr 0.92fr;
+      gap: 22px;
+      align-items:start;
+    }
 
-    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-    @media (max-width:960px){ .grid-3{grid-template-columns:1fr 1fr} }
-    @media (max-width:640px){ .grid-3{grid-template-columns:1fr} }
-    .benefit{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px;display:grid;gap:6px;box-shadow:var(--shadow)}
+    .heroBadge{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding: 10px 12px;
+      border-radius: 999px;
+      border: 1px solid var(--blueLine);
+      background: var(--blueSoft);
+      color: var(--ink);
+      font-size: 13px;
+      font-weight: 900;
+      user-select:none;
+      width: fit-content;
+    }
 
-    blockquote{margin:0;padding:20px;border-left:4px solid var(--cta);background:#fff;border-radius:12px;color:#2d4b41;border:1px solid var(--line);box-shadow:var(--shadow)}
+    .lead{
+      margin-top: 16px;
+      color: var(--muted);
+      font-size: clamp(16px, 1.25vw, 19px);
+      max-width: 80ch;
+    }
 
-    .plans{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-    @media (max-width:960px){ .plans{grid-template-columns:1fr 1fr} }
-    @media (max-width:640px){ .plans{grid-template-columns:1fr} }
-    .plan{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px;display:grid;gap:10px;box-shadow:var(--shadow)}
-    .plan .name{font-weight:900}
-    .price{font-weight:900}
+    .heroActions{
+      margin-top: 22px;
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+      align-items:center;
+    }
+    .softLink{
+      text-decoration:none;
+      color: var(--muted);
+      font-weight: 900;
+      border-bottom: 1px solid rgba(80,97,115,0.35);
+      padding-bottom: 2px;
+    }
+    .softLink:hover{color: var(--ink); border-bottom-color: rgba(11,18,32,0.35)}
 
-    details{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 16px;box-shadow:var(--shadow)}
-    summary{cursor:pointer;font-weight:800}
-    details + details{margin-top:10px}
+    /* Surprise layout: a tall "phone" onboarding canvas */
+    .phone{
+      border: 1px solid var(--line);
+      background: #fff;
+      border-radius: var(--r40);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .phoneTop{
+      padding: 18px 18px 14px;
+      border-bottom: 1px solid var(--line);
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap: 12px;
+    }
+    .app{
+      display:flex;
+      align-items:center;
+      gap: 12px;
+    }
+    .appIcon{
+      width: 42px;height:42px;border-radius: 18px;
+      background: var(--blue);
+      color:#fff;
+      display:grid;
+      place-items:center;
+      font-weight: 900;
+      box-shadow: 0 14px 30px rgba(36,94,234,0.22);
+      user-select:none;
+    }
+    .app strong{display:block; font-size: 14px}
+    .app span{display:block; margin-top:3px; font-size: 12px; color: var(--muted); font-weight: 700}
 
-    .bar{position:sticky;bottom:0;background:#ffffffcc;backdrop-filter:blur(10px);border-top:1px solid var(--line)}
-    .bar .wrap{display:flex;justify-content:space-between;align-items:center;gap:10px}
-    .footer{padding:24px 0;color:#6b6e6c;font-size:.92rem}
+    .stage{
+      display:inline-flex;
+      align-items:center;
+      gap: 10px;
+      padding: 10px 12px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: var(--soft2);
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 900;
+      user-select:none;
+      white-space:nowrap;
+    }
+
+    .phoneBody{
+      padding: 18px;
+      display:grid;
+      gap: 14px;
+      background: var(--soft);
+    }
+
+    .card{
+      border: 1px solid rgba(11,18,32,0.10);
+      background: #fff;
+      border-radius: var(--r32);
+      box-shadow: 0 12px 32px rgba(2,6,23,0.06);
+      padding: 16px;
+    }
+
+    .cardHead{
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap: 12px;
+      flex-wrap:wrap;
+    }
+    .cardHead strong{font-size: 13px; font-weight: 900}
+    .cardHead span{font-size: 12px; color: var(--muted); font-weight: 900}
+
+    .pickGrid{
+      margin-top: 12px;
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+    .pick{
+      border: 1px solid rgba(11,18,32,0.12);
+      background: #fff;
+      border-radius: 22px;
+      padding: 12px;
+      cursor:pointer;
+      user-select:none;
+      transition: transform .14s ease, border-color .14s ease, background .14s ease;
+      display:grid;
+      gap: 6px;
+      min-height: 92px;
+    }
+    .pick:hover{transform: translateY(-1px)}
+    .pick.isOn{
+      border-color: rgba(36,94,234,0.40);
+      background: rgba(36,94,234,0.06);
+    }
+    .pickTop{
+      display:flex;
+      align-items:center;
+      gap: 10px;
+      font-weight: 900;
+      font-size: 13px;
+      letter-spacing:-0.01em;
+    }
+    .pickEmoji{
+      width: 34px;height:34px;border-radius: 16px;
+      display:grid;place-items:center;
+      background: rgba(36,94,234,0.10);
+      border: 1px solid rgba(36,94,234,0.18);
+      font-size: 18px;
+      user-select:none;
+    }
+    .pick p{
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.55;
+      margin: 0;
+    }
+
+    .meterWrap{
+      margin-top: 12px;
+      display:grid;
+      gap: 8px;
+    }
+    input[type="range"]{width:100%; accent-color: var(--blue)}
+    .meterLabels{
+      display:flex;
+      justify-content:space-between;
+      gap: 12px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 900;
+    }
+
+    .result{
+      margin-top: 12px;
+      border: 1px solid rgba(11,18,32,0.12);
+      background: var(--soft2);
+      border-radius: 22px;
+      padding: 14px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.65;
+    }
+    .result strong{color: var(--ink)}
+
+    .phoneFoot{
+      padding: 16px 18px 18px;
+      border-top: 1px solid var(--line);
+      background:#fff;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap: 12px;
+      flex-wrap:wrap;
+    }
+    .micro{
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 800;
+      max-width: 48ch;
+    }
+
+    /* Sections */
+    .section{
+      padding: 78px 0;
+      border-top: 1px solid var(--line);
+      background: var(--bg);
+    }
+    .alt{background: var(--soft)}
+    .head{
+      display:grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 18px;
+      align-items:start;
+      margin-bottom: 18px;
+    }
+    .head p{
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.8;
+      max-width: 94ch;
+    }
+
+    .grid3{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 18px;
+    }
+    .box{
+      border: 1px solid rgba(11,18,32,0.12);
+      background:#fff;
+      border-radius: 34px;
+      box-shadow: var(--shadow2);
+      padding: 22px;
+      display:grid;
+      gap: 10px;
+      min-height: 220px;
+    }
+    .icon{
+      width:46px;height:46px;border-radius: 18px;
+      background: rgba(36,94,234,0.10);
+      border: 1px solid rgba(36,94,234,0.20);
+      display:grid;
+      place-items:center;
+      font-size: 18px;
+      user-select:none;
+    }
+    .box p{color: var(--muted); font-size: 15px; line-height: 1.7}
+
+    /* Mini session preview */
+    .session{
+      border: 1px solid rgba(11,18,32,0.12);
+      background:#fff;
+      border-radius: 40px;
+      box-shadow: var(--shadow2);
+      overflow:hidden;
+      margin-top: 18px;
+    }
+    .sessionTop{
+      padding: 18px 20px 16px;
+      border-bottom: 1px solid rgba(11,18,32,0.10);
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap: 12px;
+      flex-wrap:wrap;
+    }
+    .sessionTop strong{font-size: 14px; font-weight: 900}
+    .sessionTop span{color: var(--muted); font-size: 12px; font-weight: 900}
+
+    .sessionBody{
+      padding: 18px 20px 20px;
+      display:grid;
+      gap: 14px;
+      background: var(--soft2);
+    }
+    .bubbleCol{display:grid; gap: 10px}
+    .bubble{
+      width: fit-content;
+      max-width: min(560px, 100%);
+      border: 1px solid rgba(11,18,32,0.12);
+      border-radius: 22px;
+      padding: 12px 12px;
+      background:#fff;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.65;
+    }
+    .bubble strong{color: var(--ink)}
+    .bubble.user{
+      margin-left:auto;
+      background: rgba(36,94,234,0.08);
+      border-color: rgba(36,94,234,0.22);
+      color: var(--ink);
+    }
+
+    .promptGrid{
+      display:flex;
+      flex-wrap:wrap;
+      gap: 10px;
+    }
+    .prompt{
+      border: 1px solid rgba(11,18,32,0.12);
+      background:#fff;
+      color: var(--muted);
+      font-weight: 900;
+      font-size: 12px;
+      padding: 10px 12px;
+      border-radius: 999px;
+      cursor:pointer;
+      user-select:none;
+      transition: transform .14s ease, border-color .14s ease, background .14s ease, color .14s ease;
+    }
+    .prompt:hover{transform: translateY(-1px)}
+    .prompt.isOn{
+      border-color: rgba(36,94,234,0.40);
+      background: rgba(36,94,234,0.08);
+      color: var(--ink);
+    }
+
+    /* Panic tap grid */
+    .tapGrid{
+      margin-top: 18px;
+      display:grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: 16px;
+      align-items:start;
+    }
+    .tapList{
+      border: 1px solid rgba(11,18,32,0.12);
+      background:#fff;
+      border-radius: 34px;
+      box-shadow: var(--shadow2);
+      padding: 16px;
+      display:grid;
+      gap: 10px;
+    }
+    .tapBtn{
+      border: 1px solid rgba(11,18,32,0.12);
+      background: var(--soft2);
+      border-radius: 22px;
+      padding: 12px 12px;
+      cursor:pointer;
+      user-select:none;
+      transition: transform .14s ease, border-color .14s ease, background .14s ease;
+      display:flex;
+      align-items:center;
+      gap: 10px;
+      font-weight: 900;
+      font-size: 13px;
+      color: var(--ink);
+    }
+    .tapBtn:hover{transform: translateY(-1px)}
+    .tapBtn.isOn{
+      border-color: rgba(36,94,234,0.40);
+      background: rgba(36,94,234,0.07);
+    }
+    .tapEmoji{
+      width: 34px;height:34px;border-radius: 16px;
+      display:grid;place-items:center;
+      background: rgba(36,94,234,0.10);
+      border: 1px solid rgba(36,94,234,0.18);
+      font-size: 18px;
+      user-select:none;
+      flex:0 0 auto;
+    }
+
+    .tapPanel{
+      border: 1px solid rgba(11,18,32,0.12);
+      background:#fff;
+      border-radius: 34px;
+      box-shadow: var(--shadow2);
+      padding: 20px;
+      min-height: 220px;
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.8;
+    }
+    .tapPanel strong{color: var(--ink)}
+
+    /* Progress slider */
+    .progressWrap{
+      margin-top: 18px;
+      border: 1px solid rgba(11,18,32,0.12);
+      background:#fff;
+      border-radius: 40px;
+      box-shadow: var(--shadow2);
+      overflow:hidden;
+    }
+    .progressTop{
+      padding: 18px 20px 16px;
+      border-bottom: 1px solid rgba(11,18,32,0.10);
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap: 12px;
+      flex-wrap:wrap;
+    }
+    .progressTop strong{font-size: 14px; font-weight: 900}
+    .progressTop span{color: var(--muted); font-size: 12px; font-weight: 900}
+
+    .progressBody{
+      padding: 18px 20px 20px;
+      background: var(--soft2);
+      display:grid;
+      gap: 14px;
+    }
+    .progressCards{
+      display:grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 12px;
+    }
+    .pCard{
+      border: 1px solid rgba(11,18,32,0.12);
+      background:#fff;
+      border-radius: 26px;
+      padding: 16px;
+      display:grid;
+      gap: 8px;
+      min-height: 150px;
+    }
+    .pCard strong{color: var(--ink)}
+    .pCard p{color: var(--muted); font-size: 14px; line-height: 1.7}
+
+    /* FAQ */
+    .faq{
+      margin-top: 18px;
+      border: 1px solid rgba(11,18,32,0.12);
+      border-radius: 40px;
+      background:#fff;
+      box-shadow: var(--shadow2);
+      overflow:hidden;
+    }
+    details{border-top: 1px solid rgba(11,18,32,0.08)}
+    details:first-child{border-top:none}
+    summary{
+      cursor:pointer;
+      list-style:none;
+      padding: 18px 20px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap: 14px;
+      font-weight: 900;
+      font-size: 14px;
+    }
+    summary::-webkit-details-marker{display:none}
+    .chev{
+      width: 40px;height: 40px;
+      border-radius: 18px;
+      border: 1px solid rgba(11,18,32,0.10);
+      background: var(--soft2);
+      display:grid;
+      place-items:center;
+      color: var(--muted);
+      transition: transform .16s ease;
+      flex: 0 0 auto;
+      user-select:none;
+    }
+    details[open] .chev{transform: rotate(180deg)}
+    .ans{
+      padding: 0 20px 18px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.8;
+      max-width: 92ch;
+    }
+
+    /* Final */
+    .final{
+      padding: 84px 0 96px;
+      border-top: 1px solid var(--line);
+      background: var(--soft);
+    }
+    .finalBox{
+      border: 1px solid rgba(11,18,32,0.12);
+      background:#fff;
+      border-radius: 44px;
+      box-shadow: var(--shadow);
+      padding: 36px;
+      display:grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 22px;
+      align-items:center;
+    }
+    .fine{
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 800;
+      line-height: 1.7;
+      max-width: 70ch;
+    }
+
+    @media (max-width: 980px){
+      .heroGrid{grid-template-columns: 1fr; gap: 18px}
+      .head{grid-template-columns: 1fr}
+      .grid3{grid-template-columns: 1fr}
+      .tapGrid{grid-template-columns: 1fr}
+      .progressCards{grid-template-columns: 1fr}
+      .finalBox{grid-template-columns: 1fr}
+    }
+    @media (max-width: 520px){
+      .container{width: min(var(--container), calc(100% - 28px))}
+      .btn{width:100%}
+      .hero{padding: 56px 0 40px}
+      .section{padding: 60px 0}
+      .final{padding: 60px 0 76px}
+      summary{padding: 16px 16px}
+      .ans{padding: 0 16px 16px}
+      .phoneBody{padding: 16px}
+      .phoneTop{padding: 16px}
+      .phoneFoot{padding: 14px 16px 16px}
+      .sessionTop, .sessionBody, .progressTop, .progressBody{padding-left: 16px; padding-right: 16px}
+      .tapPanel{padding: 16px}
+    }
   </style>
 </head>
 
 <body>
-  <!-- HERO -->
-  <header class="hero" role="banner">
-    <div class="wrap hero-grid">
-      <div>
-        <span class="eyebrow">Private online therapy</span>
-        <h1>Online therapy that meets you where you are</h1>
-        <p class="lead">Start today with a licensed therapist. Real conversation that feels safe and a personal plan that you can follow with ease.</p>
-        <p class="story">If nights are long and your mind will not slow down you are not alone. The right guide listens first and then shapes a gentle plan that fits your day so tomorrow feels lighter.</p>
-        <div class="cta-row">
-          <a class="btn" href="https://onlinetherapy.go2cloud.org/aff_c?offer_id=2&aff_id=1116&source=safetherapy&aff_sub=default">Start now</a>
-          <a class="btn secondary" href="#how">See how it works</a>
-        </div>
-        <div class="trust" aria-label="Trust points">
-          <div class="chip"><span class="ico">
-            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="#147c66" d="M9 16.2l-3.5-3.6L4 14.1l5 5 11-11-1.4-1.4z"/></svg>
-          </span>Private and secure</div>
-          <div class="chip"><span class="ico">
-            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="#147c66" d="M12 1a9 9 0 100 18 9 9 0 000-18zm1 5v4.6l3.9 2.3-.8 1.3L11 11V6h2z"/></svg>
-          </span>Start in minutes</div>
-          <div class="chip"><span class="ico">
-            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="#147c66" d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"/></svg>
-          </span>Flexible plans</div>
+  <main id="top">
+
+    <section class="hero">
+      <div class="container">
+        <div class="heroGrid">
+
+          <div>
+            <div class="heroBadge">✨ Calm that feels real</div>
+
+            <h1 style="margin-top:16px">
+              Your mind can get <span class="accent">quiet</span> again
+            </h1>
+
+            <p class="lead">
+              Anxiety can make normal life feel unsafe.
+              Panic can feel like you are trapped inside your body.
+              Support is not about becoming a different person.
+              It is about getting your life back.
+            </p>
+
+            <div class="chipRow" aria-label="Trust chips">
+              <div class="chip"><span class="dot" aria-hidden="true"></span>🔒 Private</div>
+              <div class="chip"><span class="dot" aria-hidden="true"></span>🧑‍⚕️ Professional support</div>
+              <div class="chip"><span class="dot" aria-hidden="true"></span>🧠 Anxiety and panic focus</div>
+            </div>
+
+            <div class="heroActions">
+              <!-- CTA 1 -->
+              <a class="btn btnPrimary jsCta" href="#" aria-label="Get professional support">
+                Get Professional Support
+              </a>
+              <a class="softLink" href="#preview" aria-label="See a quick preview">
+                See a 20 second preview
+              </a>
+            </div>
+          </div>
+
+          <aside class="phone" aria-label="Interactive onboarding preview">
+            <div class="phoneTop">
+              <div class="app">
+                <div class="appIcon">OT</div>
+                <div>
+                  <strong>Quick Preview</strong>
+                  <span>Choose and watch it adapt</span>
+                </div>
+              </div>
+              <div class="stage" id="stageLabel">Step 1</div>
+            </div>
+
+            <div class="phoneBody" id="preview">
+
+              <div class="card" aria-label="Pick your today">
+                <div class="cardHead">
+                  <strong>Step 1 Pick your today</strong>
+                  <span id="todayLabel">🫀 Panic</span>
+                </div>
+
+                <div class="pickGrid" id="todayGrid" role="group" aria-label="Today picks">
+                  <div class="pick isOn" data_key="panic" role="button" tabindex="0">
+                    <div class="pickTop"><div class="pickEmoji">🫀</div> Panic</div>
+                    <p>Fast heart, short breath, fear spikes</p>
+                  </div>
+                  <div class="pick" data_key="thoughts" role="button" tabindex="0">
+                    <div class="pickTop"><div class="pickEmoji">🧠</div> Thoughts</div>
+                    <p>Loops that feel impossible to stop</p>
+                  </div>
+                  <div class="pick" data_key="sleep" role="button" tabindex="0">
+                    <div class="pickTop"><div class="pickEmoji">🌙</div> Sleep</div>
+                    <p>Night fear, light sleep, alert nights</p>
+                  </div>
+                  <div class="pick" data_key="avoid" role="button" tabindex="0">
+                    <div class="pickTop"><div class="pickEmoji">🚪</div> Avoidance</div>
+                    <p>Life getting smaller over time</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card" aria-label="Energy meter">
+                <div class="cardHead">
+                  <strong>Step 2 How much energy do you have</strong>
+                  <span id="energyLabel">Medium</span>
+                </div>
+
+                <div class="meterWrap">
+                  <input id="energyRange" type="range" min="0" max="100" value="55" aria-label="Energy slider" />
+                  <div class="meterLabels">
+                    <span>Low</span>
+                    <span>High</span>
+                  </div>
+                </div>
+
+                <div class="result" id="energyText">
+                  <strong>Medium</strong> is enough.
+                  We keep the plan simple and repeatable.
+                </div>
+              </div>
+
+              <div class="card" aria-label="Your next steps">
+                <div class="cardHead">
+                  <strong>Step 3 Your next steps</strong>
+                  <span>Updates instantly</span>
+                </div>
+
+                <div class="result" id="planBox">
+                  <strong>Right now</strong> calm the body alarm first.
+                  <br><br>
+                  <strong>In the moment</strong> name sensations as a surge and let the wave peak and fall.
+                  <br><br>
+                  <strong>This week</strong> practice one small safe exposure that rebuilds confidence.
+                </div>
+              </div>
+
+            </div>
+
+            <div class="phoneFoot">
+              <div class="micro">
+                This is a preview.
+                A professional can tailor it to your exact situation.
+              </div>
+            </div>
+          </aside>
+
         </div>
       </div>
+    </section>
 
-      <!-- Plan mockup -->
-      <div class="plan-mock" role="img" aria-label="Preview of a personal therapy plan">
-        <div class="plan-head">
-          <div class="plan-title">Your plan</div>
-          <div class="pill">
-            <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="#147c66" d="M9 16.2l-3.5-3.6L4 14.1l5 5 11-11-1.4-1.4z"/></svg>
-            Ready to begin
+    <section class="section alt" id="what">
+      <div class="container">
+        <div class="head">
+          <div>
+            <h2>What you want is not advice</h2>
+            <p>
+              You want relief that holds up when fear hits.
+              You want to trust your body again.
+              You want normal days back.
+              Not perfect days.
+              Just normal.
+            </p>
+          </div>
+          <div>
+            <h2>What works is structure</h2>
+            <p>
+              Calm the body first.
+              Respond to thoughts without chasing certainty.
+              Reduce avoidance step by step.
+              Confidence grows through repetition.
+            </p>
           </div>
         </div>
-        <div class="progress"><div></div></div>
-        <div class="todo">
-          <div class="row done">
-            <div class="check"><svg viewBox="0 0 24 24" width="14" height="14"><path fill="#147c66" d="M9 16.2l-3.5-3.6L4 14.1l5 5 11-11-1.4-1.4z"/></svg></div>
-            <div class="txt"><div class="cap">Sleep routine</div><div class="sub">Two tiny changes you can keep this week</div></div>
+
+        <div class="grid3" aria-label="Core outcomes">
+          <div class="box">
+            <div class="icon" aria-hidden="true">🫧</div>
+            <h3>A calmer body</h3>
+            <p>
+              When your body feels safer, your mind stops scanning for danger.
+              Most relief starts here.
+            </p>
           </div>
-          <div class="row">
-            <div class="check"></div>
-            <div class="txt"><div class="cap">Calm practice</div><div class="sub">Five minutes to slow the body and the head</div></div>
+
+          <div class="box">
+            <div class="icon" aria-hidden="true">🧭</div>
+            <h3>A clear response plan</h3>
+            <p>
+              When panic rises or thoughts loop, you know what to do.
+              You stop reacting on autopilot.
+            </p>
           </div>
-          <div class="row">
-            <div class="check"></div>
-            <div class="txt"><div class="cap">Words for hard moments</div><div class="sub">Short phrases that protect your energy</div></div>
+
+          <div class="box">
+            <div class="icon" aria-hidden="true">🌿</div>
+            <h3>A life that expands</h3>
+            <p>
+              Less avoidance.
+              Less checking.
+              More freedom to live without constant safety rituals.
+            </p>
           </div>
         </div>
-        <div class="helper">You move at your pace. We adjust the plan together.</div>
       </div>
-    </div>
-  </header>
+    </section>
 
-  <main>
-    <!-- HOW IT WORKS -->
-    <section id="how" aria-labelledby="how-title">
-      <div class="wrap steps">
-        <div>
-          <h2 id="how-title">How it works</h2>
-          <div class="stepper">
-            <div class="step">
-              <div class="dot">1</div>
-              <div class="callout">
-                <strong>Tell us what you need</strong>
-                <p class="mini">Answer a few simple questions and see your best match.</p>
-              </div>
-            </div>
-            <div class="step">
-              <div class="dot">2</div>
-              <div class="callout">
-                <strong>Meet live</strong>
-                <p class="mini">Video voice or text at a time that fits your day.</p>
-              </div>
-            </div>
-            <div class="step">
-              <div class="dot">3</div>
-              <div class="callout">
-                <strong>Use one small tool today</strong>
-                <p class="mini">Practise a short exercise and notice a clearer next step.</p>
-              </div>
-            </div>
+    <section class="section" id="session">
+      <div class="container">
+        <div class="head">
+          <div>
+            <h2>💬 A mini session preview</h2>
+            <p>
+              Tap a prompt.
+              See how a grounded response can sound.
+              Simple.
+              Human.
+              Practical.
+            </p>
+          </div>
+          <div>
+            <h2>Why this helps</h2>
+            <p>
+              When fear hits, your brain wants certainty.
+              The goal is not certainty.
+              The goal is safety.
+            </p>
           </div>
         </div>
-        <div>
-          <h2>What you receive</h2>
-          <div class="grid-3">
-            <div class="card">
-              <strong>Weekly live sessions</strong>
-              <p class="mini">Face to face time that brings clarity and calm.</p>
+
+        <div class="session" aria-label="Mini session">
+          <div class="sessionTop">
+            <strong>Tap a prompt</strong>
+            <span>Updates instantly</span>
+          </div>
+
+          <div class="sessionBody">
+            <div class="promptGrid" id="promptGrid" aria-label="Prompts">
+              <div class="prompt isOn" data_key="p1" role="button" tabindex="0">🫀 My chest feels tight</div>
+              <div class="prompt" data_key="p2" role="button" tabindex="0">🧠 I cannot stop thinking</div>
+              <div class="prompt" data_key="p3" role="button" tabindex="0">🌙 Nights feel unsafe</div>
+              <div class="prompt" data_key="p4" role="button" tabindex="0">🚪 I keep avoiding plans</div>
             </div>
-            <div class="card">
-              <strong>Unlimited messages</strong>
-              <p class="mini">Write when thoughts are fresh and feel supported between sessions.</p>
-            </div>
-            <div class="card">
-              <strong>CBT toolbox</strong>
-              <p class="mini">Worksheets journal a gentle activity plan and calming videos.</p>
+
+            <div class="bubbleCol" aria-label="Chat bubbles">
+              <div class="bubble user" id="chatUser"><strong>You</strong><br>My chest feels tight and I feel panic rising.</div>
+              <div class="bubble" id="chatTherapist"><strong>Support</strong><br>Let us treat this like a surge, not a threat. Notice the tightness. Name it. Keep your body still and let the wave peak and fall. Your job is to not add fear to the sensation.</div>
+              <div class="bubble" id="chatStep"><strong>Next step</strong><br>Pick one tiny action that signals safety. Slow your pace. Relax your jaw. Unclench your hands. Stay present and let the surge pass.</div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- PERSONAL PLAN -->
-    <section aria-labelledby="plan-title">
-      <div class="wrap grid-2">
-        <div>
-          <h2 id="plan-title">A plan made for you</h2>
-          <p class="mini">You do not have to carry everything at once. We begin by listening to what hurts and what helps. Together we write a plan that fits your day so change feels possible and kind.</p>
-          <div class="card">
-            <div class="tick">
-              <div class="ico">
-                <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="#147c66" d="M9 16.2l-3.5-3.6L4 14.1l5 5 11-11-1.4-1.4z"/></svg>
+    <section class="section alt" id="panic">
+      <div class="container">
+        <div class="head">
+          <div>
+            <h2>🧪 Panic sensations explained</h2>
+            <p>
+              Panic can feel like something is seriously wrong.
+              The sensations are real.
+              The meaning your brain gives them is the part that changes.
+            </p>
+          </div>
+          <div>
+            <h2>Tap a sensation</h2>
+            <p>
+              See a simple explanation and a calm response idea.
+              This is education, not diagnosis.
+            </p>
+          </div>
+        </div>
+
+        <div class="tapGrid" aria-label="Tap sensation grid">
+          <div class="tapList" id="tapList" aria-label="Sensation list">
+            <div class="tapBtn isOn" data_key="heart" role="button" tabindex="0"><div class="tapEmoji">🫀</div> Fast heartbeat</div>
+            <div class="tapBtn" data_key="breath" role="button" tabindex="0"><div class="tapEmoji">🌬️</div> Short breath</div>
+            <div class="tapBtn" data_key="dizzy" role="button" tabindex="0"><div class="tapEmoji">🌀</div> Dizziness</div>
+            <div class="tapBtn" data_key="heat" role="button" tabindex="0"><div class="tapEmoji">🔥</div> Heat rush</div>
+            <div class="tapBtn" data_key="shaky" role="button" tabindex="0"><div class="tapEmoji">🫨</div> Shaking</div>
+            <div class="tapBtn" data_key="numb" role="button" tabindex="0"><div class="tapEmoji">🧊</div> Numbness</div>
+          </div>
+
+          <div class="tapPanel" id="tapPanel" aria-label="Sensation panel">
+            <strong>Fast heartbeat</strong> is common in fight or flight.
+            Adrenaline raises heart rate to prepare you for action.
+            It feels scary.
+            It is designed to pass.
+            A helpful response is to name it as a surge and let it peak and fall without checking.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="progress">
+      <div class="container">
+        <div class="head">
+          <div>
+            <h2>🔁 From stuck to steady</h2>
+            <p>
+              Drag the slider.
+              Notice how the story changes.
+              Relief often looks quiet.
+              Less checking.
+              Faster recovery.
+              More space in your head.
+            </p>
+          </div>
+          <div>
+            <h2>Why this matters</h2>
+            <p>
+              Your goal is not to never feel anxious.
+              Your goal is to stop being controlled by it.
+            </p>
+          </div>
+        </div>
+
+        <div class="progressWrap" aria-label="Progress slider">
+          <div class="progressTop">
+            <strong>Move the slider</strong>
+            <span id="progLabel">Mid</span>
+          </div>
+
+          <div class="progressBody">
+            <div class="meterWrap">
+              <input id="progRange" type="range" min="0" max="100" value="52" aria-label="Progress slider" />
+              <div class="meterLabels">
+                <span>Stuck</span>
+                <span>Steady</span>
               </div>
-              <div><strong>Small steps that lead to real wins</strong><br><span class="mini">Sleep a little better. Speak with more ease. Protect your energy.</span></div>
             </div>
-            <div class="tick">
-              <div class="ico">
-                <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="#147c66" d="M9 16.2l-3.5-3.6L4 14.1l5 5 11-11-1.4-1.4z"/></svg>
+
+            <div class="progressCards" aria-label="Progress cards">
+              <div class="pCard">
+                <strong id="mTitle">Mind</strong>
+                <p id="mText">Thoughts feel urgent and sticky. You chase certainty and replay scenarios.</p>
               </div>
-              <div><strong>Made for your life</strong><br><span class="mini">Short practices you can keep even on busy days.</span></div>
-            </div>
-            <div class="tick">
-              <div class="ico">
-                <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="#147c66" d="M9 16.2l-3.5-3.6L4 14.1l5 5 11-11-1.4-1.4z"/></svg>
+              <div class="pCard">
+                <strong id="bTitle">Body</strong>
+                <p id="bText">Sensations feel dangerous. You monitor your body and wait for the next spike.</p>
               </div>
-              <div><strong>Adjust together</strong><br><span class="mini">We review what helps and shape the next small step.</span></div>
-            </div>
-          </div>
-          <div class="cta-row" style="margin-top:14px">
-            <a class="btn" href="https://onlinetherapy.go2cloud.org/aff_c?offer_id=2&aff_id=1116&source=safetherapy&aff_sub=default">Get your plan</a>
-            <span class="mini">Begin today with a gentle first step</span>
-          </div>
-        </div>
-        <div class="plan-mock" aria-label="Another view of the personal plan">
-          <div class="plan-head">
-            <div class="plan-title">Today</div>
-            <div class="pill">
-              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="#147c66" d="M9 16.2l-3.5-3.6L4 14.1l5 5 11-11-1.4-1.4z"/></svg>
-              Gentle start
-            </div>
-          </div>
-          <div class="todo">
-            <div class="row">
-              <div class="check"></div>
-              <div class="txt"><div class="cap">Three breaths with long exhales</div><div class="sub">Two minutes to calm the body</div></div>
-            </div>
-            <div class="row">
-              <div class="check"></div>
-              <div class="txt"><div class="cap">Name the feeling</div><div class="sub">Write one honest line without judging</div></div>
-            </div>
-            <div class="row">
-              <div class="check"></div>
-              <div class="txt"><div class="cap">One kind boundary</div><div class="sub">A short phrase you can say today</div></div>
+              <div class="pCard">
+                <strong id="lTitle">Life</strong>
+                <p id="lText">Plans feel risky. You avoid, delay, or rely on safety habits to get through.</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- BENEFITS -->
-    <section aria-labelledby="benefits-title">
-      <div class="wrap">
-        <h2 id="benefits-title">What changes in the first weeks</h2>
-        <div class="grid-3">
-          <div class="benefit">
-            <strong>Sleep feels deeper</strong>
-            <p class="mini">Your head slows at night and your body learns calm again.</p>
-          </div>
-          <div class="benefit">
-            <strong>Decisions feel clearer</strong>
-            <p class="mini">You find words that protect your boundaries and move life forward.</p>
-          </div>
-          <div class="benefit">
-            <strong>Energy returns</strong>
-            <p class="mini">Small wins stack up and you feel more yourself during the day.</p>
-          </div>
+        <div class="faq" aria-label="FAQ" style="margin-top:18px">
+          <details>
+            <summary>
+              Is this private
+              <span class="chev" aria-hidden="true">⌄</span>
+            </summary>
+            <div class="ans">
+              Privacy is a core part of online support.
+              Many people start here because it feels discreet and easier than in person sessions.
+            </div>
+          </details>
+
+          <details>
+            <summary>
+              What if I tried many things already
+              <span class="chev" aria-hidden="true">⌄</span>
+            </summary>
+            <div class="ans">
+              Many people have.
+              The difference is structure and guidance.
+              Instead of collecting tips, you build a repeatable response system you can use on hard days.
+            </div>
+          </details>
+
+          <details>
+            <summary>
+              How fast can I feel a difference
+              <span class="chev" aria-hidden="true">⌄</span>
+            </summary>
+            <div class="ans">
+              Some people feel relief quickly from having a clear plan.
+              Deeper change depends on consistency.
+              The aim is calmer recovery after fear, then fewer spirals over time.
+            </div>
+          </details>
         </div>
       </div>
     </section>
 
-    <!-- SOCIAL PROOF -->
-    <section aria-labelledby="quote-title">
-      <div class="wrap">
-        <h2 id="quote-title">From someone like you</h2>
-        <blockquote>
-          I tried to do it all by myself. It made me more tired. My therapist helped me name what I feel breathe again and make one clear choice. I slept that night. I am not at the finish line but I am finally moving.
-          <br><span class="mini">Client initials</span>
-        </blockquote>
-      </div>
-    </section>
+    <section class="final" id="start">
+      <div class="container">
+        <div class="finalBox">
+          <div>
+            <h2>Ready to take one calm step ✨</h2>
+            <p class="muted" style="margin-top:12px; font-size:16px; line-height:1.8; max-width:92ch">
+              If anxiety has been stealing your peace, you can start building control with support.
+              You do not have to carry it alone.
+            </p>
+            <div class="fine">
+              
+            </div>
+          </div>
 
-    <!-- PLANS (corrected) -->
-    <section id="plans" aria-labelledby="plans-title">
-      <div class="wrap">
-        <h2 id="plans-title">Plans that fit the way you want to start</h2>
-        <div class="plans">
-          <div class="plan">
-            <div class="name">Essential</div>
-            <div class="mini">Unlimited messaging with your therapist</div>
-            <div class="price">From $48 per week</div>
-            <a class="btn" href="https://onlinetherapy.go2cloud.org/aff_c?offer_id=2&aff_id=1116&source=safetherapy&aff_sub=default">Get started</a>
-          </div>
-          <div class="plan">
-            <div class="name">Standard</div>
-            <div class="mini">One weekly live session by video voice or text plus unlimited messaging</div>
-            <div class="price">Most popular</div>
-            <a class="btn" href="https://onlinetherapy.go2cloud.org/aff_c?offer_id=2&aff_id=1116&source=safetherapy&aff_sub=default">Start now</a>
-          </div>
-          <div class="plan">
-            <div class="name">Premium</div>
-            <div class="mini">Two weekly live sessions by video voice or text plus priority replies</div>
-            <div class="price">Highest level of support</div>
-            <a class="btn" href="https://onlinetherapy.go2cloud.org/aff_c?offer_id=2&aff_id=1116&source=safetherapy&aff_sub=default">See options</a>
+          <div>
+            <!-- CTA 2 -->
+            <a class="btn btnPrimary jsCta" href="#" aria-label="Get professional support">
+              Get Professional Support
+            </a>
+            <div class="fine">
+              
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- FAQ -->
-    <section aria-labelledby="faq-title">
-      <div class="wrap">
-        <h2 id="faq-title">Quick answers</h2>
-        <details>
-          <summary>How soon can I start</summary>
-          <p class="mini">You can usually begin today. Sign up get matched and book your first time when it suits you.</p>
-        </details>
-        <details>
-          <summary>Is messaging useful or is live better</summary>
-          <p class="mini">They work together. Messages capture thoughts in the moment. Live time gives space to practise tools and feel steady.</p>
-        </details>
-        <details>
-          <summary>Can I change therapist</summary>
-          <p class="mini">Yes. If it does not feel like a fit you can change with one click.</p>
-        </details>
-      </div>
-    </section>
   </main>
 
-  <!-- Sticky CTA bar -->
-  <div class="bar" role="complementary" aria-label="Sticky sign up">
-    <div class="wrap">
-      <div class="mini"><strong>Ready when you are.</strong> One small step can change how tonight feels.</div>
-      <a class="btn" href="https://onlinetherapy.go2cloud.org/aff_c?offer_id=2&aff_id=1116&source=safetherapy&aff_sub=default">Start now</a>
-    </div>
-  </div>
-
-  <!-- FOOTER -->
-  <footer class="footer wrap" role="contentinfo">
-    <div>© <span id="y"></span> Safe Therapy. This page promotes an independent online therapy platform. If you need urgent help call your local emergency number.</div>
-  </footer>
-
   <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
+    (function(){
+      /* CTA + source tracking
+         Usage:
+         yourpage.com/?source=YOURTAG
+         The value is persisted and automatically appended to the CTA links.
+      */
+      var base = "https://go.online-therapy.com/aff_c?offer_id=2&aff_id=1116";
+      var allow = ["source","utm_source","utm_medium","utm_campaign","utm_term","utm_content","gclid","msclkid"];
+      var params = new URLSearchParams(window.location.search);
+
+      function safe(v){
+        if(!v) return "";
+        v = String(v).trim();
+        if(!v) return "";
+        /* keep it URL safe and readable */
+        v = v.replace(/\s+/g, "_").slice(0, 60);
+        return v;
+      }
+
+      var incomingSource = safe(params.get("source"));
+      if(incomingSource){
+        try{ localStorage.setItem("lp_source", incomingSource); }catch(e){}
+      }else{
+        try{
+          var saved = safe(localStorage.getItem("lp_source"));
+          if(saved){ params.set("source", saved); }
+        }catch(e){}
+      }
+
+      function buildUrl(){
+        var out = new URL(base);
+        allow.forEach(function(k){
+          var v = safe(params.get(k));
+          if(v){ out.searchParams.set(k, v); }
+        });
+        return out.toString();
+      }
+
+      function wireCtas(){
+        var finalUrl = buildUrl();
+        document.querySelectorAll(".jsCta").forEach(function(a){
+          a.setAttribute("href", finalUrl);
+          a.setAttribute("rel","noopener noreferrer");
+          a.setAttribute("target","_blank");
+          a.addEventListener("click", function(){
+            /* fallback in case some hosts rewrite href */
+            a.href = finalUrl;
+          }, { passive:true });
+        });
+      }
+
+      if(document.readyState === "loading"){
+        document.addEventListener("DOMContentLoaded", wireCtas);
+      }else{
+        wireCtas();
+      }
+    })();
+
+    (function(){
+      var stage = document.getElementById("stageLabel");
+      var todayLabel = document.getElementById("todayLabel");
+      var energyRange = document.getElementById("energyRange");
+      var energyLabel = document.getElementById("energyLabel");
+      var energyText = document.getElementById("energyText");
+      var planBox = document.getElementById("planBox");
+      var picks = Array.from(document.querySelectorAll("#todayGrid .pick"));
+
+      var state = { today:"panic", energy:55 };
+
+      var todayMeta = {
+        panic:  { label:"🫀 Panic", now:"Calm the body alarm first.", moment:"Name sensations as a surge and let the wave peak and fall.", week:"Practice one small safe exposure that rebuilds confidence." },
+        thoughts:{ label:"🧠 Thoughts", now:"Reduce urgency in the body first.", moment:"Notice the thought and choose not to debate it.", week:"Remove one reassurance habit and replace it with a grounding action." },
+        sleep:  { label:"🌙 Sleep", now:"Make nights feel safer with a steady wind down.", moment:"If you wake anxious, keep it brief and return to calm.", week:"Keep the same evening routine and reduce late checking." },
+        avoid:  { label:"🚪 Avoidance", now:"Name one thing you avoid and shrink it.", moment:"Stay present and keep the step small.", week:"Repeat one tiny step three times to build trust." }
+      };
+
+      function band(v){
+        if(v <= 33) return "Low";
+        if(v <= 66) return "Medium";
+        return "High";
+      }
+
+      function energyLine(today, v){
+        var b = band(v);
+        if(b === "Low"){
+          return "<strong>Low</strong> energy is fine. Keep it gentle. Choose the smallest step you can repeat.";
+        }
+        if(b === "High"){
+          if(today === "avoid"){
+            return "<strong>High</strong> energy can support a brave step. Keep it specific and repeatable.";
+          }
+          return "<strong>High</strong> energy can support a focused practice. Short and consistent wins.";
+        }
+        return "<strong>Medium</strong> is enough. Keep the plan simple and repeatable.";
+      }
+
+      function planLine(today, v){
+        var t = todayMeta[today] || todayMeta.panic;
+
+        var now = t.now;
+        var moment = t.moment;
+        var week = t.week;
+
+        if(v <= 33){
+          week = "Choose the smallest version of the step and repeat it. Gentle consistency builds safety.";
+        }else if(v >= 67){
+          week = "Choose a step with a bit of challenge and repeat it. Confidence grows through repetition.";
+        }
+
+        return "<strong>Right now</strong> " + now +
+               "<br><br><strong>In the moment</strong> " + moment +
+               "<br><br><strong>This week</strong> " + week;
+      }
+
+      function setToday(key){
+        state.today = key;
+        picks.forEach(function(p){
+          var on = p.getAttribute("data_key") === key;
+          p.classList.toggle("isOn", on);
+        });
+        if(todayLabel) todayLabel.textContent = (todayMeta[key] ? todayMeta[key].label : "🫀 Panic");
+        if(stage) stage.textContent = "Step 1";
+        render();
+      }
+
+      function setEnergy(v){
+        state.energy = Number(v);
+        if(energyLabel) energyLabel.textContent = band(state.energy);
+        if(energyText) energyText.innerHTML = energyLine(state.today, state.energy);
+        if(stage) stage.textContent = "Step 2";
+        renderPlanOnly();
+      }
+
+      function renderPlanOnly(){
+        if(planBox) planBox.innerHTML = planLine(state.today, state.energy);
+        if(stage) stage.textContent = "Step 3";
+      }
+
+      function render(){
+        if(energyText) energyText.innerHTML = energyLine(state.today, state.energy);
+        renderPlanOnly();
+      }
+
+      picks.forEach(function(p){
+        function activate(){
+          var key = p.getAttribute("data_key");
+          if(key) setToday(key);
+        }
+        p.addEventListener("click", activate);
+        p.addEventListener("keydown", function(e){
+          if(e.key === "Enter" || e.key === " "){
+            e.preventDefault();
+            activate();
+          }
+        });
+      });
+
+      if(energyRange){
+        energyRange.addEventListener("input", function(e){ setEnergy(e.target.value); });
+      }
+
+      setToday("panic");
+      setEnergy(energyRange ? energyRange.value : 55);
+    })();
+
+    (function(){
+      var grid = document.getElementById("promptGrid");
+      if(!grid) return;
+
+      var prompts = Array.from(grid.querySelectorAll(".prompt"));
+      var chatUser = document.getElementById("chatUser");
+      var chatTherapist = document.getElementById("chatTherapist");
+      var chatStep = document.getElementById("chatStep");
+
+      var copy = {
+        p1:{
+          user:"My chest feels tight and I feel panic rising.",
+          sup:"Let us treat this like a surge, not a threat. Notice the tightness. Name it. Keep your body still and let the wave peak and fall. Your job is to not add fear to the sensation.",
+          step:"Pick one tiny action that signals safety. Slow your pace. Relax your jaw. Unclench your hands. Stay present and let the surge pass."
+        },
+        p2:{
+          user:"I cannot stop thinking. I keep replaying everything.",
+          sup:"Your mind is trying to protect you by solving uncertainty. We do not fight the thoughts. We stop feeding them. Name the loop and return to the moment without debate.",
+          step:"Choose one boundary. No checking. No re reading. No seeking reassurance for ten minutes. Let the urge rise and fall."
+        },
+        p3:{
+          user:"Nights feel unsafe. I am tired but my body stays alert.",
+          sup:"Night anxiety is often a safety problem, not willpower. We create a steady wind down that teaches your body it is safe to switch off.",
+          step:"Keep a simple routine in the same order. Dim light. Calm pace. One grounding action. Then let sleep come when it comes."
+        },
+        p4:{
+          user:"I keep avoiding plans because I fear I will panic.",
+          sup:"Avoidance gives short relief and long fear. We do not force big leaps. We use tiny repeatable steps that rebuild trust in your body.",
+          step:"Pick one small plan you can repeat this week. Same place. Same time. Stay until discomfort drops a little."
+        }
+      };
+
+      function setPrompt(k){
+        prompts.forEach(function(p){
+          p.classList.toggle("isOn", p.getAttribute("data_key") === k);
+        });
+        var t = copy[k] || copy.p1;
+        if(chatUser) chatUser.innerHTML = "<strong>You</strong><br>" + t.user;
+        if(chatTherapist) chatTherapist.innerHTML = "<strong>Support</strong><br>" + t.sup;
+        if(chatStep) chatStep.innerHTML = "<strong>Next step</strong><br>" + t.step;
+      }
+
+      prompts.forEach(function(p){
+        function activate(){
+          var k = p.getAttribute("data_key");
+          if(k) setPrompt(k);
+        }
+        p.addEventListener("click", activate);
+        p.addEventListener("keydown", function(e){
+          if(e.key === "Enter" || e.key === " "){
+            e.preventDefault();
+            activate();
+          }
+        });
+      });
+
+      setPrompt("p1");
+    })();
+
+    (function(){
+      var list = document.getElementById("tapList");
+      var panel = document.getElementById("tapPanel");
+      if(!list || !panel) return;
+
+      var btns = Array.from(list.querySelectorAll(".tapBtn"));
+
+      var copy = {
+        heart: "<strong>Fast heartbeat</strong> is common in fight or flight. Adrenaline raises heart rate to prepare you for action. It feels scary. It is designed to pass. A helpful response is to name it as a surge and let it peak and fall without checking.",
+        breath:"<strong>Short breath</strong> often comes from stress breathing patterns. The body feels urgent. The aim is to slow the fear story, not to chase perfect breathing. Return to a calm anchor and let the surge settle.",
+        dizzy:"<strong>Dizziness</strong> can happen when adrenaline shifts blood flow and tension changes your breathing. It feels unstable. It usually settles as the surge ends. Stay present and avoid rushing to escape.",
+        heat:"<strong>Heat rush</strong> is a stress response. Blood vessels change and you can feel sudden warmth. Uncomfortable, not proof of danger. Let it pass without interpreting it as a sign.",
+        shaky:"<strong>Shaking</strong> is the body releasing adrenaline. It can feel alarming. It is a normal part of the surge and it fades. Your job is to not add fear to it.",
+        numb:"<strong>Numbness</strong> can come from tension and stress breathing. It can feel strange. It often reduces when fear reduces. Stay calm, avoid checking, and let the body settle."
+      };
+
+      function setOn(k){
+        btns.forEach(function(b){
+          b.classList.toggle("isOn", b.getAttribute("data_key") === k);
+        });
+        panel.innerHTML = copy[k] || copy.heart;
+      }
+
+      btns.forEach(function(b){
+        function activate(){
+          var k = b.getAttribute("data_key");
+          if(k) setOn(k);
+        }
+        b.addEventListener("click", activate);
+        b.addEventListener("keydown", function(e){
+          if(e.key === "Enter" || e.key === " "){
+            e.preventDefault();
+            activate();
+          }
+        });
+      });
+
+      setOn("heart");
+    })();
+
+    (function(){
+      var r = document.getElementById("progRange");
+      if(!r) return;
+
+      var label = document.getElementById("progLabel");
+      var mText = document.getElementById("mText");
+      var bText = document.getElementById("bText");
+      var lText = document.getElementById("lText");
+
+      function lerp(a,b,t){ return a + (b-a)*t; }
+
+      var story = {
+        stuck:{
+          m:"Thoughts feel urgent and sticky. You chase certainty and replay scenarios.",
+          b:"Sensations feel dangerous. You monitor your body and wait for the next spike.",
+          l:"Plans feel risky. You avoid, delay, or rely on safety habits to get through."
+        },
+        mid:{
+          m:"Thoughts still show up, but you notice them sooner. You can pause before spiraling.",
+          b:"Sensations feel intense, but you are learning to let them pass without feeding fear.",
+          l:"You do more things, even with discomfort. Avoidance starts to shrink."
+        },
+        steady:{
+          m:"Thoughts feel lighter. You stop debating every fear and return to the moment faster.",
+          b:"Your body still reacts sometimes, but it no longer feels like danger. Recovery is quicker.",
+          l:"Life expands. You make plans without needing constant safety rituals."
+        }
+      };
+
+      function render(v){
+        var n = Number(v);
+        var t = n / 100;
+
+        var bucket = "mid";
+        if(n <= 33) bucket = "stuck";
+        if(n >= 67) bucket = "steady";
+        if(label) label.textContent = bucket === "stuck" ? "Stuck" : (bucket === "steady" ? "Steady" : "Mid");
+
+        var a = story.stuck;
+        var b = story.mid;
+        var c = story.steady;
+
+        function chooseText(){
+          if(bucket === "stuck") return a;
+          if(bucket === "steady") return c;
+          return b;
+        }
+
+        var s = chooseText();
+        if(mText) mText.textContent = s.m;
+        if(bText) bText.textContent = s.b;
+        if(lText) lText.textContent = s.l;
+      }
+
+      r.addEventListener("input", function(e){ render(e.target.value); });
+      render(r.value);
+    })();
   </script>
 </body>
 </html>
