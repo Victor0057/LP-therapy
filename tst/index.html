@@ -1033,8 +1033,7 @@
               You do not have to carry it alone.
             </p>
             <div class="fine">
-              By clicking you will continue on the provider website.
-              Source tracking is preserved if present.
+              
             </div>
           </div>
 
@@ -1044,9 +1043,7 @@
               Get Professional Support
             </a>
             <div class="fine">
-              Two CTAs only.
-              One at the top.
-              One here.
+              
             </div>
           </div>
         </div>
@@ -1057,15 +1054,30 @@
 
   <script>
     (function(){
+      /* CTA + source tracking
+         Usage:
+         yourpage.com/?source=YOURTAG
+         The value is persisted and automatically appended to the CTA links.
+      */
       var base = "https://go.online-therapy.com/aff_c?offer_id=2&aff_id=1116";
       var allow = ["source","utm_source","utm_medium","utm_campaign","utm_term","utm_content","gclid","msclkid"];
       var params = new URLSearchParams(window.location.search);
 
-      if(params.get("source")){
-        try{ localStorage.setItem("lp_source", params.get("source")); }catch(e){}
+      function safe(v){
+        if(!v) return "";
+        v = String(v).trim();
+        if(!v) return "";
+        /* keep it URL safe and readable */
+        v = v.replace(/\s+/g, "_").slice(0, 60);
+        return v;
+      }
+
+      var incomingSource = safe(params.get("source"));
+      if(incomingSource){
+        try{ localStorage.setItem("lp_source", incomingSource); }catch(e){}
       }else{
         try{
-          var saved = localStorage.getItem("lp_source");
+          var saved = safe(localStorage.getItem("lp_source"));
           if(saved){ params.set("source", saved); }
         }catch(e){}
       }
@@ -1073,18 +1085,30 @@
       function buildUrl(){
         var out = new URL(base);
         allow.forEach(function(k){
-          var v = params.get(k);
-          if(v && v.trim().length){ out.searchParams.set(k, v); }
+          var v = safe(params.get(k));
+          if(v){ out.searchParams.set(k, v); }
         });
         return out.toString();
       }
 
-      var finalUrl = buildUrl();
-      document.querySelectorAll(".jsCta").forEach(function(a){
-        a.setAttribute("href", finalUrl);
-        a.setAttribute("rel","noopener noreferrer");
-        a.setAttribute("target","_blank");
-      });
+      function wireCtas(){
+        var finalUrl = buildUrl();
+        document.querySelectorAll(".jsCta").forEach(function(a){
+          a.setAttribute("href", finalUrl);
+          a.setAttribute("rel","noopener noreferrer");
+          a.setAttribute("target","_blank");
+          a.addEventListener("click", function(){
+            /* fallback in case some hosts rewrite href */
+            a.href = finalUrl;
+          }, { passive:true });
+        });
+      }
+
+      if(document.readyState === "loading"){
+        document.addEventListener("DOMContentLoaded", wireCtas);
+      }else{
+        wireCtas();
+      }
     })();
 
     (function(){
