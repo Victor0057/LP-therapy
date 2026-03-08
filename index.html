@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <!-- Google tag (gtag.js) -->
+      <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CVBXTDCGS2"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -580,6 +580,138 @@
       font-weight: 600;
     }
 
+    .therapy-compare {
+      padding-top: 10px;
+    }
+
+    .compare-shell {
+      display: grid;
+      grid-template-columns: 1.08fr 0.92fr;
+      gap: 18px;
+      align-items: stretch;
+    }
+
+    .compare-main,
+    .compare-side {
+      border-radius: 30px;
+      padding: 30px;
+      min-height: 100%;
+    }
+
+    .compare-main {
+      background: linear-gradient(180deg, #f3fcf8 0%, #ffffff 100%);
+      border: 1px solid #d8efe6;
+      box-shadow: 0 20px 42px rgba(17, 130, 93, 0.08);
+    }
+
+    .compare-side {
+      background: linear-gradient(180deg, #fff7f7 0%, #ffffff 100%);
+      border: 1px solid #f1dede;
+      box-shadow: 0 18px 36px rgba(185, 79, 79, 0.06);
+    }
+
+    .compare-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-size: 0.84rem;
+      font-weight: 800;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    .compare-main .compare-label {
+      background: #e9f8f1;
+      color: #11825d;
+      border: 1px solid #cfeee0;
+    }
+
+    .compare-side .compare-label {
+      background: #fff0f0;
+      color: #c15757;
+      border: 1px solid #f4d6d6;
+    }
+
+    .compare-main h3,
+    .compare-side h3 {
+      margin: 0 0 12px;
+      font-size: 1.55rem;
+      line-height: 1.1;
+      letter-spacing: -0.04em;
+    }
+
+    .compare-main p,
+    .compare-side p {
+      margin: 0 0 18px;
+    }
+
+    .compare-list {
+      display: grid;
+      gap: 14px;
+    }
+
+    .compare-row {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      padding: 14px 0;
+      border-top: 1px solid rgba(17, 32, 51, 0.08);
+    }
+
+    .compare-row:first-child {
+      border-top: none;
+      padding-top: 0;
+    }
+
+    .compare-icon {
+      width: 30px;
+      height: 30px;
+      border-radius: 999px;
+      display: grid;
+      place-items: center;
+      flex: 0 0 auto;
+      font-weight: 800;
+      margin-top: 1px;
+    }
+
+    .compare-main .compare-icon {
+      background: #e5f7ef;
+      color: #11825d;
+      border: 1px solid #cdebdc;
+    }
+
+    .compare-side .compare-icon {
+      background: #fff1f1;
+      color: #c15757;
+      border: 1px solid #f0d7d7;
+    }
+
+    .compare-row strong {
+      display: block;
+      color: var(--text);
+      margin-bottom: 3px;
+      font-size: 1rem;
+    }
+
+    .compare-note {
+      margin-top: 20px;
+      padding: 16px 18px;
+      border-radius: 18px;
+      background: rgba(17, 130, 93, 0.06);
+      color: #295546;
+      border: 1px solid #d6eee2;
+      font-size: 0.96rem;
+    }
+
+    .compare-side .compare-note {
+      background: rgba(193, 87, 87, 0.05);
+      color: #7a4f4f;
+      border: 1px solid #f0dddd;
+    }
+
     .cta-section {
       padding: 22px 0 12px;
     }
@@ -669,6 +801,10 @@
     }
 
     @media (max-width: 1080px) {
+      .compare-shell {
+        grid-template-columns: 1fr;
+      }
+
       .hero-grid,
       .grid-3,
       .stories-grid,
@@ -706,7 +842,9 @@
       .stories-grid,
       .steps-grid,
       .before-after-grid,
-      .faq-grid {
+      .faq-grid,
+      .compare-shell {
+
         grid-template-columns: 1fr;
       }
 
@@ -868,6 +1006,68 @@
             <div class="card-icon">🌿</div>
             <h3>It helps you feel like yourself again</h3>
             <p>The goal is not to become fearless. The goal is to stop feeling controlled by anxiety every day.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="therapy-compare">
+      <div class="container">
+        <div class="section-head">
+          <span class="tag">Online therapy vs classic therapy</span>
+          <h2>Why more people choose online therapy when anxiety already makes life feel heavy.</h2>
+          <p>
+            When someone is anxious, the easier path is often the one they can actually follow. That is why online therapy often feels more realistic, more comfortable and easier to stick with.
+          </p>
+        </div>
+        <div class="compare-shell">
+          <div class="compare-main">
+            <div class="compare-label">✓ Online therapy</div>
+            <h3>More accessible, more flexible, easier to keep going.</h3>
+            <p>
+              For many people with anxiety, getting help from home feels less intimidating. That matters, because the best therapy is the one you actually start and continue.
+            </p>
+            <div class="compare-list">
+              <div class="compare-row">
+                <div class="compare-icon">✓</div>
+                <div><strong>Less stress before you even begin</strong> No commute, no waiting room, no extra pressure before the session starts.</div>
+              </div>
+              <div class="compare-row">
+                <div class="compare-icon">✓</div>
+                <div><strong>Easier for panic and social anxiety</strong> Starting from a familiar place can make the first step feel much safer and more doable.</div>
+              </div>
+              <div class="compare-row">
+                <div class="compare-icon">✓</div>
+                <div><strong>Fits real life better</strong> It is easier to stay consistent when support works around your routine instead of disrupting it.</div>
+              </div>
+              <div class="compare-row">
+                <div class="compare-icon">✓</div>
+                <div><strong>Consistency leads to progress</strong> When therapy feels easier to access, people are more likely to keep showing up and keep improving.</div>
+              </div>
+            </div>
+            <div class="compare-note">For anxiety, consistency matters a lot. Online therapy removes friction, and less friction often means a higher chance of finally getting the help you need.</div>
+          </div>
+          <div class="compare-side">
+            <div class="compare-label">✕ Classic therapy</div>
+            <h3>Helpful for some people, but often harder to fit into anxious lives.</h3>
+            <p>
+              Traditional in person therapy can still be valuable, but for many anxious people it adds extra effort right where they already feel overwhelmed.
+            </p>
+            <div class="compare-list">
+              <div class="compare-row">
+                <div class="compare-icon">✕</div>
+                <div><strong>More barriers to getting started</strong> Travel, timing, waiting rooms and leaving the house can all become reasons to put it off.</div>
+              </div>
+              <div class="compare-row">
+                <div class="compare-icon">✕</div>
+                <div><strong>Harder when anxiety is already high</strong> On bad days, even making it to an appointment can feel like too much.</div>
+              </div>
+              <div class="compare-row">
+                <div class="compare-icon">✕</div>
+                <div><strong>Less flexible for busy schedules</strong> If life gets chaotic, it becomes easier to skip and lose momentum.</div>
+              </div>
+            </div>
+            <div class="compare-note">When the process feels heavy, people delay it. And delayed support often means anxiety gets more time to keep running the show.</div>
           </div>
         </div>
       </div>
