@@ -175,9 +175,66 @@
 
     .hero-grid {
       display: grid;
-      grid-template-columns: 1.08fr 0.92fr;
-      gap: 34px;
+      grid-template-columns: 1fr;
+      gap: 0;
+      align-items: start;
+    }
+
+    .hero-story-section {
+      padding: 8px 0 34px;
+    }
+
+    .hero-story-wrap {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .visual-card-wide {
+      max-width: 760px;
+      margin: 0 auto;
+      background: linear-gradient(180deg, #f7faff 0%, #eef4ff 100%);
+      border: 1px solid #d8e4f6;
+      box-shadow: 0 18px 42px rgba(22, 52, 96, 0.08);
+    }
+
+    .source-banner {
+      display: flex;
       align-items: center;
+      gap: 16px;
+      padding: 18px 20px;
+      border-radius: 24px;
+      background: linear-gradient(180deg, #f7f9ff 0%, #f2f6ff 100%);
+      border: 1px solid #dce5f5;
+      box-shadow: 0 10px 26px rgba(22, 52, 96, 0.05);
+      max-width: 900px;
+      margin-bottom: 18px;
+    }
+
+    .source-icon {
+      width: 58px;
+      height: 58px;
+      border-radius: 999px;
+      display: grid;
+      place-items: center;
+      flex: 0 0 auto;
+      background: #fff3ec;
+      border: 1px solid #ffd8c6;
+    }
+
+    .source-icon img {
+      width: 36px;
+      height: 36px;
+      display: block;
+    }
+
+    .source-copy {
+      color: #394d68;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
+    .source-copy strong {
+      color: #11315d;
     }
 
     .eyebrow {
@@ -261,6 +318,10 @@
     }
 
     .story-card {
+      background: rgba(255,255,255,0.96);
+      border: 1px solid #e4ebf6;
+      box-shadow: 0 14px 32px rgba(22, 52, 96, 0.05);
+
       position: relative;
       z-index: 1;
       background: white;
@@ -363,6 +424,12 @@
       font-size: clamp(2rem, 3.4vw, 3rem);
       line-height: 1.08;
       letter-spacing: -0.045em;
+    }
+
+    .section-head-centered {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .section-head p {
@@ -836,6 +903,7 @@
         font-size: 2.5rem;
       }
 
+      .source-banner,
       .hero-points,
       .trustbox,
       .grid-3,
@@ -865,6 +933,12 @@
     <section class="hero">
       <div class="container hero-grid">
         <div>
+          <div class="source-banner">
+            <div class="source-icon">
+              <img src="https://www.redditstatic.com/desktop2x/img/favicon/apple-icon-57x57.png" alt="Reddit logo" />
+            </div>
+            <div class="source-copy"><strong>Welcome r/anxiety_support readers.</strong> Many people here struggle with anxiety, panic attacks and constant overthinking. You're not alone.</div>
+          </div>
           <div class="eyebrow">Private online therapy for anxiety, panic attacks and overthinking</div>
           <h1>You can stop living in survival mode.</h1>
           <p>
@@ -872,7 +946,7 @@
           </p>
           <div class="hero-actions">
             <a class="btn-primary" href="https://go.online-therapy.com/aff_c?offer_id=2&amp;aff_id=1116&amp;source=anxiety">Get Professional Support</a>
-            <a class="btn-secondary" href="#symptoms">See if this feels familiar</a>
+            <a class="btn-secondary" href="#trusted-support">See if this sounds like you</a>
           </div>
           <div class="hero-points">
             <div class="hero-point">
@@ -889,19 +963,30 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
 
-        <div class="visual-card">
-          <div class="story-card">
-            <div class="story-badge">Trusted online support</div>
-            <h3>“I thought I was just going to feel like this forever.”</h3>
-            <p>
-              That is how a lot of people describe anxiety before they get help. Not dramatic. Just tired. Tired of the constant stress, the physical symptoms, the fear that something is wrong, and the feeling that life keeps getting smaller.
-            </p>
-            <p>
-              Online therapy gives you a place to finally make sense of what is happening, learn how to calm your nervous system, and start changing the patterns that keep pulling you back into panic and overthinking.
-            </p>
-            <div class="story-note">
-              Support can help with panic attacks, social anxiety, intrusive thoughts, fear of leaving the house, sleep problems, stress and constant mental spiraling.
+    <section class="hero-story-section" id="trusted-support">
+      <div class="container">
+        <div class="hero-story-wrap">
+          <div class="section-head section-head-centered" style="margin-bottom:18px; max-width:760px;">
+            <span class="tag">Trusted online support</span>
+            <h2 style="font-size:clamp(1.8rem,3vw,2.5rem);">You are not the only person who has felt stuck like this.</h2>
+            <p>Many people reach therapy after months or years of trying to manage anxiety alone. Getting the right support can make things feel clearer, calmer and more manageable.</p>
+          </div>
+          <div class="visual-card visual-card-wide">
+            <div class="story-card">
+              
+              <h3>“I thought I was just going to feel like this forever.”</h3>
+              <p>
+                That is how a lot of people describe anxiety before they get help. Not dramatic. Just tired. Tired of the constant stress, the physical symptoms, the fear that something is wrong, and the feeling that life keeps getting smaller.
+              </p>
+              <p>
+                Online therapy gives you a place to finally make sense of what is happening, learn how to calm your nervous system, and start changing the patterns that keep pulling you back into panic and overthinking.
+              </p>
+              <div class="story-note">
+                Support can help with panic attacks, social anxiety, intrusive thoughts, fear of leaving the house, sleep problems, stress and constant mental spiraling.
+              </div>
             </div>
           </div>
         </div>
