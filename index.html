@@ -1272,5 +1272,19 @@
       <div>Online anxiety support designed to feel clear, calm and easy to start.</div>
     </div>
   </footer>
+      <script>
+  const params = new URLSearchParams(window.location.search);
+  const source = params.get('source');
+
+  if (source) {
+    localStorage.setItem('traffic_source', source);
+
+    document.querySelectorAll('a[href*="go.online-therapy.com"]').forEach(link => {
+      const url = new URL(link.href);
+      url.searchParams.set('source', source);
+      link.href = url.toString();
+    });
+  }
+</script>
 </body>
 </html>
