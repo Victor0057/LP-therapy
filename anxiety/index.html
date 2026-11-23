@@ -1047,17 +1047,24 @@
   </footer>
 
   <script>
+    // Dynamic source tracking: ?source=anything-you-want
+    // Example: ?source=reddit_post17, ?source=myanxietytest, ?source=morning_post
     const params = new URLSearchParams(window.location.search);
-    const paramSource = params.get('source');
+    const incomingSource = params.get('source');
     const savedSource = localStorage.getItem('traffic_source');
-    const activeSource = paramSource || savedSource || 'anxiety';
 
-    if (paramSource) {
-      localStorage.setItem('traffic_source', paramSource);
+    // Only update saved attribution when a non-empty source is provided.
+    // Keep the value as entered (case and punctuation) for affiliate tracking.
+    const cleanSource = incomingSource && incomingSource.trim() ? incomingSource.trim() : null;
+    if (cleanSource) {
+      localStorage.setItem('traffic_source', cleanSource);
     }
 
+    const activeSource = cleanSource || savedSource || 'anxiety';
+
+    // Apply the active source to every affiliate CTA, preserving other URL parameters.
     document.querySelectorAll('.aff-link').forEach(link => {
-      const url = new URL(link.href);
+      const url = new URL(link.href, window.location.href);
       url.searchParams.set('source', activeSource);
       link.href = url.toString();
 
