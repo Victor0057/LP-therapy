@@ -1072,14 +1072,7 @@
       });
     });
 
-    const lowerSource = activeSource.toLowerCase();
-    if (lowerSource !== 'anxiety' && !lowerSource.includes('reddit')) {
-      const logo = document.getElementById('communityLogo');
-      const text = document.getElementById('communityText');
-      if (logo) logo.style.display = 'none';
-      if (text) text.innerHTML = '<strong>Reader Offer:</strong> 20% off your first month is included automatically.';
-    }
-
+    
     const weeksData = {
       1: {
         title: 'Week 1: Matching with your licensed therapist and mapping what is happening',
