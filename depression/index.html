@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Depression Therapy Online: Licensed Support From Home | Safe Therapy</title>
+  <meta name="description" content="Depression therapy with a licensed online therapist. Start at your own pace from home with daily CBT tools, messaging support, and 20% off your first month." />
+  <link rel="icon" type="image/svg+xml" href="/favicon-safe.svg" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CVBXTDCGS2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-CVBXTDCGS2');
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bg: #f4f7f9;
+      --surface: #ffffff;
+      --soft-sky: #e6f0f8;
+      --soft-mint: #e7f6ef;
+      --text: #152230;
+      --muted: #55677a;
+      --line: #dce6ef;
+      --primary: #1d4ed8;
+      --primary-dark: #1e40af;
+      --accent: #0f766e;
+      --shadow-sm: 0 8px 22px rgba(21, 34, 48, 0.04);
+      --shadow-lg: 0 22px 50px rgba(21, 34, 48, 0.08);
+      --max: 1060px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Nunito', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.62;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(calc(100% - 32px), var(--max));
+      margin: 0 auto;
+    }
+
+    /* Top Announcement + Minimal Nav */
+    .promo-top {
+      background: #152230;
+      color: #ffffff;
+      text-align: center;
+      font-size: 0.88rem;
+      font-weight: 700;
+      padding: 9px 16px;
+    }
+
+    .promo-top span {
+      display: inline-block;
+      background: #10b981;
+      color: #06281e;
+      font-weight: 900;
+      font-size: 0.75rem;
+      padding: 2px 8px;
+      border-radius: 6px;
+      margin-right: 8px;
+    }
+
+    .navbar {
+      background: var(--surface);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .navbar-inner {
+      min-height: 68px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 900;
+      font-size: 1.15rem;
+      letter-spacing: -0.02em;
+    }
+
+    .brand-logo {
+      width: 34px;
+      height: 34px;
+      border-radius: 9px;
+      flex: 0 0 auto;
+    }
+
+    .nav-cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 42px;
+      padding: 0 18px;
+      border-radius: 11px;
+      background: var(--primary);
+      color: #fff;
+      font-weight: 800;
+      font-size: 0.9rem;
+      transition: background-color 0.15s ease;
+    }
+
+    .nav-cta:hover {
+      background: var(--primary-dark);
+    }
+
+    /* Hero With Embedded Guided Matcher */
+    .hero {
+      padding: 42px 0 48px;
+    }
+
+    .hero-head {
+      text-align: center;
+      max-width: 760px;
+      margin: 0 auto 30px;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      background: var(--soft-sky);
+      color: var(--primary);
+      font-size: 0.82rem;
+      font-weight: 800;
+      padding: 5px 14px;
+      border-radius: 999px;
+      margin-bottom: 12px;
+    }
+
+    .hero-head h1 {
+      margin: 0 0 14px;
+      font-size: clamp(2.1rem, 4.5vw, 3.35rem);
+      font-weight: 900;
+      line-height: 1.08;
+      letter-spacing: -0.035em;
+    }
+
+    .hero-head p {
+      margin: 0;
+      font-size: 1.08rem;
+      color: var(--muted);
+    }
+
+    /* Interactive 2-Step Matcher Card */
+    .matcher-box {
+      max-width: 820px;
+      margin: 0 auto;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      padding: 32px;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .step-indicator {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 18px;
+      font-size: 0.84rem;
+      font-weight: 800;
+      color: var(--muted);
+    }
+
+    .progress-track {
+      height: 7px;
+      background: #e9eff5;
+      border-radius: 999px;
+      overflow: hidden;
+      margin-bottom: 24px;
+    }
+
+    .progress-fill {
+      height: 100%;
+      width: 50%;
+      background: var(--primary);
+      border-radius: 999px;
+      transition: width 0.25s ease;
+    }
+
+    .matcher-q {
+      margin: 0 0 16px;
+      font-size: 1.32rem;
+      font-weight: 900;
+      letter-spacing: -0.02em;
+    }
+
+    .choice-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+
+    .choice-btn {
+      text-align: left;
+      background: #f8fafc;
+      border: 1.5px solid #dce6f0;
+      border-radius: 16px;
+      padding: 16px 18px;
+      font-family: inherit;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .choice-btn:hover {
+      border-color: var(--primary);
+      background: #f2f7ff;
+    }
+
+    .choice-btn strong {
+      display: block;
+      font-size: 0.98rem;
+      font-weight: 800;
+      color: var(--text);
+      margin-bottom: 3px;
+    }
+
+    .choice-btn span {
+      display: block;
+      font-size: 0.86rem;
+      color: var(--muted);
+    }
+
+    .matcher-result {
+      display: none;
+    }
+
+    .result-badge {
+      display: inline-block;
+      background: var(--soft-mint);
+      color: var(--accent);
+      font-size: 0.8rem;
+      font-weight: 900;
+      padding: 5px 12px;
+      border-radius: 999px;
+      margin-bottom: 10px;
+    }
+
+    .matcher-result h2 {
+      margin: 0 0 10px;
+      font-size: 1.45rem;
+      font-weight: 900;
+    }
+
+    .matcher-result p {
+      margin: 0 0 20px;
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+
+    .result-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 54px;
+      padding: 0 28px;
+      border-radius: 14px;
+      background: var(--primary);
+      color: #fff;
+      font-weight: 800;
+      font-size: 1.02rem;
+      box-shadow: 0 14px 28px rgba(29, 78, 216, 0.24);
+      transition: background-color 0.15s ease, transform 0.15s ease;
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-dark);
+      transform: translateY(-1px);
+    }
+
+    .btn-reset {
+      background: transparent;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      min-height: 54px;
+      padding: 0 18px;
+      font-family: inherit;
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--muted);
+      cursor: pointer;
+    }
+
+    /* Bento Grid Section */
+    section {
+      padding: 46px 0;
+    }
+
+    .sec-head {
+      max-width: 680px;
+      margin-bottom: 26px;
+    }
+
+    .sec-head h2 {
+      margin: 0 0 8px;
+      font-size: clamp(1.7rem, 3.2vw, 2.35rem);
+      font-weight: 900;
+      line-height: 1.14;
+      letter-spacing: -0.03em;
+    }
+
+    .sec-head p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.02rem;
+    }
+
+    .bento-grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 18px;
+    }
+
+    .bento-card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 26px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .span-7 { grid-column: span 7; }
+    .span-5 { grid-column: span 5; }
+    .span-4 { grid-column: span 4; }
+    .span-8 { grid-column: span 8; }
+
+    .bento-highlight {
+      background: linear-gradient(135deg, #eef5ff 0%, #ffffff 100%);
+      border: 1.5px solid #bfdbfe;
+      color: var(--text);
+    }
+
+    .bento-highlight h3 {
+      color: var(--primary-dark);
+    }
+
+    .bento-highlight p {
+      color: var(--muted);
+    }
+
+    .bento-card h3 {
+      margin: 0 0 9px;
+      font-size: 1.18rem;
+      font-weight: 900;
+    }
+
+    .bento-card p {
+      margin: 0;
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+
+    /* Comparison Table */
+    .table-wrap {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+    }
+
+    th, td {
+      padding: 18px 22px;
+      border-bottom: 1px solid var(--line);
+      font-size: 0.95rem;
+    }
+
+    th {
+      background: #f8fafc;
+      font-weight: 900;
+      color: var(--text);
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    .col-highlight {
+      background: #f3f8ff;
+      font-weight: 800;
+      color: var(--primary-dark);
+    }
+
+    /* Accordion FAQ */
+    .accordion {
+      display: grid;
+      gap: 12px;
+    }
+
+    .acc-item {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      overflow: hidden;
+    }
+
+    .acc-btn {
+      width: 100%;
+      text-align: left;
+      background: none;
+      border: none;
+      padding: 20px 24px;
+      font-family: inherit;
+      font-size: 1.03rem;
+      font-weight: 800;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      cursor: pointer;
+    }
+
+    .acc-panel {
+      display: none;
+      padding: 0 24px 20px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .acc-item.open .acc-panel {
+      display: block;
+    }
+
+    /* Bottom CTA */
+    .final-card {
+      background: var(--surface);
+      border: 2px solid #bfdbfe;
+      border-radius: 28px;
+      padding: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      flex-wrap: wrap;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .final-card h2 {
+      margin: 0 0 8px;
+      font-size: clamp(1.65rem, 3vw, 2.25rem);
+      font-weight: 900;
+      line-height: 1.15;
+    }
+
+    .final-card p {
+      margin: 0;
+      color: var(--muted);
+      max-width: 560px;
+    }
+
+    .footer {
+      padding: 32px 0 80px;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+
+    .footer-inner {
+      border-top: 1px solid var(--line);
+      padding-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    /* Sticky Mobile Bottom Bar */
+    .mobile-bar {
+      display: none;
+    }
+
+    @media (max-width: 860px) {
+      .choice-grid,
+      .bento-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .span-7, .span-5, .span-4, .span-8 {
+        grid-column: span 1;
+      }
+
+      th, td {
+        padding: 14px 14px;
+        font-size: 0.88rem;
+      }
+
+      .mobile-bar {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(255, 255, 255, 0.96);
+        backdrop-filter: blur(10px);
+        border-top: 1px solid var(--line);
+        padding: 10px 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        z-index: 50;
+      }
+
+      .mobile-bar span {
+        font-size: 0.84rem;
+        font-weight: 800;
+        color: var(--text);
+      }
+
+      .mobile-bar a {
+        background: var(--primary);
+        color: #fff;
+        font-weight: 800;
+        font-size: 0.88rem;
+        padding: 11px 16px;
+        border-radius: 11px;
+        white-space: nowrap;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="promo-top">
+    <span>20% OFF</span>First month discount applied automatically when you start today
+  </div>
+
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a class="brand" href="/">
+        <svg class="brand-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-hidden="true">
+          <rect width="64" height="64" rx="16" fill="#1d4ed8"/>
+          <path d="M32 14c9 0 16 5 16 5v11c0 13-10 19-16 22-6-3-16-9-16-22V19s7-5 16-5z" fill="white"/>
+          <path d="M26 33l5 5 9-10" stroke="#1d4ed8" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>Safe Therapy</span>
+      </a>
+      <a class="nav-cta aff-link" data-placement="depression_top_nav" href="https://go.online-therapy.com/aff_c?offer_id=2&amp;aff_id=1116&amp;source=depression">
+        Start Therapy
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-head">
+          <span class="eyebrow">Licensed Online Depression Care</span>
+          <h1>When even small tasks feel heavy, support should not be hard to reach.</h1>
+          <p>
+            Answer two quick questions below to see how online cognitive behavioral therapy fits your energy level right now.
+          </p>
+        </div>
+
+        <div class="matcher-box" id="matcherBox">
+          <div id="step1">
+            <div class="step-indicator">
+              <span>Step 1 of 2</span>
+              <span>Takes 10 seconds</span>
+            </div>
+            <div class="progress-track"><div class="progress-fill" style="width: 50%;"></div></div>
+            <h2 class="matcher-q">What has been hardest to carry lately?</h2>
+            <div class="choice-grid">
+              <button class="choice-btn" type="button" onclick="pickStep1('energy')">
+                <strong>Low energy and zero motivation</strong>
+                <span>Getting through basic routines feels exhausting</span>
+              </button>
+              <button class="choice-btn" type="button" onclick="pickStep1('numb')">
+                <strong>Feeling disconnected or flat</strong>
+                <span>Things you used to enjoy no longer feel engaging</span>
+              </button>
+              <button class="choice-btn" type="button" onclick="pickStep1('guilt')">
+                <strong>Heavy self criticism and guilt</strong>
+                <span>Feeling stuck or blaming yourself for slowing down</span>
+              </button>
+              <button class="choice-btn" type="button" onclick="pickStep1('isolation')">
+                <strong>Pulling away from people</strong>
+                <span>Hard to explain what you are going through to others</span>
+              </button>
+            </div>
+          </div>
+
+          <div id="step2" style="display: none;">
+            <div class="step-indicator">
+              <span>Step 2 of 2</span>
+              <span>Almost done</span>
+            </div>
+            <div class="progress-track"><div class="progress-fill" style="width: 100%;"></div></div>
+            <h2 class="matcher-q">How would you feel most comfortable starting?</h2>
+            <div class="choice-grid">
+              <button class="choice-btn" type="button" onclick="pickStep2('text')">
+                <strong>Writing and messaging first</strong>
+                <span>Start quietly at your own pace without camera pressure</span>
+              </button>
+              <button class="choice-btn" type="button" onclick="pickStep2('voice')">
+                <strong>Voice sessions from home</strong>
+                <span>Talk directly with your therapist without video</span>
+              </button>
+              <button class="choice-btn" type="button" onclick="pickStep2('video')">
+                <strong>Live video sessions</strong>
+                <span>Face to face guidance from a familiar room</span>
+              </button>
+              <button class="choice-btn" type="button" onclick="pickStep2('flexible')">
+                <strong>A mix depending on my energy</strong>
+                <span>Switch between text, voice, and video anytime</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="matcher-result" id="matcherResult">
+            <span class="result-badge">Matched Care Approach &bull; 20% Off Included</span>
+            <h2 id="resultHeadline">Low-friction online support built for low-energy days</h2>
+            <p id="resultBody">
+              You can start directly from home with a licensed therapist, daily structured CBT steps, and messaging support between sessions so you never have to force yourself across town on hard days.
+            </p>
+            <div class="result-actions">
+              <a class="btn-primary aff-link" data-placement="depression_matcher_cta" href="https://go.online-therapy.com/aff_c?offer_id=2&amp;aff_id=1116&amp;source=depression">
+                See Matched Plans &amp; Claim 20% Off &rarr;
+              </a>
+              <button class="btn-reset" type="button" onclick="resetMatcher()">Change answers</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="sec-head">
+          <h2>Designed for days when leaving the house feels like too much.</h2>
+          <p>Small, steady structure makes progress realistic even when energy is low.</p>
+        </div>
+
+        <div class="bento-grid">
+          <div class="bento-card bento-highlight span-7">
+            <h3>Start from bed, the couch, or a quiet corner</h3>
+            <p>
+              Traditional therapy requires driving, waiting rooms, and rigid appointments. Online care lets you connect with a licensed therapist in whatever format matches your energy that week.
+            </p>
+          </div>
+          <div class="bento-card span-5">
+            <h3>Daily therapist feedback</h3>
+            <p>
+              Write in your private journal or complete short CBT worksheets and receive direct replies from your therapist between sessions.
+            </p>
+          </div>
+          <div class="bento-card span-4">
+            <h3>Bite-sized CBT steps</h3>
+            <p>
+              Short, clear sections help break inertia without overwhelming you with long homework.
+            </p>
+          </div>
+          <div class="bento-card span-8">
+            <h3>Switch therapists anytime at no extra cost</h3>
+            <p>
+              Feeling understood matters. If your first therapist match does not feel like the right fit, you can switch to another licensed specialist easily.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="sec-head">
+          <h2>Online CBT vs. traditional in-person office visits</h2>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>What matters when you are struggling</th>
+                <th>Traditional Office Therapy</th>
+                <th class="col-highlight">Online Therapy From Home</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Getting to your session</td>
+                <td>Commute, traffic, and waiting rooms</td>
+                <td class="col-highlight">Zero travel, join from home</td>
+              </tr>
+              <tr>
+                <td>Support between appointments</td>
+                <td>Usually none until next week</td>
+                <td class="col-highlight">Direct messaging &amp; worksheet feedback</td>
+              </tr>
+              <tr>
+                <td>Communication options</td>
+                <td>In-person talking only</td>
+                <td class="col-highlight">Video, voice, or text chat</td>
+              </tr>
+              <tr>
+                <td>First month savings</td>
+                <td>Full single-session rates</td>
+                <td class="col-highlight">20% off first month included</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="sec-head">
+          <h2>Common questions</h2>
+        </div>
+
+        <div class="accordion">
+          <div class="acc-item open">
+            <button class="acc-btn" type="button" onclick="toggleAcc(this)">
+              <span>Do I have to turn on my camera right away?</span>
+              <span>+</span>
+            </button>
+            <div class="acc-panel">
+              No. You can choose text messaging, voice calls, or live video depending on what feels easiest for you right now.
+            </div>
+          </div>
+
+          <div class="acc-item">
+            <button class="acc-btn" type="button" onclick="toggleAcc(this)">
+              <span>Are the therapists licensed professionals?</span>
+              <span>+</span>
+            </button>
+            <div class="acc-panel">
+              Yes. You are matched with a vetted, licensed therapist trained in evidence-based cognitive behavioral therapy.
+            </div>
+          </div>
+
+          <div class="acc-item">
+            <button class="acc-btn" type="button" onclick="toggleAcc(this)">
+              <span>How is the 20% discount applied?</span>
+              <span>+</span>
+            </button>
+            <div class="acc-panel">
+              Your 20% discount on the first month applies automatically when you continue through any button on this page.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="final-card">
+          <div>
+            <h2>Take one gentle step today.</h2>
+            <p>
+              Connect privately with a licensed therapist from home with 20% off your first month included automatically.
+            </p>
+          </div>
+          <a class="btn-primary aff-link" data-placement="depression_bottom_cta" href="https://go.online-therapy.com/aff_c?offer_id=2&amp;aff_id=1116&amp;source=depression">
+            Start Therapy &rarr;
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>&copy; 2026 Safe Therapy.com</div>
+      <div>Informational resource only; not a clinical diagnosis or emergency service. If you are in immediate crisis, please contact your local emergency number or crisis helpline. Affiliate disclosure: we may earn a commission if you sign up, at no extra cost to you.</div>
+    </div>
+  </footer>
+
+  <div class="mobile-bar">
+    <span>20% off first month</span>
+    <a class="aff-link" data-placement="depression_mobile_sticky" href="https://go.online-therapy.com/aff_c?offer_id=2&amp;aff_id=1116&amp;source=depression">
+      Start Therapy &rarr;
+    </a>
+  </div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const paramSource = params.get('source');
+    const savedSource = localStorage.getItem('traffic_source');
+    const activeSource = paramSource || savedSource || 'depression';
+
+    if (paramSource) {
+      localStorage.setItem('traffic_source', paramSource);
+    }
+
+    document.querySelectorAll('.aff-link').forEach(link => {
+      const url = new URL(link.href);
+      url.searchParams.set('source', activeSource);
+      link.href = url.toString();
+
+      link.addEventListener('click', function() {
+        if (typeof gtag === 'function') {
+          gtag('event', 'affiliate_click', {
+            'event_category': 'Outbound Affiliate',
+            'event_label': this.getAttribute('data-placement') || 'unknown',
+            'traffic_source': activeSource
+          });
+        }
+      });
+    });
+
+    let selectedNeed = 'energy';
+
+    function pickStep1(need) {
+      selectedNeed = need;
+      document.getElementById('step1').style.display = 'none';
+      document.getElementById('step2').style.display = 'block';
+    }
+
+    function pickStep2(format) {
+      document.getElementById('step2').style.display = 'none';
+      const resultEl = document.getElementById('matcherResult');
+      resultEl.style.display = 'block';
+
+      const formatLabels = {
+        text: 'messaging-first support',
+        voice: 'voice sessions from home',
+        video: 'live video sessions',
+        flexible: 'flexible text, voice, and video care'
+      };
+
+      const needHeadlines = {
+        energy: 'Low-friction support built for low-energy days',
+        numb: 'Guided steps to reconnect at a manageable pace',
+        guilt: 'Compassionate CBT support without self-blame',
+        isolation: 'Private, steady connection from your own space'
+      };
+
+      document.getElementById('resultHeadline').textContent = needHeadlines[selectedNeed] || needHeadlines.energy;
+      document.getElementById('resultBody').textContent =
+        `Based on your preferences, you can begin with ${formatLabels[format] || 'flexible online care'} alongside daily structured CBT exercises and therapist feedback between sessions.`;
+
+      if (typeof gtag === 'function') {
+        gtag('event', 'depression_matcher_completed', {
+          'need': selectedNeed,
+          'format': format,
+          'traffic_source': activeSource
+        });
+      }
+    }
+
+    function resetMatcher() {
+      document.getElementById('matcherResult').style.display = 'none';
+      document.getElementById('step2').style.display = 'none';
+      document.getElementById('step1').style.display = 'block';
+    }
+
+    function toggleAcc(btn) {
+      const item = btn.closest('.acc-item');
+      if (item) item.classList.toggle('open');
+    }
+  </script>
+</body>
+</html>
