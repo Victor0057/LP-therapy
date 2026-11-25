@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Burnout Recovery &amp; Online Therapy | Safe Therapy</title>
+  <meta name="description" content="Recover from burnout and mental exhaustion with a licensed online therapist. Practical support, flexible sessions, and steady recovery from home." />
+  <link rel="icon" type="image/svg+xml" href="/favicon-safe.svg" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CVBXTDCGS2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-CVBXTDCGS2');
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bg: #f7fafc;
+      --surface: #ffffff;
+      --soft-teal: #e9f7f4;
+      --soft-amber: #fff6e8;
+      --text: #132232;
+      --muted: #56697f;
+      --line: #dde8f2;
+      --primary: #0f766e;
+      --primary-dark: #0b5c56;
+      --accent: #1c69f0;
+      --warm: #b45309;
+      --shadow-sm: 0 8px 24px rgba(19, 34, 50, 0.04);
+      --shadow-md: 0 20px 46px rgba(19, 34, 50, 0.07);
+      --max: 1080px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Nunito', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.64;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(calc(100% - 32px), var(--max));
+      margin: 0 auto;
+    }
+
+    /* Header */
+    .header {
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--line);
+      position: sticky;
+      top: 0;
+      z-index: 20;
+    }
+
+    .header-inner {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 11px;
+      font-weight: 900;
+      font-size: 1.15rem;
+      letter-spacing: -0.02em;
+    }
+
+    .brand-logo {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      flex: 0 0 auto;
+      box-shadow: 0 6px 16px rgba(15, 118, 110, 0.2);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      font-size: 0.94rem;
+      font-weight: 700;
+      color: var(--muted);
+    }
+
+    .nav a:hover {
+      color: var(--text);
+    }
+
+    .btn-nav {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0 18px;
+      border-radius: 13px;
+      background: var(--primary);
+      color: #fff;
+      font-weight: 800;
+      font-size: 0.92rem;
+      transition: background-color 0.15s ease, transform 0.15s ease;
+    }
+
+    .btn-nav:hover {
+      background: var(--primary-dark);
+      transform: translateY(-1px);
+    }
+
+    /* Split Hero */
+    .hero {
+      padding: 46px 0 40px;
+    }
+
+    .discount-banner {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--soft-amber);
+      border: 1.5px solid #f4d29c;
+      color: #6b3804;
+      border-radius: 14px;
+      padding: 8px 15px;
+      margin-bottom: 22px;
+      font-size: 0.92rem;
+      font-weight: 700;
+      box-shadow: 0 8px 20px rgba(180, 83, 9, 0.07);
+    }
+
+    .discount-pill {
+      background: var(--warm);
+      color: #fff;
+      font-size: 0.76rem;
+      font-weight: 900;
+      padding: 4px 10px;
+      border-radius: 9px;
+      letter-spacing: 0.03em;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.18fr 0.82fr;
+      gap: 34px;
+      align-items: start;
+    }
+
+    .kicker-pill {
+      display: inline-block;
+      background: var(--soft-teal);
+      color: var(--primary);
+      font-size: 0.84rem;
+      font-weight: 800;
+      padding: 6px 14px;
+      border-radius: 999px;
+      margin-bottom: 14px;
+    }
+
+    .hero h1 {
+      margin: 0 0 16px;
+      font-size: clamp(2.2rem, 4.5vw, 3.45rem);
+      font-weight: 900;
+      line-height: 1.08;
+      letter-spacing: -0.035em;
+    }
+
+    .hero-sub {
+      margin: 0 0 24px;
+      font-size: 1.08rem;
+      color: var(--muted);
+      max-width: 590px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 56px;
+      padding: 0 26px;
+      border-radius: 16px;
+      background: var(--primary);
+      color: #fff;
+      font-weight: 800;
+      font-size: 1.02rem;
+      box-shadow: 0 14px 28px rgba(15, 118, 110, 0.22);
+      transition: background-color 0.15s ease, transform 0.15s ease;
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-dark);
+      transform: translateY(-1px);
+    }
+
+    .btn-ghost {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 56px;
+      padding: 0 22px;
+      border-radius: 16px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      color: var(--text);
+      font-weight: 700;
+      font-size: 0.98rem;
+    }
+
+    .hero-note {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--muted);
+    }
+
+    /* Interactive Burnout Check Card */
+    .check-card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 26px;
+      padding: 26px;
+      box-shadow: var(--shadow-md);
+    }
+
+    .check-card-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+
+    .check-tag {
+      font-size: 0.78rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--primary);
+      background: var(--soft-teal);
+      padding: 5px 11px;
+      border-radius: 999px;
+    }
+
+    .check-card h2 {
+      margin: 0 0 8px;
+      font-size: 1.28rem;
+      font-weight: 900;
+      line-height: 1.25;
+    }
+
+    .check-card p {
+      margin: 0 0 16px;
+      font-size: 0.93rem;
+      color: var(--muted);
+    }
+
+    .signal-options {
+      display: grid;
+      gap: 9px;
+      margin-bottom: 18px;
+    }
+
+    .signal-btn {
+      width: 100%;
+      text-align: left;
+      background: #f8fbfd;
+      border: 1.5px solid #dce8f3;
+      border-radius: 14px;
+      padding: 11px 14px;
+      font-family: inherit;
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--text);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      transition: all 0.14s ease;
+    }
+
+    .signal-btn.selected {
+      background: var(--soft-teal);
+      border-color: var(--primary);
+      color: var(--primary-dark);
+    }
+
+    .check-result {
+      background: #f4f9f8;
+      border: 1px solid #cce7e2;
+      border-radius: 16px;
+      padding: 14px 16px;
+      margin-bottom: 16px;
+      font-size: 0.9rem;
+      color: #1b3835;
+    }
+
+    .check-result strong {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--primary-dark);
+    }
+
+    .btn-card-cta {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      min-height: 52px;
+      border-radius: 15px;
+      background: var(--accent);
+      color: #fff;
+      font-weight: 800;
+      font-size: 0.98rem;
+      transition: filter 0.15s ease, transform 0.15s ease;
+    }
+
+    .btn-card-cta:hover {
+      filter: brightness(0.95);
+      transform: translateY(-1px);
+    }
+
+    /* Sections */
+    section {
+      padding: 46px 0;
+    }
+
+    .sec-head {
+      max-width: 720px;
+      margin-bottom: 26px;
+    }
+
+    .sec-kicker {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--primary);
+      margin-bottom: 8px;
+    }
+
+    .sec-head h2 {
+      margin: 0 0 10px;
+      font-size: clamp(1.75rem, 3.2vw, 2.45rem);
+      font-weight: 900;
+      line-height: 1.14;
+      letter-spacing: -0.03em;
+    }
+
+    .sec-head p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.02rem;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .box {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 25px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .box h3 {
+      margin: 0 0 9px;
+      font-size: 1.14rem;
+      font-weight: 800;
+    }
+
+    .box p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    /* Horizontal Recovery Steps */
+    .steps-strip {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+
+    .step-card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 22px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .step-num {
+      display: inline-grid;
+      place-items: center;
+      width: 34px;
+      height: 34px;
+      border-radius: 11px;
+      background: var(--soft-teal);
+      color: var(--primary);
+      font-weight: 900;
+      font-size: 0.92rem;
+      margin-bottom: 12px;
+    }
+
+    .step-card h3 {
+      margin: 0 0 8px;
+      font-size: 1.06rem;
+      font-weight: 800;
+    }
+
+    .step-card p {
+      margin: 0;
+      font-size: 0.92rem;
+      color: var(--muted);
+    }
+
+    /* Mid Band */
+    .mid-banner {
+      background: var(--soft-teal);
+      border: 1px solid #c6e6df;
+      border-radius: 24px;
+      padding: 28px 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .mid-banner h3 {
+      margin: 0 0 5px;
+      font-size: 1.28rem;
+      font-weight: 900;
+    }
+
+    .mid-banner p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+
+    /* FAQ */
+    .faq-box {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 22px 24px;
+    }
+
+    .faq-box h3 {
+      margin: 0 0 8px;
+      font-size: 1.04rem;
+      font-weight: 800;
+    }
+
+    .faq-box p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    /* Closing Banner */
+    .closing-box {
+      background: linear-gradient(135deg, #0f766e 0%, #1c69f0 100%);
+      color: #fff;
+      border-radius: 28px;
+      padding: 38px 34px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      flex-wrap: wrap;
+      box-shadow: 0 22px 46px rgba(15, 118, 110, 0.22);
+    }
+
+    .closing-box h2 {
+      margin: 0 0 8px;
+      font-size: clamp(1.75rem, 3vw, 2.35rem);
+      font-weight: 900;
+      line-height: 1.14;
+      letter-spacing: -0.03em;
+    }
+
+    .closing-box p {
+      margin: 0;
+      max-width: 570px;
+      color: rgba(255, 255, 255, 0.92);
+      font-size: 1.02rem;
+    }
+
+    .btn-white {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 54px;
+      padding: 0 28px;
+      border-radius: 15px;
+      background: #fff;
+      color: #0f766e;
+      font-weight: 900;
+      font-size: 1rem;
+      transition: transform 0.15s ease;
+    }
+
+    .btn-white:hover {
+      transform: translateY(-1px);
+    }
+
+    /* Footer */
+    .footer {
+      padding: 32px 0 50px;
+      color: var(--muted);
+      font-size: 0.86rem;
+    }
+
+    .footer-inner {
+      border-top: 1px solid var(--line);
+      padding-top: 22px;
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 940px) {
+      .hero-grid,
+      .grid-3,
+      .grid-2,
+      .steps-strip {
+        grid-template-columns: 1fr;
+      }
+
+      .nav {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="/">
+        <svg class="brand-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-hidden="true">
+          <defs>
+            <linearGradient id="gBurnout" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#0f766e"/>
+              <stop offset="100%" stop-color="#1c69f0"/>
+            </linearGradient>
+          </defs>
+          <rect width="64" height="64" rx="16" fill="url(#gBurnout)"/>
+          <path d="M32 14c9 0 16 5 16 5v11c0 13-10 19-16 22-6-3-16-9-16-22V19s7-5 16-5z" fill="white"/>
+          <path d="M26 33l5 5 9-10" stroke="#0f766e" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>Safe Therapy</span>
+      </a>
+      <nav class="nav">
+        <a href="#signs">Burnout Signs</a>
+        <a href="#recovery">Recovery Path</a>
+        <a href="#support">What You Get</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a class="btn-nav aff-link" data-placement="burnout_top_nav" href="https://go.online-therapy.com/aff_c?offer_id=2&amp;aff_id=1116&amp;source=burnout">
+        Start Therapy
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="discount-banner">
+          <span class="discount-pill">20% OFF</span>
+          <span>First month discount applied automatically when you get started.</span>
+        </div>
+
+        <div class="hero-grid">
+          <div>
+            <span class="kicker-pill">Burnout &amp; Exhaustion Support</span>
+            <h1>Running on empty every day is not a sustainable pace.</h1>
+            <p class="hero-sub">
+              Work with a licensed therapist online to step out of constant overwork, reset unhealthy pressure habits, and rebuild steady energy without rearranging your whole schedule.
+            </p>
+            <div class="hero-actions">
+              <a class="btn-primary aff-link" data-placement="burnout_hero_cta" href="https://go.online-therapy.com/aff_c?offer_id=2&amp;aff_id=1116&amp;source=burnout">
+                Match With a Therapist for Burnout
+              </a>
+              <a class="btn-ghost" href="#recovery">How recovery unfolds</a>
+            </div>
+            <div class="hero-note">
+              Private online care &bull; Flexible session formats &bull; No commute required
+            </div>
+          </div>
+
+          <aside class="check-card">
+            <div class="check-card-top">
+              <span class="check-tag">Quick Burnout Check</span>
+            </div>
+            <h2>Which pattern hits closest right now?</h2>
+            <p>Select one item to see how online therapy helps address that exact bottleneck.</p>
+
+            <div class="signal-options" id="burnoutSignals">
+              <button class="signal-btn selected" type="button" data-key="guilt" onclick="selectSignal(this)">
+                <span>Feeling guilty whenever I stop working</span>
+                <span>&#10003;</span>
+              </button>
+              <button class="signal-btn" type="button" data-key="fatigue" onclick="selectSignal(this)">
+                <span>Mental fog and exhaustion even after rest</span>
+                <span></span>
+              </button>
+              <button class="signal-btn" type="button" data-key="boundaries" onclick="selectSignal(this)">
+                <span>Saying yes to too much and burning out</span>
+                <span></span>
+              </button>
+            </div>
+
+            <div class="check-result" id="signalResult">
+              <strong>Deconditioning work guilt</strong>
+              A therapist helps you separate real responsibility from self imposed pressure so rest stops feeling earned only at a breaking point.
+            </div>
+
+            <a class="btn-card-cta aff-link" data-placement="burnout_check_cta" href="https://go.online-therapy.com/aff_c?offer_id=2&amp;aff_id=1116&amp;source=burnout">
+              Get Matched &amp; Claim 20% Off &rarr;
+            </a>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="signs">
+      <div class="container">
+        <div class="sec-head">
+          <span class="sec-kicker">What Burnout Looks Like</span>
+          <h2>Burnout builds quietly before you realize how depleted you are.</h2>
+          <p>
+            Many driven people push through warning signs for months until focus drops, patience runs thin, and everyday tasks feel heavy.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <div class="box">
+            <h3>Emotional numbness or irritability</h3>
+            <p>
+              Snapping over small things, feeling detached from tasks you used to care about, or feeling flat even on days off.
+            </p>
+          </div>
+          <div class="box">
+            <h3>Cognitive overload and slow focus</h3>
+            <p>
+              Re-reading simple messages, struggling to prioritize, or feeling mentally saturated before mid afternoon.
+            </p>
+          </div>
+          <div class="box">
+            <h3>Always on, never truly off</h3>
+            <p>
+              Checking messages late, thinking about unfinished tasks in bed, and treating downtime like wasted time.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="recovery">
+      <div class="container">
+        <div class="sec-head">
+          <span class="sec-kicker">Steady Recovery</span>
+          <h2>A practical four stage approach to recovering your bandwidth.</h2>
+          <p>
+            Instead of telling you to simply take a vacation and go right back to the same cycle, structured therapy helps shift the root habits.
+          </p>
+        </div>
+
+        <div class="steps-strip">
+          <div class="step-card">
+            <span class="step-num">1</span>
+            <h3>Audit the drain</h3>
+            <p>Identify where your time, attention, and emotional energy are leaking each week.</p>
+          </div>
+          <div class="step-card">
+            <span class="step-num">2</span>
+            <h3>Set realistic limits</h3>
+            <p>Practice clear boundaries around work hours, expectations, and overcommitting.</p>
+          </div>
+          <div class="step-card">
+            <span class="step-num">3</span>
+            <h3>Reframe perfectionism</h3>
+            <p>Challenge all or nothing rules that turn normal effort into constant self criticism.</p>
+          </div>
+          <div class="step-card">
+            <span class="step-num">4</span>
+            <h3>Lock in recovery</h3>
+            <p>Build sustainable weekly pacing so progress holds up under real deadlines.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="support">
+      <div class="container">
+        <div class="sec-head">
+          <span class="sec-kicker">Why Online Fits Busy Schedules</span>
+          <h2>Support that fits around demanding hours instead of adding another chore.</h2>
+        </div>
+
+        <div class="grid-2">
+          <div class="box">
+            <h3>Flexible sessions and messaging</h3>
+            <p>
+              Meet via live video, voice call, or text chat from home, and send messages between sessions when stress spikes during the week.
+            </p>
+          </div>
+          <div class="box">
+            <h3>Guided CBT worksheets at your pace</h3>
+            <p>
+              Work through practical cognitive behavioral exercises that help you spot stress triggers early and reset your routine.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="mid-banner">
+          <div>
+            <h3>Ready to stop pushing through exhaustion alone?</h3>
+            <p>See available plans online with 20% off your first month included automatically.</p>
+          </div>
+          <a class="btn-primary aff-link" data-placement="burnout_mid_cta" href="https://go.online-therapy.com/aff_c?offer_id=2&amp;aff_id=1116&amp;source=burnout">
+            Explore Therapy Plans &rarr;
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="container">
+        <div class="sec-head">
+          <span class="sec-kicker">Common Questions</span>
+          <h2>Quick answers before you start.</h2>
+        </div>
+
+        <div class="grid-2">
+          <div class="faq-box">
+            <h3>Do I need a formal burnout diagnosis to start?</h3>
+            <p>
+              No. You can start whenever you feel overworked, drained, or stuck in high stress cycles and want structured guidance from a licensed therapist.
+            </p>
+          </div>
+          <div class="faq-box">
+            <h3>Can I fit this around irregular shifts or busy weeks?</h3>
+            <p>
+              Yes. Online sessions and asynchronous messaging make it much easier to stay consistent even when your schedule changes.
+            </p>
+          </div>
+          <div class="faq-box">
+            <h3>What if my therapist match does not feel right?</h3>
+            <p>
+              You can request a switch to another licensed therapist whenever you need a different fit.
+            </p>
+          </div>
+          <div class="faq-box">
+            <h3>How is the 20% first month discount applied?</h3>
+            <p>
+              It applies automatically when you sign up through this page, with no code needed.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="closing-box">
+          <div>
+            <h2>Give yourself room to recover without losing momentum.</h2>
+            <p>
+              Connect with a licensed therapist online and start rebuilding sustainable energy with 20% off your first month.
+            </p>
+          </div>
+          <a class="btn-white aff-link" data-placement="burnout_bottom_cta" href="https://go.online-therapy.com/aff_c?offer_id=2&amp;aff_id=1116&amp;source=burnout">
+            Start Therapy &rarr;
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>&copy; 2026 Safe Therapy.com</div>
+      <div>Informational resource only; not a clinical diagnosis or emergency service. Affiliate disclosure: we may earn a commission if you sign up, at no extra cost to you.</div>
+    </div>
+  </footer>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const paramSource = params.get('source');
+    const savedSource = localStorage.getItem('traffic_source');
+    const activeSource = paramSource || savedSource || 'burnout';
+
+    if (paramSource) {
+      localStorage.setItem('traffic_source', paramSource);
+    }
+
+    document.querySelectorAll('.aff-link').forEach(link => {
+      const url = new URL(link.href);
+      url.searchParams.set('source', activeSource);
+      link.href = url.toString();
+
+      link.addEventListener('click', function() {
+        if (typeof gtag === 'function') {
+          gtag('event', 'affiliate_click', {
+            'event_category': 'Outbound Affiliate',
+            'event_label': this.getAttribute('data-placement') || 'unknown',
+            'traffic_source': activeSource
+          });
+        }
+      });
+    });
+
+    const signalCopy = {
+      guilt: {
+        title: 'Deconditioning work guilt',
+        body: 'A therapist helps you separate real responsibility from self imposed pressure so rest stops feeling earned only at a breaking point.'
+      },
+      fatigue: {
+        title: 'Rebuilding cognitive and emotional recovery',
+        body: 'Structured CBT tools help quiet mental chatter and establish daily decompression habits that actually restore your energy.'
+      },
+      boundaries: {
+        title: 'Setting sustainable boundaries',
+        body: 'You practice clear, practical ways to protect your time and workload without feeling constant friction or guilt.'
+      }
+    };
+
+    function selectSignal(btnEl) {
+      const key = btnEl.getAttribute('data-key');
+      const data = signalCopy[key];
+      if (!data) return;
+
+      document.querySelectorAll('#burnoutSignals .signal-btn').forEach(btn => {
+        btn.classList.remove('selected');
+        const rightSpan = btn.querySelectorAll('span')[1];
+        if (rightSpan) rightSpan.innerHTML = '';
+      });
+
+      btnEl.classList.add('selected');
+      const activeRightSpan = btnEl.querySelectorAll('span')[1];
+      if (activeRightSpan) activeRightSpan.innerHTML = '&#10003;';
+
+      document.getElementById('signalResult').innerHTML =
+        `<strong>${data.title}</strong>${data.body}`;
+
+      if (typeof gtag === 'function') {
+        gtag('event', 'burnout_signal_selected', {
+          'signal': key,
+          'traffic_source': activeSource
+        });
+      }
+    }
+  </script>
+</body>
+</html>
