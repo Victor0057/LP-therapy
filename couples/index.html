@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Couples Therapy Online: Licensed Support | Safe Therapy</title>
+  <meta name="description" content="Couples therapy online with a licensed therapist. Rebuild communication, trust, and connection from home at a pace that works for both partners." />
+  <link rel="icon" type="image/svg+xml" href="/favicon-safe.svg" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CVBXTDCGS2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-CVBXTDCGS2');
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bg: #fdf9f6;
+      --surface: #ffffff;
+      --soft-terracotta: #fdf0ea;
+      --soft-slate: #eef2f7;
+      --text: #1c2430;
+      --muted: #5c6878;
+      --line: #eadfd7;
+      --primary: #c2410c;
+      --primary-dark: #9a3412;
+      --accent: #1e3a8a;
+      --shadow-sm: 0 10px 24px rgba(28, 36, 48, 0.04);
+      --shadow-md: 0 20px 46px rgba(28, 36, 48, 0.07);
+      --max: 1060px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Nunito', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.64;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(calc(100% - 32px), var(--max));
+      margin: 0 auto;
+    }
+
+    /* Header */
+    .header {
+      background: rgba(253, 249, 246, 0.94);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .header-inner {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 11px;
+      font-weight: 900;
+      font-size: 1.15rem;
+      letter-spacing: -0.02em;
+    }
+
+    .brand-logo {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      flex: 0 0 auto;
+      box-shadow: 0 6px 16px rgba(194, 65, 12, 0.2);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      font-size: 0.94rem;
+      font-weight: 700;
+      color: var(--muted);
+    }
+
+    .nav a:hover {
+      color: var(--text);
+    }
+
+    .btn-header {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0 18px;
+      border-radius: 12px;
+      background: var(--primary);
+      color: #fff;
+      font-weight: 800;
+      font-size: 0.92rem;
+      transition: background-color 0.15s ease, transform 0.15s ease;
+    }
+
+    .btn-header:hover {
+      background: var(--primary-dark);
+      transform: translateY(-1px);
+    }
+
+    /* Hero */
+    .hero {
+      padding: 46px 0 38px;
+    }
+
+    .offer-strip {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--soft-terracotta);
+      border: 1.5px solid #f4c7b3;
+      color: #6c2408;
+      border-radius: 14px;
+      padding: 8px 15px;
+      margin-bottom: 22px;
+      font-size: 0.92rem;
+      font-weight: 700;
+      box-shadow: 0 8px 20px rgba(194, 65, 12, 0.07);
+    }
+
+    .offer-badge {
+      background: var(--primary);
+      color: #fff;
+      font-size: 0.76rem;
+      font-weight: 900;
+      padding: 4px 10px;
+      border-radius: 9px;
+      letter-spacing: 0.03em;
+    }
+
+    .hero-banner-card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      padding: 36px;
+      box-shadow: var(--shadow-md);
+      display: grid;
+      grid-template-columns: 1.25fr 0.75fr;
+      gap: 32px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      background: var(--soft-slate);
+      color: var(--accent);
+      font-size: 0.83rem;
+      font-weight: 800;
+      padding: 6px 14px;
+      border-radius: 999px;
+      margin-bottom: 14px;
+    }
+
+    .hero h1 {
+      margin: 0 0 14px;
+      font-size: clamp(2.15rem, 4.3vw, 3.35rem);
+      font-weight: 900;
+      line-height: 1.08;
+      letter-spacing: -0.035em;
+    }
+
+    .hero p {
+      margin: 0 0 24px;
+      color: var(--muted);
+      font-size: 1.06rem;
+    }
+
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 56px;
+      padding: 0 26px;
+      border-radius: 15px;
+      background: var(--primary);
+      color: #fff;
+      font-weight: 800;
+      font-size: 1.02rem;
+      box-shadow: 0 14px 28px rgba(194, 65, 12, 0.22);
+      transition: background-color 0.15s ease, transform 0.15s ease;
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-dark);
+      transform: translateY(-1px);
+    }
+
+    .btn-outline {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 56px;
+      padding: 0 22px;
+      border-radius: 15px;
+      background: var(--bg);
+      border: 1px solid var(--line);
+      color: var(--text);
+      font-weight: 700;
+      font-size: 0.96rem;
+    }
+
+    .reassurance {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--muted);
+    }
+
+    .side-highlight {
+      background: #fcf7f4;
+      border: 1px solid #f0dfd5;
+      border-radius: 22px;
+      padding: 24px;
+    }
+
+    .side-highlight h2 {
+      margin: 0 0 12px;
+      font-size: 1.2rem;
+      font-weight: 900;
+    }
+
+    .side-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 20px;
+      display: grid;
+      gap: 10px;
+      font-size: 0.94rem;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .side-list li {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+    }
+
+    .dot-check {
+      color: var(--primary);
+      font-weight: 900;
+    }
+
+    .btn-secondary-cta {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      min-height: 50px;
+      border-radius: 14px;
+      background: var(--accent);
+      color: #fff;
+      font-weight: 800;
+      font-size: 0.96rem;
+      transition: filter 0.15s ease, transform 0.15s ease;
+    }
+
+    .btn-secondary-cta:hover {
+      filter: brightness(0.95);
+      transform: translateY(-1px);
+    }
+
+    /* Sections */
+    section {
+      padding: 46px 0;
+    }
+
+    .sec-head {
+      max-width: 720px;
+      margin-bottom: 26px;
+    }
+
+    .kicker {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--primary);
+      margin-bottom: 8px;
+    }
+
+    .sec-head h2 {
+      margin: 0 0 10px;
+      font-size: clamp(1.75rem, 3.2vw, 2.45rem);
+      font-weight: 900;
+      line-height: 1.14;
+      letter-spacing: -0.03em;
+    }
+
+    .sec-head p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.02rem;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 25px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .card h3 {
+      margin: 0 0 9px;
+      font-size: 1.14rem;
+      font-weight: 800;
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    /* Interactive Relationship Focus */
+    .focus-box {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 26px;
+      padding: 28px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .focus-buttons {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .focus-btn {
+      background: #faf5f2;
+      border: 1.5px solid #eadad0;
+      border-radius: 14px;
+      padding: 12px 14px;
+      font-family: inherit;
+      font-size: 0.93rem;
+      font-weight: 800;
+      color: var(--muted);
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .focus-btn.active {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: #fff;
+    }
+
+    .focus-panel {
+      background: #fdf9f6;
+      border: 1px solid #efe2d9;
+      border-radius: 18px;
+      padding: 22px;
+    }
+
+    .focus-panel h3 {
+      margin: 0 0 8px;
+      font-size: 1.22rem;
+      font-weight: 900;
+    }
+
+    .focus-panel p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+
+    /* Mid Callout */
+    .mid-callout {
+      background: var(--soft-terracotta);
+      border: 1px solid #f2cfc0;
+      border-radius: 24px;
+      padding: 28px 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .mid-callout h3 {
+      margin: 0 0 5px;
+      font-size: 1.28rem;
+      font-weight: 900;
+    }
+
+    .mid-callout p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+
+    /* FAQ */
+    .faq-item {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 22px 24px;
+    }
+
+    .faq-item h3 {
+      margin: 0 0 8px;
+      font-size: 1.04rem;
+      font-weight: 800;
+    }
+
+    .faq-item p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    /* Bottom Banner */
+    .bottom-banner {
+      background: linear-gradient(135deg, #c2410c 0%, #ea580c 100%);
+      color: #fff;
+      border-radius: 28px;
+      padding: 38px 34px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      flex-wrap: wrap;
+      box-shadow: 0 22px 46px rgba(194, 65, 12, 0.22);
+    }
+
+    .bottom-banner h2 {
+      margin: 0 0 8px;
+      font-size: clamp(1.75rem, 3vw, 2.35rem);
+      font-weight: 900;
+      line-height: 1.14;
+      letter-spacing: -0.03em;
+    }
+
+    .bottom-banner p {
+      margin: 0;
+      max-width: 570px;
+      color: rgba(255, 255, 255, 0.92);
+      font-size: 1.02rem;
+    }
+
+    .btn-white {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 54px;
+      padding: 0 28px;
+      border-radius: 15px;
+      background: #fff;
+      color: var(--primary-dark);
+      font-weight: 900;
+      font-size: 1rem;
+      transition: transform 0.15s ease;
+    }
+
+    .btn-white:hover {
+      transform: translateY(-1px);
+    }
+
+    /* Footer */
+    .footer {
+      padding: 32px 0 50px;
+      color: var(--muted);
+      font-size: 0.86rem;
+    }
+
+    .footer-inner {
+      border-top: 1px solid var(--line);
+      padding-top: 22px;
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 920px) {
+      .hero-banner-card,
+      .grid-3,
+      .grid-2,
+      .focus-buttons {
+        grid-template-columns: 1fr;
+      }
+
+      .nav {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="/">
+        <svg class="brand-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-hidden="true">
+          <defs>
+            <linearGradient id="gCouples" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#c2410c"/>
+              <stop offset="100%" stop-color="#ea580c"/>
+            </linearGradient>
+          </defs>
+          <rect width="64" height="64" rx="16" fill="url(#gCouples)"/>
+          <path d="M32 14c9 0 16 5 16 5v11c0 13-10 19-16 22-6-3-16-9-16-22V19s7-5 16-5z" fill="white"/>
+          <path d="M26 33l5 5 9-10" stroke="#c2410c" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>Safe Therapy</span>
+      </a>
+      <nav class="nav">
+        <a href="#dynamics">Common Friction</a>
+        <a href="#focus">Where To Start</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a class="btn-header aff-link" data-placement="couples_top_nav" href="https://go.online-therapy.com/aff_c?offer_id=2&amp;aff_id=1116&amp;source=couples">
+        Start Therapy
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="offer-strip">
+          <span class="offer-badge">20% OFF</span>
+          <span>First month discount applied automatically when you get started.</span>
+        </div>
+
+        <div class="hero-banner-card">
+          <div>
+            <span class="eyebrow">Licensed Therapists &bull; Private Online Sessions</span>
+            <h1>Talk through recurring arguments before distance grows wider.</h1>
+            <p>
+              Connect with a licensed therapist online to build calmer communication, repair trust, and navigate everyday relationship tension from home.
+            </p>
+            <div class="cta-row">
+              <a class="btn-primary aff-link" data-placement="couples_hero_cta" href="https://go.online-therapy.com/aff_c?offer_id=2&amp;aff_id=1116&amp;source=couples">
+                Match With a Therapist
+              </a>
+              <a class="btn-outline" href="#focus">Explore focus areas</a>
+            </div>
+            <div class="reassurance">
+              Private online care &bull; Flexible scheduling &bull; Switch therapists anytime
+            </div>
+          </div>
+
+          <aside class="side-highlight">
+            <h2>Built for real life together</h2>
+            <ul class="side-list">
+              <li><span class="dot-check">✓</span><span>Join from home without travel or waiting rooms</span></li>
+              <li><span class="dot-check">✓</span><span>Guided exercises and structured worksheets</span></li>
+              <li><span class="dot-check">✓</span><span>Message support alongside live sessions</span></li>
+              <li><span class="dot-check">✓</span><span>20% off your first month included</span></li>
+            </ul>
+            <a class="btn-secondary-cta aff-link" data-placement="couples_side_cta" href="https://go.online-therapy.com/aff_c?offer_id=2&amp;aff_id=1116&amp;source=couples">
+              See Plans &amp; Availability &rarr;
+            </a>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="dynamics">
+      <div class="container">
+        <div class="sec-head">
+          <span class="kicker">Why Relationships Stall</span>
+          <h2>Most couples do not run out of care. They get stuck in patterns.</h2>
+          <p>
+            When stress, unmet expectations, or past hurt go unnamed, small disagreements can quickly turn into silence or defensiveness.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <div class="card">
+            <h3>Conversations that loop or shut down</h3>
+            <p>
+              Bringing up a concern turns into an argument, or one partner withdraws completely just to keep the peace.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Feeling like roommates instead of partners</h3>
+            <p>
+              Work, chores, and daily logistics take over while real emotional closeness and appreciation slip into the background.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Carrying unspoken resentment</h3>
+            <p>
+              Small letdowns accumulate over time until neutral comments start sounding critical or unfair.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="focus">
+      <div class="container">
+        <div class="sec-head">
+          <span class="kicker">Targeted Support</span>
+          <h2>Choose what feels most urgent in your relationship right now.</h2>
+        </div>
+
+        <div class="focus-box">
+          <div class="focus-buttons">
+            <button class="focus-btn active" type="button" onclick="showFocus('communication', this)">Communication &amp; Conflict</button>
+            <button class="focus-btn" type="button" onclick="showFocus('trust', this)">Trust &amp; Reconnection</button>
+            <button class="focus-btn" type="button" onclick="showFocus('balance', this)">Stress &amp; Daily Balance</button>
+          </div>
+
+          <div class="focus-panel">
+            <h3 id="focusTitle">Moving from defensiveness and arguments to productive listening</h3>
+            <p id="focusDesc">
+              A licensed therapist helps you spot what triggers escalation early, slow down reactive loops, and express needs clearly without blame.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="mid-callout">
+          <div>
+            <h3>Ready to take a constructive first step?</h3>
+            <p>Explore therapy plans online with 20% off your first month included automatically.</p>
+          </div>
+          <a class="btn-primary aff-link" data-placement="couples_mid_cta" href="https://go.online-therapy.com/aff_c?offer_id=2&amp;aff_id=1116&amp;source=couples">
+            Explore Support Options &rarr;
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="container">
+        <div class="sec-head">
+          <span class="kicker">Questions &amp; Answers</span>
+          <h2>Common questions before getting started.</h2>
+        </div>
+
+        <div class="grid-2">
+          <div class="faq-item">
+            <h3>Do we need to be in the same room for online sessions?</h3>
+            <p>
+              Not necessarily. Online sessions make it flexible to connect together or from separate places when schedules require it.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h3>What if we are not sure where to begin?</h3>
+            <p>
+              You do not need everything mapped out beforehand. Your therapist helps structure what to focus on step by step.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h3>Can we switch therapists if it is not the right fit?</h3>
+            <p>
+              Yes. You can request a different licensed therapist match whenever needed.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h3>How does the 20% first month discount work?</h3>
+            <p>
+              Your 20% first month discount applies automatically at signup with no promo code required.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="bottom-banner">
+          <div>
+            <h2>Start building calmer conversations and stronger connection.</h2>
+            <p>
+              Connect with a licensed therapist online and claim 20% off your first month automatically.
+            </p>
+          </div>
+          <a class="btn-white aff-link" data-placement="couples_bottom_cta" href="https://go.online-therapy.com/aff_c?offer_id=2&amp;aff_id=1116&amp;source=couples">
+            Start Therapy &rarr;
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>&copy; 2026 Safe Therapy.com</div>
+      <div>Informational resource only; not a clinical diagnosis or emergency service. Affiliate disclosure: we may earn a commission if you sign up, at no extra cost to you.</div>
+    </div>
+  </footer>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const paramSource = params.get('source');
+    const savedSource = localStorage.getItem('traffic_source');
+    const activeSource = paramSource || savedSource || 'couples';
+
+    if (paramSource) {
+      localStorage.setItem('traffic_source', paramSource);
+    }
+
+    document.querySelectorAll('.aff-link').forEach(link => {
+      const url = new URL(link.href);
+      url.searchParams.set('source', activeSource);
+      link.href = url.toString();
+
+      link.addEventListener('click', function() {
+        if (typeof gtag === 'function') {
+          gtag('event', 'affiliate_click', {
+            'event_category': 'Outbound Affiliate',
+            'event_label': this.getAttribute('data-placement') || 'unknown',
+            'traffic_source': activeSource
+          });
+        }
+      });
+    });
+
+    const focusData = {
+      communication: {
+        title: 'Moving from defensiveness and arguments to productive listening',
+        desc: 'A licensed therapist helps you spot what triggers escalation early, slow down reactive loops, and express needs clearly without blame.'
+      },
+      trust: {
+        title: 'Rebuilding emotional safety and steady connection',
+        desc: 'When trust feels strained or distance has grown, structured guidance gives both of you a clear space to be honest and rebuild consistency.'
+      },
+      balance: {
+        title: 'Handling outside stress without taking it out on each other',
+        desc: 'Practical habits help you protect quality time and shared support even during demanding work periods or major life changes.'
+      }
+    };
+
+    function showFocus(key, btnEl) {
+      document.querySelectorAll('.focus-btn').forEach(btn => btn.classList.remove('active'));
+      if (btnEl) btnEl.classList.add('active');
+
+      const item = focusData[key];
+      if (item) {
+        document.getElementById('focusTitle').textContent = item.title;
+        document.getElementById('focusDesc').textContent = item.desc;
+
+        if (typeof gtag === 'function') {
+          gtag('event', 'couples_focus_viewed', {
+            'focus_area': key,
+            'traffic_source': activeSource
+          });
+        }
+      }
+    }
+  </script>
+</body>
+</html>
