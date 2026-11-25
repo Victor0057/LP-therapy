@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Overthinking &amp; Racing Thoughts Therapy | Safe Therapy</title>
+  <meta name="description" content="Overthinking therapy with a licensed online therapist. Break repetitive thought loops, ease nighttime mental noise, and feel more decisive from home." />
+  <link rel="icon" type="image/svg+xml" href="/favicon-safe.svg" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CVBXTDCGS2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-CVBXTDCGS2');
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bg: #fbfaf7;
+      --surface: #ffffff;
+      --soft-indigo: #eef0ff;
+      --soft-plum: #f6effd;
+      --text: #191c32;
+      --muted: #5c6282;
+      --line: #e5e7f2;
+      --primary: #4338ca;
+      --primary-dark: #3128a5;
+      --accent: #0d9488;
+      --shadow-sm: 0 10px 26px rgba(25, 28, 50, 0.04);
+      --shadow-lg: 0 24px 54px rgba(25, 28, 50, 0.08);
+      --max: 1020px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Nunito', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(calc(100% - 32px), var(--max));
+      margin: 0 auto;
+    }
+
+    /* Header */
+    .topbar {
+      background: rgba(251, 250, 247, 0.92);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .topbar-inner {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 11px;
+      font-weight: 900;
+      font-size: 1.15rem;
+      letter-spacing: -0.02em;
+    }
+
+    .brand-logo {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      flex: 0 0 auto;
+      box-shadow: 0 6px 16px rgba(67, 56, 202, 0.22);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      font-size: 0.94rem;
+      font-weight: 700;
+      color: var(--muted);
+    }
+
+    .nav-links a:hover {
+      color: var(--text);
+    }
+
+    .btn-top {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0 18px;
+      border-radius: 12px;
+      background: var(--primary);
+      color: #fff;
+      font-weight: 800;
+      font-size: 0.92rem;
+      transition: background-color 0.15s ease, transform 0.15s ease;
+    }
+
+    .btn-top:hover {
+      background: var(--primary-dark);
+      transform: translateY(-1px);
+    }
+
+    /* Centered Editorial Hero */
+    .hero {
+      padding: 48px 0 36px;
+      text-align: center;
+    }
+
+    .promo-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--surface);
+      border: 1.5px solid #c7d2fe;
+      border-radius: 999px;
+      padding: 7px 16px 7px 8px;
+      margin-bottom: 22px;
+      font-size: 0.91rem;
+      font-weight: 700;
+      color: #272b52;
+      box-shadow: 0 10px 24px rgba(67, 56, 202, 0.08);
+    }
+
+    .promo-tag {
+      background: var(--primary);
+      color: #fff;
+      font-size: 0.76rem;
+      font-weight: 900;
+      padding: 4px 11px;
+      border-radius: 999px;
+      letter-spacing: 0.03em;
+    }
+
+    .hero h1 {
+      margin: 0 auto 16px;
+      max-width: 790px;
+      font-size: clamp(2.25rem, 4.8vw, 3.6rem);
+      font-weight: 900;
+      line-height: 1.07;
+      letter-spacing: -0.035em;
+    }
+
+    .hero-sub {
+      margin: 0 auto 28px;
+      max-width: 640px;
+      font-size: 1.1rem;
+      color: var(--muted);
+    }
+
+    .hero-cta-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+
+    .btn-main {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 56px;
+      padding: 0 28px;
+      border-radius: 15px;
+      background: var(--primary);
+      color: #fff;
+      font-weight: 800;
+      font-size: 1.02rem;
+      box-shadow: 0 16px 32px rgba(67, 56, 202, 0.24);
+      transition: background-color 0.15s ease, transform 0.15s ease;
+    }
+
+    .btn-main:hover {
+      background: var(--primary-dark);
+      transform: translateY(-1px);
+    }
+
+    .btn-sub {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 56px;
+      padding: 0 22px;
+      border-radius: 15px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      color: var(--text);
+      font-weight: 700;
+      font-size: 0.98rem;
+    }
+
+    .hero-caption {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--muted);
+    }
+
+    /* Interactive Loop Switcher Panel */
+    .loop-panel {
+      margin-top: 34px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      padding: 28px;
+      box-shadow: var(--shadow-lg);
+      text-align: left;
+    }
+
+    .loop-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 22px;
+    }
+
+    .loop-tab {
+      background: var(--soft-indigo);
+      border: 1.5px solid transparent;
+      color: var(--primary);
+      border-radius: 13px;
+      padding: 10px 16px;
+      font-family: inherit;
+      font-size: 0.92rem;
+      font-weight: 800;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .loop-tab.active {
+      background: var(--primary);
+      color: #fff;
+      box-shadow: 0 8px 18px rgba(67, 56, 202, 0.2);
+    }
+
+    .loop-body {
+      display: grid;
+      grid-template-columns: 1.25fr 0.75fr;
+      gap: 24px;
+      align-items: center;
+      background: #fafaff;
+      border: 1px solid #e6e8f7;
+      border-radius: 20px;
+      padding: 24px;
+    }
+
+    .loop-body h2 {
+      margin: 0 0 8px;
+      font-size: 1.3rem;
+      font-weight: 900;
+      line-height: 1.25;
+    }
+
+    .loop-body p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+
+    .loop-cta-box {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 18px;
+      text-align: center;
+    }
+
+    .loop-cta-label {
+      display: block;
+      font-size: 0.82rem;
+      font-weight: 800;
+      color: var(--accent);
+      margin-bottom: 10px;
+    }
+
+    .btn-panel {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      min-height: 48px;
+      border-radius: 13px;
+      background: var(--accent);
+      color: #fff;
+      font-weight: 800;
+      font-size: 0.95rem;
+      transition: filter 0.15s ease, transform 0.15s ease;
+    }
+
+    .btn-panel:hover {
+      filter: brightness(0.95);
+      transform: translateY(-1px);
+    }
+
+    /* Sections */
+    section {
+      padding: 46px 0;
+    }
+
+    .sec-title-wrap {
+      max-width: 700px;
+      margin-bottom: 26px;
+    }
+
+    .kicker {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--primary);
+      margin-bottom: 8px;
+    }
+
+    .sec-title-wrap h2 {
+      margin: 0 0 10px;
+      font-size: clamp(1.75rem, 3.2vw, 2.45rem);
+      font-weight: 900;
+      line-height: 1.14;
+      letter-spacing: -0.03em;
+    }
+
+    .sec-title-wrap p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.02rem;
+    }
+
+    /* Two Column Contrast Cards */
+    .contrast-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .card-trap {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 28px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .card-shift {
+      background: linear-gradient(180deg, #f3f4ff 0%, #ffffff 100%);
+      border: 1px solid #d4d8f8;
+      border-radius: 24px;
+      padding: 28px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .card-trap h3,
+    .card-shift h3 {
+      margin: 0 0 14px;
+      font-size: 1.24rem;
+      font-weight: 900;
+    }
+
+    .list-clean {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 12px;
+      font-size: 0.96rem;
+      color: var(--muted);
+    }
+
+    .list-clean li {
+      padding-left: 22px;
+      position: relative;
+    }
+
+    .card-trap .list-clean li::before {
+      content: "◦";
+      position: absolute;
+      left: 4px;
+      font-weight: 900;
+      color: #8c93b5;
+    }
+
+    .card-shift .list-clean li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      font-weight: 900;
+      color: var(--primary);
+    }
+
+    /* 3 Benefit Cards */
+    .cards-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .info-card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 25px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .info-card h3 {
+      margin: 0 0 9px;
+      font-size: 1.12rem;
+      font-weight: 800;
+    }
+
+    .info-card p {
+      margin: 0;
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+
+    /* Mid Callout */
+    .mid-cta {
+      background: var(--soft-plum);
+      border: 1px solid #e2d4f5;
+      border-radius: 24px;
+      padding: 28px 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .mid-cta h3 {
+      margin: 0 0 5px;
+      font-size: 1.28rem;
+      font-weight: 900;
+    }
+
+    .mid-cta p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+
+    /* FAQ Grid */
+    .faq-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .faq-card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 22px 24px;
+    }
+
+    .faq-card h3 {
+      margin: 0 0 8px;
+      font-size: 1.04rem;
+      font-weight: 800;
+    }
+
+    .faq-card p {
+      margin: 0;
+      font-size: 0.94rem;
+      color: var(--muted);
+    }
+
+    /* Bottom Banner */
+    .bottom-cta {
+      background: linear-gradient(135deg, #4338ca 0%, #6366f1 100%);
+      color: #fff;
+      border-radius: 28px;
+      padding: 38px 34px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      flex-wrap: wrap;
+      box-shadow: 0 22px 48px rgba(67, 56, 202, 0.24);
+    }
+
+    .bottom-cta h2 {
+      margin: 0 0 8px;
+      font-size: clamp(1.75rem, 3vw, 2.35rem);
+      font-weight: 900;
+      line-height: 1.14;
+      letter-spacing: -0.03em;
+    }
+
+    .bottom-cta p {
+      margin: 0;
+      max-width: 560px;
+      color: rgba(255, 255, 255, 0.92);
+      font-size: 1.02rem;
+    }
+
+    .btn-light {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 54px;
+      padding: 0 28px;
+      border-radius: 15px;
+      background: #fff;
+      color: var(--primary);
+      font-weight: 900;
+      font-size: 1rem;
+      transition: transform 0.15s ease;
+    }
+
+    .btn-light:hover {
+      transform: translateY(-1px);
+    }
+
+    /* Footer */
+    .footer {
+      padding: 32px 0 50px;
+      color: var(--muted);
+      font-size: 0.86rem;
+    }
+
+    .footer-inner {
+      border-top: 1px solid var(--line);
+      padding-top: 22px;
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 900px) {
+      .loop-body,
+      .contrast-grid,
+      .cards-3,
+      .faq-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .nav-links {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="/">
+        <svg class="brand-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-hidden="true">
+          <defs>
+            <linearGradient id="gOverthink" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#4338ca"/>
+              <stop offset="100%" stop-color="#6366f1"/>
+            </linearGradient>
+          </defs>
+          <rect width="64" height="64" rx="16" fill="url(#gOverthink)"/>
+          <path d="M32 14c9 0 16 5 16 5v11c0 13-10 19-16 22-6-3-16-9-16-22V19s7-5 16-5z" fill="white"/>
+          <path d="M26 33l5 5 9-10" stroke="#4338ca" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>Safe Therapy</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#contrast">Mental Loops</a>
+        <a href="#benefits">How CBT Helps</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a class="btn-top aff-link" data-placement="overthinking_top_nav" href="https://go.online-therapy.com/aff_c?offer_id=2&amp;aff_id=1116&amp;source=overthinking">
+        Start Therapy
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="promo-chip">
+          <span class="promo-tag">20% OFF</span>
+          <span>First month discount applied automatically when you sign up.</span>
+        </div>
+
+        <h1>Quiet the mental replay and stop overanalyzing every move.</h1>
+        <p class="hero-sub">
+          Work with a licensed online therapist to spot overthinking loops early, turn down nighttime mental noise, and make decisions with a steadier mind.
+        </p>
+
+        <div class="hero-cta-row">
+          <a class="btn-main aff-link" data-placement="overthinking_hero_cta" href="https://go.online-therapy.com/aff_c?offer_id=2&amp;aff_id=1116&amp;source=overthinking">
+            Match With a Therapist
+          </a>
+          <a class="btn-sub" href="#contrast">See how it breaks the loop</a>
+        </div>
+        <div class="hero-caption">
+          100% private &bull; Online from home &bull; Live video, voice, or text
+        </div>
+
+        <div class="loop-panel">
+          <div class="loop-tabs">
+            <button class="loop-tab active" type="button" onclick="showLoop('night', this)">Nighttime Loops</button>
+            <button class="loop-tab" type="button" onclick="showLoop('decisions', this)">Decision Paralysis</button>
+            <button class="loop-tab" type="button" onclick="showLoop('conversations', this)">Post-Talk Replay</button>
+          </div>
+
+          <div class="loop-body">
+            <div>
+              <h2 id="loopTitle">When your head hits the pillow and thoughts shift into overdrive</h2>
+              <p id="loopDesc">
+                During the day you stay busy enough to outrun mental noise, but at night every unresolved detail feels urgent. Structured CBT helps you step out of mental problem solving at bedtime and build a calmer wind down.
+              </p>
+            </div>
+            <div class="loop-cta-box">
+              <span class="loop-cta-label">Includes 20% off month 1</span>
+              <a class="btn-panel aff-link" data-placement="overthinking_panel_cta" href="https://go.online-therapy.com/aff_c?offer_id=2&amp;aff_id=1116&amp;source=overthinking">
+                View Plans &amp; Start &rarr;
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contrast">
+      <div class="container">
+        <div class="sec-title-wrap">
+          <span class="kicker">Breaking The Cycle</span>
+          <h2>Thinking harder rarely solves a habit of overthinking.</h2>
+          <p>
+            Most overthinkers do not lack intelligence or insight. They get stuck trying to think their way to 100% certainty.
+          </p>
+        </div>
+
+        <div class="contrast-grid">
+          <div class="card-trap">
+            <h3>The overthinking trap</h3>
+            <ul class="list-clean">
+              <li>Chasing certainty by running dozens of what if scenarios</li>
+              <li>Re-reading messages or replaying talks looking for hidden meaning</li>
+              <li>Delaying choices until the risk of being wrong feels smaller</li>
+              <li>Feeling mentally exhausted even without physical exertion</li>
+            </ul>
+          </div>
+
+          <div class="card-shift">
+            <h3>What changes with guided support</h3>
+            <ul class="list-clean">
+              <li>Catching thought spirals earlier before they snowball</li>
+              <li>Separating useful planning from repetitive mental rumination</li>
+              <li>Taking clean, grounded action without needing perfection first</li>
+              <li>Having a licensed therapist help you test new responses weekly</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="benefits">
+      <div class="container">
+        <div class="sec-title-wrap">
+          <span class="kicker">Practical Structure</span>
+          <h2>Tools you can use between sessions, not just talk.</h2>
+        </div>
+
+        <div class="cards-3">
+          <div class="info-card">
+            <h3>CBT worksheets and journal</h3>
+            <p>
+              Put racing thoughts onto structured prompts so your mind does not have to hold every loop on repeat.
+            </p>
+          </div>
+          <div class="info-card">
+            <h3>Therapist messaging support</h3>
+            <p>
+              Share what came up during the week and get guidance from your licensed therapist between live sessions.
+            </p>
+          </div>
+          <div class="info-card">
+            <h3>Your pace, your format</h3>
+            <p>
+              Connect via video, voice, or text from home with the option to switch therapists anytime if needed.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="mid-cta">
+          <div>
+            <h3>Ready to give your mind a real break?</h3>
+            <p>Check therapy plans online with 20% off your first month included automatically.</p>
+          </div>
+          <a class="btn-main aff-link" data-placement="overthinking_mid_cta" href="https://go.online-therapy.com/aff_c?offer_id=2&amp;aff_id=1116&amp;source=overthinking">
+            Match With a Therapist &rarr;
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="container">
+        <div class="sec-title-wrap">
+          <span class="kicker">Questions &amp; Answers</span>
+          <h2>Before you get started.</h2>
+        </div>
+
+        <div class="faq-grid">
+          <div class="faq-card">
+            <h3>Is online therapy effective for overthinking?</h3>
+            <p>
+              Yes. Cognitive behavioral therapy is widely used to help recognize thought loops, reduce rumination, and build healthier mental habits.
+            </p>
+          </div>
+          <div class="faq-card">
+            <h3>What if I prefer not to do video calls?</h3>
+            <p>
+              You can choose live sessions by video or voice, or work through text messaging depending on what feels comfortable.
+            </p>
+          </div>
+          <div class="faq-card">
+            <h3>Can I switch to a different therapist?</h3>
+            <p>
+              Yes. If you feel you need a different match, you can request a new licensed therapist.
+            </p>
+          </div>
+          <div class="faq-card">
+            <h3>How do I get the 20% first month discount?</h3>
+            <p>
+              It is applied automatically when you sign up through this page with no promo code required.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="bottom-cta">
+          <div>
+            <h2>Step out of the mental loop and start moving forward.</h2>
+            <p>
+              Connect with a licensed therapist online and claim 20% off your first month automatically.
+            </p>
+          </div>
+          <a class="btn-light aff-link" data-placement="overthinking_bottom_cta" href="https://go.online-therapy.com/aff_c?offer_id=2&amp;aff_id=1116&amp;source=overthinking">
+            Start Therapy &rarr;
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>&copy; 2026 Safe Therapy.com</div>
+      <div>Informational resource only; not a clinical diagnosis or emergency service. Affiliate disclosure: we may earn a commission if you sign up, at no extra cost to you.</div>
+    </div>
+  </footer>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const paramSource = params.get('source');
+    const savedSource = localStorage.getItem('traffic_source');
+    const activeSource = paramSource || savedSource || 'overthinking';
+
+    if (paramSource) {
+      localStorage.setItem('traffic_source', paramSource);
+    }
+
+    document.querySelectorAll('.aff-link').forEach(link => {
+      const url = new URL(link.href);
+      url.searchParams.set('source', activeSource);
+      link.href = url.toString();
+
+      link.addEventListener('click', function() {
+        if (typeof gtag === 'function') {
+          gtag('event', 'affiliate_click', {
+            'event_category': 'Outbound Affiliate',
+            'event_label': this.getAttribute('data-placement') || 'unknown',
+            'traffic_source': activeSource
+          });
+        }
+      });
+    });
+
+    const loopsData = {
+      night: {
+        title: 'When your head hits the pillow and thoughts shift into overdrive',
+        desc: 'During the day you stay busy enough to outrun mental noise, but at night every unresolved detail feels urgent. Structured CBT helps you step out of mental problem solving at bedtime and build a calmer wind down.'
+      },
+      decisions: {
+        title: 'Stuck weighing every option until momentum stalls',
+        desc: 'Trying to predict every outcome before acting keeps you frozen. Working with a licensed therapist helps you weigh trade-offs realistically and move ahead without second guessing every step.'
+      },
+      conversations: {
+        title: 'Replaying what you said or how it came across',
+        desc: 'Mentally editing past conversations rarely brings peace. Guided exercises help you spot anxiety-driven assumptions and respond with more balance in future interactions.'
+      }
+    };
+
+    function showLoop(key, btnEl) {
+      document.querySelectorAll('.loop-tab').forEach(btn => btn.classList.remove('active'));
+      if (btnEl) btnEl.classList.add('active');
+
+      const item = loopsData[key];
+      if (item) {
+        document.getElementById('loopTitle').textContent = item.title;
+        document.getElementById('loopDesc').textContent = item.desc;
+
+        if (typeof gtag === 'function') {
+          gtag('event', 'overthinking_loop_viewed', {
+            'loop_type': key,
+            'traffic_source': activeSource
+          });
+        }
+      }
+    }
+  </script>
+</body>
+</html>
