@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Social Anxiety Therapy Online: Licensed Support | Safe Therapy</title>
+  <meta name="description" content="Social anxiety therapy with a licensed online therapist. Start at your own pace via text, voice, or video with 20% off your first month included." />
+  <link rel="icon" type="image/svg+xml" href="/favicon-safe.svg" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CVBXTDCGS2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-CVBXTDCGS2');
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bg: #f6f8fb;
+      --surface: #ffffff;
+      --soft-violet: #f1efff;
+      --soft-emerald: #e9f8f1;
+      --text: #161d2b;
+      --muted: #5a657d;
+      --line: #dfe5f0;
+      --primary: #5b21b6;
+      --primary-dark: #4c1d95;
+      --accent: #059669;
+      --shadow-sm: 0 8px 22px rgba(22, 29, 43, 0.04);
+      --shadow-md: 0 20px 46px rgba(22, 29, 43, 0.08);
+      --max: 1080px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Nunito', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.66;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(calc(100% - 32px), var(--max));
+      margin: 0 auto;
+    }
+
+    /* Topbar */
+    .topbar {
+      background: var(--surface);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .topbar-inner {
+      min-height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 900;
+      font-size: 1.15rem;
+      letter-spacing: -0.02em;
+    }
+
+    .brand-logo {
+      width: 35px;
+      height: 35px;
+      border-radius: 10px;
+      flex: 0 0 auto;
+    }
+
+    .btn-top {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0 18px;
+      border-radius: 12px;
+      background: var(--primary);
+      color: #fff;
+      font-weight: 800;
+      font-size: 0.92rem;
+      transition: background-color 0.15s ease;
+    }
+
+    .btn-top:hover {
+      background: var(--primary-dark);
+    }
+
+    /* Offer Ribbon */
+    .offer-ribbon {
+      background: var(--soft-emerald);
+      border-bottom: 1px solid #bcebd6;
+      color: #094733;
+      padding: 10px 16px;
+      font-size: 0.9rem;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    .offer-badge {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      font-size: 0.74rem;
+      font-weight: 900;
+      padding: 2px 9px;
+      border-radius: 7px;
+      margin-right: 8px;
+      letter-spacing: 0.03em;
+    }
+
+    /* Main Asymmetric Two-Column Page Layout */
+    .page-layout {
+      display: grid;
+      grid-template-columns: 1fr 340px;
+      gap: 36px;
+      align-items: start;
+      padding: 42px 0 64px;
+    }
+
+    .main-col > section {
+      padding: 0 0 44px;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      background: var(--soft-violet);
+      color: var(--primary);
+      font-size: 0.82rem;
+      font-weight: 800;
+      padding: 5px 14px;
+      border-radius: 999px;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      margin: 0 0 16px;
+      font-size: clamp(2.15rem, 4.2vw, 3.25rem);
+      font-weight: 900;
+      line-height: 1.08;
+      letter-spacing: -0.035em;
+    }
+
+    .lead {
+      margin: 0 0 24px;
+      font-size: 1.08rem;
+      color: var(--muted);
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 54px;
+      padding: 0 26px;
+      border-radius: 14px;
+      background: var(--primary);
+      color: #fff;
+      font-weight: 800;
+      font-size: 1rem;
+      box-shadow: 0 14px 28px rgba(91, 33, 182, 0.22);
+      transition: background-color 0.15s ease, transform 0.15s ease;
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-dark);
+      transform: translateY(-1px);
+    }
+
+    /* Interactive Comfort Selector */
+    .comfort-box {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 26px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .comfort-box h2 {
+      margin: 0 0 8px;
+      font-size: 1.32rem;
+      font-weight: 900;
+    }
+
+    .comfort-box > p {
+      margin: 0 0 18px;
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+
+    .chip-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      margin-bottom: 18px;
+    }
+
+    .chip-btn {
+      background: #f5f3ff;
+      border: 1.5px solid #ddd6fe;
+      color: var(--primary-dark);
+      border-radius: 12px;
+      padding: 9px 14px;
+      font-family: inherit;
+      font-size: 0.88rem;
+      font-weight: 800;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .chip-btn.active {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: #fff;
+    }
+
+    .comfort-output {
+      background: #faf9ff;
+      border-left: 4px solid var(--primary);
+      border-radius: 0 14px 14px 0;
+      padding: 16px 18px;
+    }
+
+    .comfort-output strong {
+      display: block;
+      font-size: 1rem;
+      margin-bottom: 4px;
+    }
+
+    .comfort-output p {
+      margin: 0;
+      font-size: 0.94rem;
+      color: var(--muted);
+    }
+
+    /* Myth vs Reality Rows */
+    .section-heading {
+      margin: 0 0 18px;
+      font-size: 1.65rem;
+      font-weight: 900;
+      letter-spacing: -0.025em;
+    }
+
+    .mr-stack {
+      display: grid;
+      gap: 14px;
+    }
+
+    .mr-row {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 22px;
+      box-shadow: var(--shadow-sm);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .mr-tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 6px;
+    }
+
+    .mr-myth .mr-tag {
+      color: #7c879e;
+    }
+
+    .mr-reality .mr-tag {
+      color: var(--accent);
+    }
+
+    .mr-row p {
+      margin: 0;
+      font-size: 0.94rem;
+      color: var(--muted);
+    }
+
+    .mr-myth p {
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    /* Inline CTA Strip */
+    .inline-cta {
+      background: var(--soft-violet);
+      border: 1px solid #ddd6fe;
+      border-radius: 22px;
+      padding: 24px 26px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .inline-cta h3 {
+      margin: 0 0 4px;
+      font-size: 1.18rem;
+      font-weight: 900;
+    }
+
+    .inline-cta p {
+      margin: 0;
+      font-size: 0.94rem;
+      color: var(--muted);
+    }
+
+    /* Sticky Right Sidebar */
+    .sticky-card {
+      position: sticky;
+      top: 24px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 26px;
+      box-shadow: var(--shadow-md);
+    }
+
+    .sticky-badge {
+      display: inline-block;
+      background: var(--soft-emerald);
+      color: var(--accent);
+      font-size: 0.78rem;
+      font-weight: 900;
+      padding: 5px 12px;
+      border-radius: 999px;
+      margin-bottom: 12px;
+    }
+
+    .sticky-card h2 {
+      margin: 0 0 10px;
+      font-size: 1.28rem;
+      font-weight: 900;
+      line-height: 1.25;
+    }
+
+    .sticky-card p {
+      margin: 0 0 18px;
+      font-size: 0.92rem;
+      color: var(--muted);
+    }
+
+    .sticky-points {
+      display: grid;
+      gap: 10px;
+      margin-bottom: 20px;
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+
+    .sticky-point {
+      background: #f8fafc;
+      border: 1px solid #e7edf5;
+      border-radius: 12px;
+      padding: 10px 12px;
+    }
+
+    .btn-full {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      min-height: 50px;
+      border-radius: 13px;
+      background: var(--accent);
+      color: #fff;
+      font-weight: 800;
+      font-size: 0.96rem;
+      transition: filter 0.15s ease;
+    }
+
+    .btn-full:hover {
+      filter: brightness(0.95);
+    }
+
+    .sticky-foot {
+      margin-top: 12px;
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--muted);
+      font-weight: 700;
+    }
+
+    /* Footer */
+    .footer {
+      padding: 28px 0 46px;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+
+    .footer-inner {
+      border-top: 1px solid var(--line);
+      padding-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 940px) {
+      .page-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .sticky-card {
+        position: static;
+      }
+
+      .mr-row {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="offer-ribbon">
+    <span class="offer-badge">20% OFF</span>First month discount applies automatically when you get started
+  </div>
+
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="/">
+        <svg class="brand-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-hidden="true">
+          <rect width="64" height="64" rx="16" fill="#5b21b6"/>
+          <path d="M32 14c9 0 16 5 16 5v11c0 13-10 19-16 22-6-3-16-9-16-22V19s7-5 16-5z" fill="white"/>
+          <path d="M26 33l5 5 9-10" stroke="#5b21b6" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>Safe Therapy</span>
+      </a>
+      <a class="btn-top aff-link" data-placement="socialanxiety_top_nav" href="https://go.online-therapy.com/aff_c?offer_id=2&amp;aff_id=1116&amp;source=socialanxiety">
+        Start Therapy
+      </a>
+    </div>
+  </header>
+
+  <main class="container page-layout">
+    <div class="main-col">
+      <section>
+        <span class="eyebrow">Licensed Online Care &bull; Low-Pressure Start</span>
+        <h1>Practice showing up on your own terms, without being put on the spot.</h1>
+        <p class="lead">
+          Working with a licensed therapist online lets you address social anxiety from a familiar space, starting with text, voice, or video at a pace that feels safe.
+        </p>
+        <a class="btn-primary aff-link" data-placement="socialanxiety_hero_cta" href="https://go.online-therapy.com/aff_c?offer_id=2&amp;aff_id=1116&amp;source=socialanxiety">
+          Match With a Therapist &rarr;
+        </a>
+      </section>
+
+      <section>
+        <div class="comfort-box">
+          <h2>Pick the situation that feels hardest right now</h2>
+          <p>Click a scenario to see how online therapy adapts to how you prefer to communicate.</p>
+
+          <div class="chip-group">
+            <button class="chip-btn active" type="button" onclick="showScenario('calls', this)">Phone &amp; Video Calls</button>
+            <button class="chip-btn" type="button" onclick="showScenario('smalltalk', this)">Everyday Conversations</button>
+            <button class="chip-btn" type="button" onclick="showScenario('judgment', this)">Fear of Being Judged</button>
+            <button class="chip-btn" type="button" onclick="showScenario('avoidance', this)">Avoiding Plans</button>
+          </div>
+
+          <div class="comfort-output">
+            <strong id="scenarioTitle">Start by writing before speaking live</strong>
+            <p id="scenarioDesc">
+              If live calls feel intense right now, you can message your therapist in writing first, organize your thoughts without pressure, and move to voice or video only when you are ready.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-heading">Common assumptions vs. what online support actually looks like</h2>
+        <div class="mr-stack">
+          <div class="mr-row">
+            <div class="mr-myth">
+              <span class="mr-tag">Common Assumption</span>
+              <p>“I have to be confident and outgoing before therapy can help.”</p>
+            </div>
+            <div class="mr-reality">
+              <span class="mr-tag">In Practice</span>
+              <p>You can start while feeling guarded or hesitant. Your therapist meets you where you are and helps build skills gradually.</p>
+            </div>
+          </div>
+
+          <div class="mr-row">
+            <div class="mr-myth">
+              <span class="mr-tag">Common Assumption</span>
+              <p>“Therapy means sitting face-to-face under bright lights.”</p>
+            </div>
+            <div class="mr-reality">
+              <span class="mr-tag">In Practice</span>
+              <p>Sessions happen from your own home, with options for text messaging, voice calls, or video.</p>
+            </div>
+          </div>
+
+          <div class="mr-row">
+            <div class="mr-myth">
+              <span class="mr-tag">Common Assumption</span>
+              <p>“I will be pushed into uncomfortable situations too fast.”</p>
+            </div>
+            <div class="mr-reality">
+              <span class="mr-tag">In Practice</span>
+              <p>Structured CBT steps are paced around your comfort level so you can test practical habits steadily.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="inline-cta">
+          <div>
+            <h3>Ready to explore online therapy options?</h3>
+            <p>Your 20% first month discount applies automatically when you start.</p>
+          </div>
+          <a class="btn-primary aff-link" data-placement="socialanxiety_inline_cta" href="https://go.online-therapy.com/aff_c?offer_id=2&amp;aff_id=1116&amp;source=socialanxiety">
+            See Plans &amp; Start &rarr;
+          </a>
+        </div>
+      </section>
+    </div>
+
+    <aside class="sticky-card">
+      <span class="sticky-badge">20% Off First Month</span>
+      <h2>Private support from home with a licensed therapist</h2>
+      <p>
+        Combine structured CBT worksheets, therapist messaging, and flexible sessions without leaving your space.
+      </p>
+      <div class="sticky-points">
+        <div class="sticky-point">Text, voice, or video session formats</div>
+        <div class="sticky-point">Therapist feedback between sessions</div>
+        <div class="sticky-point">Switch therapists anytime if needed</div>
+      </div>
+      <a class="btn-full aff-link" data-placement="socialanxiety_sidebar_cta" href="https://go.online-therapy.com/aff_c?offer_id=2&amp;aff_id=1116&amp;source=socialanxiety">
+        Start Therapy &rarr;
+      </a>
+      <div class="sticky-foot">100% private &bull; No promo code needed</div>
+    </aside>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>&copy; 2026 Safe Therapy.com</div>
+      <div>Informational resource only; not a clinical diagnosis or emergency service. Affiliate disclosure: we may earn a commission if you sign up, at no extra cost to you.</div>
+    </div>
+  </footer>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const paramSource = params.get('source');
+    const savedSource = localStorage.getItem('traffic_source');
+    const activeSource = paramSource || savedSource || 'socialanxiety';
+
+    if (paramSource) {
+      localStorage.setItem('traffic_source', paramSource);
+    }
+
+    document.querySelectorAll('.aff-link').forEach(link => {
+      const url = new URL(link.href);
+      url.searchParams.set('source', activeSource);
+      link.href = url.toString();
+
+      link.addEventListener('click', function() {
+        if (typeof gtag === 'function') {
+          gtag('event', 'affiliate_click', {
+            'event_category': 'Outbound Affiliate',
+            'event_label': this.getAttribute('data-placement') || 'unknown',
+            'traffic_source': activeSource
+          });
+        }
+      });
+    });
+
+    const scenarios = {
+      calls: {
+        title: 'Start by writing before speaking live',
+        desc: 'If live calls feel intense right now, you can message your therapist in writing first, organize your thoughts without pressure, and move to voice or video only when you are ready.'
+      },
+      smalltalk: {
+        title: 'Take the pressure off getting every word right',
+        desc: 'CBT tools help you spot perfectionist expectations in casual talk so everyday chats feel less like a test you have to pass.'
+      },
+      judgment: {
+        title: 'Separate imagined scrutiny from real feedback',
+        desc: 'Working with a licensed therapist helps you examine harsh self-monitoring and respond with more grounded perspective.'
+      },
+      avoidance: {
+        title: 'Build momentum with small, realistic steps',
+        desc: 'Instead of forcing big leaps all at once, you set manageable weekly goals with guidance between sessions.'
+      }
+    };
+
+    function showScenario(key, btnEl) {
+      document.querySelectorAll('.chip-btn').forEach(btn => btn.classList.remove('active'));
+      if (btnEl) btnEl.classList.add('active');
+
+      const data = scenarios[key];
+      if (data) {
+        document.getElementById('scenarioTitle').textContent = data.title;
+        document.getElementById('scenarioDesc').textContent = data.desc;
+
+        if (typeof gtag === 'function') {
+          gtag('event', 'socialanxiety_scenario_viewed', {
+            'scenario': key,
+            'traffic_source': activeSource
+          });
+        }
+      }
+    }
+  </script>
+</body>
+</html>
