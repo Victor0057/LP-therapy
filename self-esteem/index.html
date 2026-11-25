@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Self-Esteem Therapy Online: Licensed Support | Safe Therapy</title>
+  <meta name="description" content="Self-esteem therapy with a licensed online therapist. Build steadier self-worth, set healthier boundaries, and quiet inner criticism from home." />
+  <link rel="icon" type="image/svg+xml" href="/favicon-safe.svg" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CVBXTDCGS2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-CVBXTDCGS2');
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --surface: #ffffff;
+      --soft-emerald: #e8f7f1;
+      --soft-sky: #ebf3ff;
+      --text: #131c2b;
+      --muted: #55647c;
+      --line: #dde5f0;
+      --primary: #047857;
+      --primary-dark: #065f46;
+      --accent: #2563eb;
+      --shadow-sm: 0 8px 22px rgba(19, 28, 43, 0.04);
+      --shadow-md: 0 20px 44px rgba(19, 28, 43, 0.07);
+      --max: 1040px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Nunito', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.64;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(calc(100% - 32px), var(--max));
+      margin: 0 auto;
+    }
+
+    /* Header */
+    .header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .header-inner {
+      min-height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 900;
+      font-size: 1.15rem;
+      letter-spacing: -0.02em;
+    }
+
+    .brand-logo {
+      width: 35px;
+      height: 35px;
+      border-radius: 10px;
+      flex: 0 0 auto;
+    }
+
+    .btn-nav {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 43px;
+      padding: 0 18px;
+      border-radius: 12px;
+      background: var(--primary);
+      color: #fff;
+      font-weight: 800;
+      font-size: 0.92rem;
+      transition: background-color 0.15s ease;
+    }
+
+    .btn-nav:hover {
+      background: var(--primary-dark);
+    }
+
+    /* Hero */
+    .hero {
+      padding: 44px 0 38px;
+    }
+
+    .hero-card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      padding: 36px;
+      box-shadow: var(--shadow-md);
+    }
+
+    .offer-pill-row {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+
+    .badge-20 {
+      background: var(--primary);
+      color: #fff;
+      font-size: 0.76rem;
+      font-weight: 900;
+      padding: 4px 11px;
+      border-radius: 999px;
+      letter-spacing: 0.03em;
+    }
+
+    .offer-caption {
+      font-size: 0.9rem;
+      font-weight: 800;
+      color: var(--primary-dark);
+    }
+
+    .hero h1 {
+      margin: 0 0 14px;
+      max-width: 780px;
+      font-size: clamp(2.15rem, 4.4vw, 3.35rem);
+      font-weight: 900;
+      line-height: 1.08;
+      letter-spacing: -0.035em;
+    }
+
+    .hero-lead {
+      margin: 0 0 24px;
+      max-width: 660px;
+      font-size: 1.06rem;
+      color: var(--muted);
+    }
+
+    .hero-cta-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 28px;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 54px;
+      padding: 0 26px;
+      border-radius: 14px;
+      background: var(--primary);
+      color: #fff;
+      font-weight: 800;
+      font-size: 1rem;
+      box-shadow: 0 14px 26px rgba(4, 120, 87, 0.22);
+      transition: background-color 0.15s ease, transform 0.15s ease;
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-dark);
+      transform: translateY(-1px);
+    }
+
+    .hero-meta {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--muted);
+    }
+
+    /* Interactive Pattern Picker */
+    .picker-bar {
+      border-top: 1px solid var(--line);
+      padding-top: 24px;
+    }
+
+    .picker-label {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--muted);
+      margin-bottom: 12px;
+    }
+
+    .picker-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+
+    .picker-btn {
+      background: var(--soft-sky);
+      border: 1.5px solid transparent;
+      color: var(--accent);
+      border-radius: 12px;
+      padding: 9px 15px;
+      font-family: inherit;
+      font-size: 0.9rem;
+      font-weight: 800;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .picker-btn.active {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    .picker-box {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 16px;
+      padding: 18px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .picker-box strong {
+      display: block;
+      font-size: 1.04rem;
+      margin-bottom: 4px;
+    }
+
+    .picker-box p {
+      margin: 0;
+      font-size: 0.93rem;
+      color: var(--muted);
+      max-width: 620px;
+    }
+
+    .btn-mini {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0 18px;
+      border-radius: 12px;
+      background: var(--surface);
+      border: 1.5px solid var(--primary);
+      color: var(--primary-dark);
+      font-weight: 800;
+      font-size: 0.9rem;
+      white-space: nowrap;
+      transition: all 0.15s ease;
+    }
+
+    .btn-mini:hover {
+      background: var(--primary);
+      color: #fff;
+    }
+
+    /* Sections */
+    section {
+      padding: 44px 0;
+    }
+
+    .sec-head {
+      max-width: 680px;
+      margin-bottom: 24px;
+    }
+
+    .sec-head h2 {
+      margin: 0 0 8px;
+      font-size: clamp(1.7rem, 3.2vw, 2.35rem);
+      font-weight: 900;
+      line-height: 1.14;
+      letter-spacing: -0.03em;
+    }
+
+    .sec-head p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.02rem;
+    }
+
+    /* Numbered Pillars */
+    .pillars-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .pillar {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 26px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .pillar-num {
+      font-size: 1.85rem;
+      font-weight: 900;
+      line-height: 1;
+      color: var(--primary);
+      margin-bottom: 12px;
+    }
+
+    .pillar h3 {
+      margin: 0 0 8px;
+      font-size: 1.14rem;
+      font-weight: 800;
+    }
+
+    .pillar p {
+      margin: 0;
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+
+    /* Horizontal Shift Rows */
+    .shifts-list {
+      display: grid;
+      gap: 14px;
+    }
+
+    .shift-row {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 22px 24px;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .shift-row h3 {
+      margin: 0 0 5px;
+      font-size: 1.1rem;
+      font-weight: 800;
+    }
+
+    .shift-row p {
+      margin: 0;
+      font-size: 0.94rem;
+      color: var(--muted);
+      max-width: 680px;
+    }
+
+    .shift-tag {
+      background: var(--soft-emerald);
+      color: var(--primary-dark);
+      font-size: 0.8rem;
+      font-weight: 800;
+      padding: 6px 12px;
+      border-radius: 999px;
+      white-space: nowrap;
+    }
+
+    /* Bottom Banner */
+    .cta-banner {
+      background: linear-gradient(135deg, #047857 0%, #0d9488 100%);
+      color: #fff;
+      border-radius: 28px;
+      padding: 36px 34px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      flex-wrap: wrap;
+      box-shadow: 0 22px 46px rgba(4, 120, 87, 0.22);
+    }
+
+    .cta-banner h2 {
+      margin: 0 0 8px;
+      font-size: clamp(1.7rem, 3vw, 2.3rem);
+      font-weight: 900;
+      line-height: 1.14;
+    }
+
+    .cta-banner p {
+      margin: 0;
+      max-width: 560px;
+      color: rgba(255, 255, 255, 0.92);
+    }
+
+    .btn-white {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 54px;
+      padding: 0 28px;
+      border-radius: 14px;
+      background: #fff;
+      color: var(--primary-dark);
+      font-weight: 900;
+      font-size: 1rem;
+      transition: transform 0.15s ease;
+    }
+
+    .btn-white:hover {
+      transform: translateY(-1px);
+    }
+
+    /* Footer */
+    .footer {
+      padding: 30px 0 48px;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+
+    .footer-inner {
+      border-top: 1px solid var(--line);
+      padding-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 880px) {
+      .pillars-3 {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-card {
+        padding: 26px 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="/">
+        <svg class="brand-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-hidden="true">
+          <rect width="64" height="64" rx="16" fill="#047857"/>
+          <path d="M32 14c9 0 16 5 16 5v11c0 13-10 19-16 22-6-3-16-9-16-22V19s7-5 16-5z" fill="white"/>
+          <path d="M26 33l5 5 9-10" stroke="#047857" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>Safe Therapy</span>
+      </a>
+      <a class="btn-nav aff-link" data-placement="selfesteem_top_nav" href="https://go.online-therapy.com/aff_c?offer_id=2&amp;aff_id=1116&amp;source=selfesteem">
+        Start Therapy
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-card">
+          <div class="offer-pill-row">
+            <span class="badge-20">20% OFF</span>
+            <span class="offer-caption">First month discount applied automatically when you get started</span>
+          </div>
+
+          <h1>Stop measuring your worth by how much you prove or please.</h1>
+          <p class="hero-lead">
+            Connect privately with a licensed therapist online to quiet harsh inner criticism, set steadier boundaries, and feel more grounded in your own skin.
+          </p>
+
+          <div class="hero-cta-wrap">
+            <a class="btn-primary aff-link" data-placement="selfesteem_hero_cta" href="https://go.online-therapy.com/aff_c?offer_id=2&amp;aff_id=1116&amp;source=selfesteem">
+              Match With a Therapist &rarr;
+            </a>
+            <span class="hero-meta">Private online care &bull; Switch therapists anytime</span>
+          </div>
+
+          <div class="picker-bar">
+            <span class="picker-label">See where to focus first</span>
+            <div class="picker-tabs">
+              <button class="picker-btn active" type="button" onclick="showPattern('imposter', this)">Imposter Syndrome</button>
+              <button class="picker-btn" type="button" onclick="showPattern('pleasing', this)">People-Pleasing</button>
+              <button class="picker-btn" type="button" onclick="showPattern('doubt', this)">Constant Self-Doubt</button>
+            </div>
+
+            <div class="picker-box">
+              <div>
+                <strong id="patternTitle">Feeling like a fraud even when results show up</strong>
+                <p id="patternDesc">
+                  A licensed therapist helps you examine why praise feels hard to accept and build a more accurate, realistic view of your capabilities.
+                </p>
+              </div>
+              <a class="btn-mini aff-link" data-placement="selfesteem_picker_cta" href="https://go.online-therapy.com/aff_c?offer_id=2&amp;aff_id=1116&amp;source=selfesteem">
+                Explore Plans &rarr;
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="sec-head">
+          <h2>How online CBT helps build quieter self-trust</h2>
+          <p>Practical structure makes it easier to notice old habits and test new responses in daily life.</p>
+        </div>
+
+        <div class="pillars-3">
+          <div class="pillar">
+            <div class="pillar-num">01</div>
+            <h3>Spot harsh self-talk early</h3>
+            <p>
+              Recognize automatic critical thoughts before they turn a minor mistake or delay into a verdict on your entire worth.
+            </p>
+          </div>
+          <div class="pillar">
+            <div class="pillar-num">02</div>
+            <h3>Practice clear boundaries</h3>
+            <p>
+              Learn how to say no or ask for what you need without over-explaining or carrying heavy guilt afterward.
+            </p>
+          </div>
+          <div class="pillar">
+            <div class="pillar-num">03</div>
+            <h3>Stay supported between sessions</h3>
+            <p>
+              Use worksheets, journaling, and therapist messaging during the week when old patterns get tested.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="sec-head">
+          <h2>Everyday shifts people notice</h2>
+        </div>
+
+        <div class="shifts-list">
+          <div class="shift-row">
+            <div>
+              <h3>Less over-apologizing for normal needs</h3>
+              <p>Taking up space, asking questions, or resting feels less like an inconvenience you have to make up for.</p>
+            </div>
+            <span class="shift-tag">Boundaries</span>
+          </div>
+
+          <div class="shift-row">
+            <div>
+              <h3>More room to try without fear of looking foolish</h3>
+              <p>Mistakes feel like feedback to learn from rather than proof that you are falling behind.</p>
+            </div>
+            <span class="shift-tag">Confidence</span>
+          </div>
+
+          <div class="shift-row">
+            <div>
+              <h3>Flexible online format from home</h3>
+              <p>Connect via video, voice, or text at your own pace, with the option to switch therapists if needed.</p>
+            </div>
+            <span class="shift-tag">Flexibility</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="cta-banner">
+          <div>
+            <h2>Start building steadier self-worth from home.</h2>
+            <p>
+              Connect with a licensed therapist online and claim 20% off your first month automatically.
+            </p>
+          </div>
+          <a class="btn-white aff-link" data-placement="selfesteem_bottom_cta" href="https://go.online-therapy.com/aff_c?offer_id=2&amp;aff_id=1116&amp;source=selfesteem">
+            Start Therapy &rarr;
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>&copy; 2026 Safe Therapy.com</div>
+      <div>Informational resource only; not a clinical diagnosis or emergency service. Affiliate disclosure: we may earn a commission if you sign up, at no extra cost to you.</div>
+    </div>
+  </footer>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const paramSource = params.get('source');
+    const savedSource = localStorage.getItem('traffic_source');
+    const activeSource = paramSource || savedSource || 'selfesteem';
+
+    if (paramSource) {
+      localStorage.setItem('traffic_source', paramSource);
+    }
+
+    document.querySelectorAll('.aff-link').forEach(link => {
+      const url = new URL(link.href);
+      url.searchParams.set('source', activeSource);
+      link.href = url.toString();
+
+      link.addEventListener('click', function() {
+        if (typeof gtag === 'function') {
+          gtag('event', 'affiliate_click', {
+            'event_category': 'Outbound Affiliate',
+            'event_label': this.getAttribute('data-placement') || 'unknown',
+            'traffic_source': activeSource
+          });
+        }
+      });
+    });
+
+    const patternsData = {
+      imposter: {
+        title: 'Feeling like a fraud even when results show up',
+        desc: 'A licensed therapist helps you examine why praise feels hard to accept and build a more accurate, realistic view of your capabilities.'
+      },
+      pleasing: {
+        title: 'Putting everyone else first until you feel resentful',
+        desc: 'Structured exercises help you practice direct, calm boundaries so you can care for others without losing yourself in the process.'
+      },
+      doubt: {
+        title: 'Second-guessing yourself before you even begin',
+        desc: 'Working through cognitive habits makes it easier to take action steadily rather than waiting until every worry disappears.'
+      }
+    };
+
+    function showPattern(key, btnEl) {
+      document.querySelectorAll('.picker-btn').forEach(btn => btn.classList.remove('active'));
+      if (btnEl) btnEl.classList.add('active');
+
+      const item = patternsData[key];
+      if (item) {
+        document.getElementById('patternTitle').textContent = item.title;
+        document.getElementById('patternDesc').textContent = item.desc;
+
+        if (typeof gtag === 'function') {
+          gtag('event', 'selfesteem_pattern_viewed', {
+            'pattern': key,
+            'traffic_source': activeSource
+          });
+        }
+      }
+    }
+  </script>
+</body>
+</html>
